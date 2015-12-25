@@ -1,0 +1,234 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "rdm.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("getopt.h" include (:system-flag t) nil [677 696])
+            ("signal.h" include (:system-flag t) nil [697 716])
+            ("stdio.h" include (:system-flag t) nil [717 735])
+            ("stdlib.h" include (:system-flag t) nil [736 755])
+            ("rct/EventLoop.h" include nil nil [807 833])
+            ("rct/FileSystemWatcher.h" include nil nil [834 868])
+            ("rct/Log.h" include nil nil [869 889])
+            ("rct/Process.h" include nil nil [890 914])
+            ("rct/Rct.h" include nil nil [915 935])
+            ("rct/StackBuffer.h" include nil nil [936 964])
+            ("rct/Thread.h" include nil nil [965 988])
+            ("rct/ThreadPool.h" include nil nil [989 1016])
+            ("RTags.h" include nil nil [1017 1035])
+            ("Server.h" include nil nil [1036 1055])
+            ("sigSegvHandler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signal" variable (:type "int") (reparse-symbol arg-sub-list) [1171 1182]))                  
+                :type "void")
+                nil [1144 1438])
+            ("EXCLUDEFILTER_DEFAULT" variable (:constant-flag t) nil [1448 1469])
+            ("opterr" variable
+               (:default-value "1"
+                :type "int")
+                nil [16263 16274])
+            ("append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("argv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16298 16305]))                  
+                :type "int")
+                nil [16291 16307])
+            ("append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("originalArgv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17255 17270]))                  
+                :type "int")
+                nil [17248 17272])
+            ("optind" variable
+               (:default-value "1"
+                :type "int")
+                nil [17282 17293])
+            ("serverOpts" variable (:type ("Server::Options" type (:type "class") nil nil)) nil [17305 17332])
+            ("threadStackSize" variable
+               (:default-value "defaultStackSize"
+                :type "int")
+                nil [17348 17383])
+            ("headerErrorJobCount" variable
+               (:default-value "-1"
+                :type "int")
+                nil [17555 17580])
+            ("rpVisitFileTimeout" variable
+               (:default-value "DEFAULT_RP_VISITFILE_TIMEOUT"
+                :type "int")
+                nil [17596 17646])
+            ("rpIndexDataMessageTimeout" variable
+               (:default-value "DEFAULT_RP_INDEXER_MESSAGE_TIMEOUT"
+                :type "int")
+                nil [17662 17725])
+            ("rpConnectTimeout" variable
+               (:default-value "DEFAULT_RP_CONNECT_TIMEOUT"
+                :type "int")
+                nil [17741 17787])
+            ("rpConnectAttempts" variable
+               (:default-value "DEFAULT_RP_CONNECT_ATTEMPTS"
+                :type "int")
+                nil [17803 17851])
+            ("maxFileMapScopeCacheSize" variable
+               (:default-value "DEFAULT_RDM_MAX_FILE_MAP_CACHE_SIZE"
+                :type "int")
+                nil [17867 17930])
+            ("rpNiceValue" variable
+               (:default-value "INT_MIN"
+                :type "int")
+                nil [17946 17968])
+            ("Server::SpellChecking" variable (:type "int") nil [18007 18029])
+            ("maxCrashCount" variable
+               (:default-value "DEFAULT_MAX_CRASH_COUNT"
+                :type "int")
+                nil [18045 18085])
+            ("completionCacheSize" variable
+               (:default-value "DEFAULT_COMPLETION_CACHE_SIZE"
+                :type "int")
+                nil [18101 18153])
+            ("logFile" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "0"
+                :type "char")
+                nil [18479 18503])
+            ("logFlags" variable
+               (:default-value "DontRotate"
+                :type ("Flags" type
+                     (:template-specifier 
+                        ( ("LogFileFlag" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [18508 18549])
+            ("sigHandler" variable
+               (:default-value "true"
+                :type "bool")
+                nil [18641 18664])
+            ("defaultDataDir" variable
+               (:default-value "true"
+                :type "bool")
+                nil [18778 18805])
+            ("inactivityTimeout" variable
+               (:default-value "0"
+                :type "int")
+                nil [18810 18836])
+            ("c" variable
+               (:constant-flag t
+                :default-value "getopt_long(argCount, args, shortOptions.constData(), opts, 0)"
+                :type "int")
+                nil [18865 18942])
+            ("fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stderr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29515 29522])
+                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29559 29571]))                  
+                :type "int")
+                nil [29507 29573])
+            ("headerErrorJobCount" variable
+               (:default-value "std::max(1, serverOpts.jobCount / 2)"
+                :type "int")
+                nil [30209 30268])
+            ("headerErrorJobCount" variable
+               (:default-value "std::min(serverOpts.headerErrorJobCount, serverOpts.jobCount)"
+                :type "int")
+                nil [30301 30385])
+            ("signal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SIGSEGV" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30444 30452])
+                    ("" variable (:type ("sigSegvHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30453 30468]))                  
+                :type "int")
+                nil [30437 30469])
+            ("signal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SIGILL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30485 30492])
+                    ("" variable (:type ("sigSegvHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30493 30508]))                  
+                :type "int")
+                nil [30478 30509])
+            ("signal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("SIGABRT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30525 30533])
+                    ("" variable (:type ("sigSegvHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30534 30549]))                  
+                :type "int")
+                nil [30518 30550])
+            ("fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stderr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30751 30758])
+                    ("" variable (:type ("logLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30819 30828])
+                    ("" variable (:type ("toInt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30828 30835])
+                    ("" variable (:type ("logFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30837 30846])
+                    ("" variable (:type ("logFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30847 30856])
+                    ("" variable (:type ("logFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30861 30870])
+                    ("" variable (:type ("toString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30870 30880])
+                    ("" variable (:type ("constData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30881 30892]))                  
+                :type "int")
+                nil [30743 30894])
+            ("buf" variable
+               (:dereference 1
+                :type "char")
+                nil [31755 31770])
+            ("path" variable (:type ("Path" type (:type "class") nil nil)) nil [31779 31789])
+            ("dataDir" variable
+               (:default-value "path"
+                :type "int")
+                nil [32105 32120])
+            ("strcpy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32136 32140]))                  
+                :type "int")
+                nil [32129 32167])
+            ("fd" variable
+               (:constant-flag t
+                :default-value "mkstemp(buf)"
+                :type "int")
+                nil [32176 32204])
+            ("close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32339 32342]))                  
+                :type "int")
+                nil [32333 32343])
+            ("socketFile" variable
+               (:default-value "buf"
+                :type "int")
+                nil [32363 32380])
+            ("resolve" function
+               (:prototype-flag t
+                :type "int")
+                nil [32411 32421])
+            ("migration" variable
+               (:default-value "String::format<128>(\"%s.rtags-file\", Path::home().constData())"
+                :type ("Path" type (:type "class") nil nil))
+                nil [32462 32542])
+            ("cleanupLogging" function
+               (:prototype-flag t
+                :type "int")
+                nil [32904 32921])
+            ("ret" variable (:type "int") nil [33206 33210]))          
+      :file "rdm.cpp"
+      :pointmax 33213
+      :fsize 33198
+      :lastmodtime '(22116 50244 499358 870000)
+      :unmatched-syntax '((close-paren 33211 . 33212) (RETURN 33199 . 33205) (punctuation 33193 . 33194) (close-paren 33192 . 33193) (open-paren 33191 . 33192) (symbol 33177 . 33191) (punctuation 33171 . 33172) (close-paren 33170 . 33171) (open-paren 33169 . 33170) (symbol 33164 . 33169) (punctuation 33163 . 33164) (symbol 33157 . 33163) (punctuation 33151 . 33152) (close-paren 33150 . 33151) (open-paren 33149 . 33150) (symbol 33141 . 33149) (punctuation 33140 . 33141) (punctuation 33139 . 33140) (symbol 33133 . 33139) (punctuation 33131 . 33132) (symbol 33127 . 33130) (INT 33123 . 33126) (CONST 33117 . 33122) (punctuation 33111 . 33112) (close-paren 33110 . 33111) (open-paren 33109 . 33110) (symbol 33105 . 33109) (punctuation 33104 . 33105) (punctuation 33103 . 33104) (symbol 33099 . 33103) (punctuation 33092 . 33093) (close-paren 33091 . 33092) (number 33087 . 33091) (punctuation 33085 . 33086) (symbol 33067 . 33084) (open-paren 33066 . 33067) (symbol 33046 . 33066) (punctuation 33045 . 33046) (punctuation 33044 . 33045) (symbol 33040 . 33044) (close-paren 33033 . 33034) (punctuation 33027 . 33028) (number 33026 . 33027) (punctuation 33024 . 33025) (number 33022 . 33023) (punctuation 33020 . 33021) (semantic-list 33017 . 33019) (symbol 33009 . 33017) (punctuation 33008 . 33009) (punctuation 33007 . 33008) (symbol 33001 . 33007) (RETURN 32994 . 33000) (open-paren 32984 . 32985) (close-paren 32982 . 32983) (semantic-list 32980 . 32982) (symbol 32973 . 32980) (punctuation 32972 . 32973) (symbol 32967 . 32972) (punctuation 32966 . 32967) (symbol 32956 . 32966) (punctuation 32955 . 32956) (open-paren 32954 . 32955) (IF 32951 . 32953) (close-paren 32944 . 32945) (punctuation 32938 . 32939) (number 32937 . 32938) (RETURN 32930 . 32936) (open-paren 32894 . 32895) (close-paren 32892 . 32893) (semantic-list 32880 . 32892) (symbol 32876 . 32880) (punctuation 32875 . 32876) (punctuation 32874 . 32875) (symbol 32868 . 32874) (punctuation 32867 . 32868) (open-paren 32866 . 32867) (IF 32863 . 32865) (punctuation 32857 . 32858) (close-paren 32856 . 32857) (open-paren 32855 . 32856) (symbol 32836 . 32855) (punctuation 32835 . 32836) (symbol 32828 . 32835) (punctuation 32827 . 32828) (symbol 32817 . 32827) (punctuation 32815 . 32816) (symbol 32807 . 32814) (punctuation 32806 . 32807) (symbol 32796 . 32806) (close-paren 32790 . 32791) (semantic-list 32574 . 32785) (semantic-list 32554 . 32573) (IF 32551 . 32553) (open-paren 32452 . 32453) (close-paren 32450 . 32451) (symbol 32436 . 32450) (open-paren 32435 . 32436) (IF 32432 . 32434) (close-paren 32426 . 32427) (punctuation 32410 . 32411) (symbol 32400 . 32410) (punctuation 32399 . 32400) (symbol 32389 . 32399) (punctuation 32362 . 32363) (symbol 32352 . 32362) (semantic-list 32227 . 32324) (semantic-list 32216 . 32226) (IF 32213 . 32215) (string 32141 . 32165) (punctuation 32104 . 32105) (symbol 32094 . 32104) (semantic-list 31811 . 32085) (semantic-list 31804 . 31810) (WHILE 31798 . 31803) (open-paren 31745 . 31746) (close-paren 31743 . 31744) (semantic-list 31741 . 31743) (symbol 31734 . 31741) (punctuation 31733 . 31734) (symbol 31728 . 31733) (punctuation 31727 . 31728) (symbol 31717 . 31727) (punctuation 31716 . 31717) (open-paren 31715 . 31716) (IF 31712 . 31714) (punctuation 31706 . 31707) (close-paren 31705 . 31706) (symbol 31699 . 31705) (NEW 31695 . 31698) (open-paren 31694 . 31695) (symbol 31688 . 31694) (punctuation 31686 . 31687) (symbol 31680 . 31686) (punctuation 31679 . 31680) (symbol 31669 . 31679) (punctuation 31668 . 31669) (punctuation 31667 . 31668) (symbol 31664 . 31667) (punctuation 31657 . 31658) (close-paren 31656 . 31657) (symbol 31636 . 31656) (punctuation 31635 . 31636) (punctuation 31634 . 31635) (symbol 31625 . 31634) (punctuation 31624 . 31625) (symbol 31605 . 31624) (punctuation 31604 . 31605) (punctuation 31603 . 31604) (symbol 31594 . 31603) (punctuation 31593 . 31594) (symbol 31580 . 31593) (punctuation 31579 . 31580) (punctuation 31578 . 31579) (symbol 31569 . 31578) (open-paren 31568 . 31569) (symbol 31564 . 31568) (punctuation 31563 . 31564) (punctuation 31562 . 31563) (symbol 31558 . 31562) (punctuation 31552 . 31553) (close-paren 31551 . 31552) (symbol 31542 . 31551) (NEW 31538 . 31541) (open-paren 31537 . 31538) (symbol 31533 . 31537) (symbol 31523 . 31532) (punctuation 31522 . 31523) (punctuation 31521 . 31522) (symbol 31512 . 31521) (close-paren 30917 . 30918) (punctuation 30911 . 30912) (number 30910 . 30911) (RETURN 30903 . 30909) (semantic-list 30890 . 30892) (punctuation 30880 . 30881) (semantic-list 30878 . 30880) (punctuation 30869 . 30870) (string 30857 . 30859) (punctuation 30855 . 30856) (punctuation 30845 . 30846) (semantic-list 30833 . 30835) (punctuation 30827 . 30828) (string 30759 . 30801) (open-paren 30733 . 30734) (close-paren 30731 . 30732) (semantic-list 30653 . 30731) (symbol 30642 . 30653) (semantic-list 30701 . 30703) (punctuation 30691 . 30692) (semantic-list 30658 . 30661) (punctuation 30641 . 30642) (open-paren 30640 . 30641) (IF 30637 . 30639) (punctuation 30630 . 30631) (close-paren 30629 . 30630) (open-paren 30628 . 30629) (symbol 30621 . 30628) (punctuation 30620 . 30621) (symbol 30613 . 30620) (punctuation 30611 . 30612) (close-paren 30610 . 30611) (symbol 30603 . 30610) (open-paren 30602 . 30603) (symbol 30595 . 30602) (symbol 30590 . 30594) (close-paren 30555 . 30556) (open-paren 30413 . 30414) (close-paren 30411 . 30412) (symbol 30401 . 30411) (open-paren 30400 . 30401) (IF 30397 . 30399) (close-paren 30390 . 30391) (punctuation 30300 . 30301) (symbol 30290 . 30300) (open-paren 30280 . 30281) (ELSE 30275 . 30279) (close-paren 30273 . 30274) (punctuation 30208 . 30209) (symbol 30198 . 30208) (open-paren 30188 . 30189) (close-paren 30186 . 30187) (number 30185 . 30186) (punctuation 30184 . 30185) (punctuation 30182 . 30183) (punctuation 30181 . 30182) (symbol 30161 . 30180) (punctuation 30160 . 30161) (symbol 30150 . 30160) (open-paren 30149 . 30150) (IF 30146 . 30148) (close-paren 30139 . 30140) (semantic-list 29641 . 30134) (semantic-list 29632 . 29640) (SWITCH 29625 . 29631) (open-paren 29615 . 29616) (close-paren 29613 . 29614) (symbol 29607 . 29613) (open-paren 29606 . 29607) (IF 29603 . 29605) (close-paren 29596 . 29597) (punctuation 29590 . 29591) (number 29589 . 29590) (RETURN 29582 . 29588) (semantic-list 29563 . 29571) (string 29523 . 29557) (open-paren 29497 . 29498) (close-paren 29495 . 29496) (symbol 29487 . 29495) (punctuation 29485 . 29486) (symbol 29478 . 29484) (open-paren 29477 . 29478) (IF 29474 . 29476) (close-paren 29468 . 29469) (semantic-list 19002 . 29463) (semantic-list 18998 . 19001) (SWITCH 18991 . 18997) (punctuation 18981 . 18982) (BREAK 18976 . 18981) (semantic-list 18954 . 18963) (IF 18951 . 18953) (open-paren 18855 . 18856) (close-paren 18853 . 18854) (symbol 18849 . 18853) (open-paren 18848 . 18849) (WHILE 18842 . 18847) (punctuation 18772 . 18773) (close-paren 18771 . 18772) (open-paren 18770 . 18771) (symbol 18766 . 18770) (punctuation 18765 . 18766) (symbol 18758 . 18765) (punctuation 18756 . 18757) (symbol 18751 . 18755) (punctuation 18750 . 18751) (punctuation 18749 . 18750) (CHAR 18744 . 18748) (punctuation 18738 . 18739) (close-paren 18737 . 18738) (open-paren 18736 . 18737) (symbol 18732 . 18736) (punctuation 18731 . 18732) (symbol 18724 . 18731) (punctuation 18722 . 18723) (symbol 18713 . 18721) (INT 18709 . 18712) (punctuation 18703 . 18704) (close-paren 18702 . 18703) (semantic-list 18697 . 18702) (symbol 18689 . 18697) (string 18698 . 18701) (punctuation 18688 . 18689) (semantic-list 18686 . 18688) (symbol 18682 . 18686) (punctuation 18681 . 18682) (punctuation 18680 . 18681) (symbol 18676 . 18680) (open-paren 18675 . 18676) (symbol 18669 . 18675) (punctuation 18635 . 18636) (close-paren 18634 . 18635) (symbol 18629 . 18634) (punctuation 18628 . 18629) (punctuation 18627 . 18628) (symbol 18619 . 18627) (open-paren 18618 . 18619) (symbol 18603 . 18618) (symbol 18594 . 18602) (punctuation 18588 . 18589) (close-paren 18587 . 18588) (symbol 18582 . 18587) (punctuation 18581 . 18582) (punctuation 18580 . 18581) (symbol 18572 . 18580) (open-paren 18571 . 18572) (symbol 18563 . 18571) (symbol 18554 . 18562) (punctuation 18472 . 18473) (close-paren 18471 . 18472) (semantic-list 18469 . 18471) (symbol 18460 . 18469) (punctuation 18459 . 18460) (semantic-list 18457 . 18459) (symbol 18453 . 18457) (punctuation 18452 . 18453) (punctuation 18451 . 18452) (symbol 18447 . 18451) (punctuation 18445 . 18446) (string 18435 . 18445) (open-paren 18434 . 18435) (punctuation 18433 . 18434) (number 18430 . 18433) (punctuation 18429 . 18430) (symbol 18423 . 18429) (punctuation 18422 . 18423) (punctuation 18421 . 18422) (symbol 18415 . 18421) (punctuation 18413 . 18414) (symbol 18405 . 18412) (punctuation 18404 . 18405) (symbol 18394 . 18404) (punctuation 18388 . 18389) (close-paren 18387 . 18388) (string 18384 . 18387) (open-paren 18383 . 18384) (symbol 18378 . 18383) (punctuation 18377 . 18378) (close-paren 18376 . 18377) (string "\"*/CMakeFiles/*;*/cmake*/Modules/*;*/conftest.c*;/tm" 18355 . 18376) (open-paren 18354 . 18355) (symbol 18348 . 18354) (punctuation 18346 . 18347) (symbol 18331 . 18345) (punctuation 18330 . 18331) (symbol 18320 . 18330) (punctuation 18100 . 18101) (symbol 18090 . 18100) (punctuation 18044 . 18045) (symbol 18034 . 18044) (punctuation 18006 . 18007) (symbol 18002 . 18006) (punctuation 18001 . 18002) (punctuation 18000 . 18001) (symbol 17994 . 18000) (punctuation 17992 . 17993) (symbol 17984 . 17991) (punctuation 17983 . 17984) (symbol 17973 . 17983) (punctuation 17945 . 17946) (symbol 17935 . 17945) (punctuation 17866 . 17867) (symbol 17856 . 17866) (punctuation 17802 . 17803) (symbol 17792 . 17802) (punctuation 17740 . 17741) (symbol 17730 . 17740) (punctuation 17661 . 17662) (symbol 17651 . 17661) (punctuation 17595 . 17596) (symbol 17585 . 17595) (punctuation 17554 . 17555) (symbol 17544 . 17554) (punctuation 17538 . 17539) (close-paren 17537 . 17538) (semantic-list 17535 . 17537) (symbol 17519 . 17535) (punctuation 17518 . 17519) (punctuation 17517 . 17518) (symbol 17507 . 17517) (punctuation 17505 . 17506) (number 17504 . 17505) (open-paren 17503 . 17504) (symbol 17500 . 17503) (punctuation 17499 . 17500) (punctuation 17498 . 17499) (symbol 17495 . 17498) (punctuation 17493 . 17494) (symbol 17484 . 17492) (punctuation 17483 . 17484) (symbol 17473 . 17483) (punctuation 17467 . 17468) (close-paren 17466 . 17467) (semantic-list 17464 . 17466) (symbol 17455 . 17464) (punctuation 17454 . 17455) (semantic-list 17452 . 17454) (symbol 17448 . 17452) (punctuation 17447 . 17448) (punctuation 17446 . 17447) (symbol 17442 . 17446) (punctuation 17440 . 17441) (string 17432 . 17440) (open-paren 17431 . 17432) (punctuation 17430 . 17431) (number 17427 . 17430) (punctuation 17426 . 17427) (symbol 17420 . 17426) (punctuation 17419 . 17420) (punctuation 17418 . 17419) (symbol 17412 . 17418) (punctuation 17410 . 17411) (symbol 17399 . 17409) (punctuation 17398 . 17399) (symbol 17388 . 17398) (punctuation 17347 . 17348) (symbol 17337 . 17347) (close-paren 17298 . 17299) (semantic-list 17267 . 17270) (punctuation 17247 . 17248) (symbol 17240 . 17247) (semantic-list 17205 . 17227) (FOR 17201 . 17204) (semantic-list 16327 . 17191) (semantic-list 16319 . 16326) (IF 16316 . 16318) (semantic-list 16302 . 16305) (punctuation 16290 . 16291) (symbol 16283 . 16290) (semantic-list 15874 . 16254) (semantic-list 15867 . 15873) (WHILE 15861 . 15866) (symbol 1522 . 1523) (punctuation 17247 . 17248) (symbol 17240 . 17247) (semantic-list 17205 . 17227) (FOR 17201 . 17204) (semantic-list 16327 . 17191) (semantic-list 16319 . 16326) (IF 16316 . 16318) (semantic-list 16302 . 16305) (punctuation 16290 . 16291) (symbol 16283 . 16290) (semantic-list 15874 . 16254) (semantic-list 15867 . 15873) (WHILE 15861 . 15866) (symbol 1522 . 1523))
+      :lexical-table 
+        '(("EXCLUDEFILTER_DEFAULT" . ((string "\"*/CMakeFiles/*;*/cmake*/Modules/*;*/conftest.c*;/tm" 1470 . 1522)))
+          )
+)
+    (semanticdb-table "RTags.h"
+      :file "RTags.h"
+      :fsize 18539
+      :lastmodtime '(22116 50244 496025 528000))
+    (semanticdb-table "Server.h"
+      :file "Server.h"
+      :fsize 10407
+      :lastmodtime '(22116 50244 499358 870000)))
+  :file "!home!seshu!rtags!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

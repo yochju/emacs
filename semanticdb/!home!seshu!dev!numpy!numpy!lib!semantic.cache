@@ -1,0 +1,1090 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables
+  (list
+    (semanticdb-table "npyio.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 65])
+            ("sys" include nil nil [67 77])
+            ("os" include nil nil [78 87])
+            ("re" include nil nil [88 97])
+            ("itertools" include nil nil [98 114])
+            ("warnings" include nil nil [115 130])
+            ("weakref" include nil nil [131 145])
+            ("operator" include nil nil [146 177])
+            ("numpy" include nil nil [179 197])
+            ("format" include nil nil [205 218])
+            ("DataSource" include nil nil [237 254])
+            ("numpy.core.multiarray" include nil nil [255 309])
+            ("" code nil nil [332 530])
+            ("" code nil nil [557 627])
+            ("if" code nil nil [629 747])
+            ("loads" variable nil nil [748 768])
+            ("__all__" variable nil nil [770 995])
+            ("BagObj" type
+               (:documentation "
+    BagObj(obj)
+
+    Convert attribute look-ups to getitems on the object passed in.
+
+    Parameters
+    ----------
+    obj : class instance
+        Object on which attribute look-up is performed.
+
+    Examples
+    --------
+    >>> from numpy.lib.npyio import BagObj as BO
+    >>> class BagDemo(object):
+    ...     def __getitem__(self, key): # An instance of BagObj(BagDemo)
+    ...                                 # will call this method when any
+    ...                                 # attribute look-up is required
+    ...         result = \"Doesn't matter what you want, \"
+    ...         return result + \"you're gonna get this\"
+    ...
+    >>> demo_obj = BagDemo()
+    >>> bagobj = BO(demo_obj)
+    >>> bagobj.hello_there
+    \"Doesn't matter what you want, you're gonna get this\"
+    >>> bagobj.I_can_be_anything
+    \"Doesn't matter what you want, you're gonna get this\"
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2024 2054]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1934 1938])
+                            ("obj" variable nil (reparse-symbol function_parameters) [1940 1943]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1921 2055])
+                    ("__getattribute__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2081 2085])
+                            ("key" variable nil (reparse-symbol function_parameters) [2087 2090]))                          )
+                        (reparse-symbol indented_block_body) [2060 2231])
+                    ("__dir__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2248 2252]))                          
+                        :documentation "
+        Enables dir(bagobj) to list the files in an NpzFile.
+
+        This also enables tab-completion in an interpreter or IPython.
+        ")
+                        (reparse-symbol indented_block_body) [2236 2472]))                  
+                :type "class")
+                nil [998 2472])
+            ("zipfile_factory" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [2494 2499])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [2501 2509]))              ) nil [2474 2607])
+            ("NpzFile" type
+               (:documentation "
+    NpzFile(fid)
+
+    A dictionary-like object with lazy-loading of files in the zipped
+    archive provided on construction.
+
+    `NpzFile` is used to load files in the NumPy ``.npz`` data archive
+    format. It assumes that files in the archive have a ``.npy`` extension,
+    other files are ignored.
+
+    The arrays and file strings are lazily loaded on either
+    getitem access using ``obj['key']`` or attribute lookup using
+    ``obj.f.key``. A list of all files (without ``.npy`` extensions) can
+    be obtained with ``obj.files`` and the ZipFile object itself using
+    ``obj.zip``.
+
+    Attributes
+    ----------
+    files : list of str
+        List of all files in the archive with a ``.npy`` extension.
+    zip : ZipFile instance
+        The ZipFile object initialized with the zipped archive.
+    f : BagObj instance
+        An object on which attribute can be performed as an alternative
+        to getitem access on the `NpzFile` instance itself.
+    allow_pickle : bool, optional
+        Allow loading pickled data. Default: True
+    pickle_kwargs : dict, optional
+        Additional keyword arguments to pass on to pickle.load.
+        These are only useful when loading object arrays saved on
+        Python 2 when using Python 3.
+
+    Parameters
+    ----------
+    fid : file or str
+        The zipped archive to open. This is either a file-like object
+        or a string containing the path to the archive.
+    own_fid : bool, optional
+        Whether NpzFile should close the file handle.
+        Requires that `fid` is a file-like object.
+
+    Examples
+    --------
+    >>> from tempfile import TemporaryFile
+    >>> outfile = TemporaryFile()
+    >>> x = np.arange(10)
+    >>> y = np.sin(x)
+    >>> np.savez(outfile, x=x, y=y)
+    >>> outfile.seek(0)
+
+    >>> npz = np.load(outfile)
+    >>> isinstance(npz, np.lib.io.NpzFile)
+    True
+    >>> npz.files
+    ['y', 'x']
+    >>> npz['x']  # getitem access
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    >>> npz.f.x  # attribute lookup
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("_zip" variable nil (reparse-symbol indented_block_body) [4939 4966])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4975 5004])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5013 5028])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5037 5069])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5078 5112])
+                            ("for" code nil (reparse-symbol indented_block_body) [5121 5275])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5283 5298])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5307 5328])
+                            ("if" code nil (reparse-symbol indented_block_body) [5337 5418]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4712 4716])
+                            ("fid" variable nil (reparse-symbol function_parameters) [4718 4721])
+                            ("own_fid" variable nil (reparse-symbol function_parameters) [4723 4730])
+                            ("allow_pickle" variable nil (reparse-symbol function_parameters) [4738 4750])
+                            ("pickle_kwargs" variable nil (reparse-symbol function_parameters) [4774 4787]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4699 5418])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5437 5441]))                          )
+                        (reparse-symbol indented_block_body) [5423 5464])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5482 5486])
+                            ("exc_type" variable nil (reparse-symbol function_parameters) [5488 5496])
+                            ("exc_value" variable nil (reparse-symbol function_parameters) [5498 5507])
+                            ("traceback" variable nil (reparse-symbol function_parameters) [5509 5518]))                          )
+                        (reparse-symbol indented_block_body) [5469 5542])
+                    ("close" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5557 5561]))                          
+                        :documentation "
+        Close the file.
+
+        ")
+                        (reparse-symbol indented_block_body) [5547 5840])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5857 5861]))                          )
+                        (reparse-symbol indented_block_body) [5845 5885])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5906 5910])
+                            ("key" variable nil (reparse-symbol function_parameters) [5912 5915]))                          )
+                        (reparse-symbol indented_block_body) [5890 7042])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7060 7064]))                          )
+                        (reparse-symbol indented_block_body) [7047 7099])
+                    ("items" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7114 7118]))                          
+                        :documentation "
+        Return a list of tuples, with each tuple (filename, array in file).
+
+        ")
+                        (reparse-symbol indented_block_body) [7104 7272])
+                    ("iteritems" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7291 7295]))                          
+                        :documentation "Generator that returns tuples (filename, array in file).")
+                        (reparse-symbol indented_block_body) [7277 7429])
+                    ("keys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7443 7447]))                          
+                        :documentation "Return files in the archive with a ``.npy`` extension.")
+                        (reparse-symbol indented_block_body) [7434 7545])
+                    ("iterkeys" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7563 7567]))                          
+                        :documentation "Return an iterator over the files in the archive.")
+                        (reparse-symbol indented_block_body) [7550 7665])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7687 7691])
+                            ("key" variable nil (reparse-symbol function_parameters) [7693 7696]))                          )
+                        (reparse-symbol indented_block_body) [7670 7743]))                  
+                :type "class")
+                nil [2609 7743])
+            ("load" function
+               (:documentation "
+    Load arrays or pickled objects from ``.npy``, ``.npz`` or pickled files.
+
+    Parameters
+    ----------
+    file : file-like object or string
+        The file to read. File-like objects must support the
+        ``seek()`` and ``read()`` methods. Pickled files require that the
+        file-like object support the ``readline()`` method as well.
+    mmap_mode : {None, 'r+', 'r', 'w+', 'c'}, optional
+        If not None, then memory-map the file, using the given mode (see
+        `numpy.memmap` for a detailed description of the modes).  A
+        memory-mapped array is kept on disk. However, it can be accessed
+        and sliced like any ndarray.  Memory mapping is especially useful
+        for accessing small fragments of large files without reading the
+        entire file into memory.
+    allow_pickle : bool, optional
+        Allow loading pickled object arrays stored in npy files. Reasons for
+        disallowing pickles include security, as loading pickled data can
+        execute arbitrary code. If pickles are disallowed, loading object
+        arrays will fail.
+        Default: True
+    fix_imports : bool, optional
+        Only useful when loading Python 2 generated pickled files on Python 3,
+        which includes npy/npz files containing object arrays. If `fix_imports`
+        is True, pickle will try to map the old Python 2 names to the new names
+        used in Python 3.
+    encoding : str, optional
+        What encoding to use when reading Python 2 strings. Only useful when
+        loading Python 2 generated pickled files on Python 3, which includes
+        npy/npz files containing object arrays. Values other than 'latin1',
+        'ASCII', and 'bytes' are not allowed, as they can corrupt numerical
+        data. Default: 'ASCII'
+
+    Returns
+    -------
+    result : array, tuple, dict, etc.
+        Data stored in the file. For ``.npz`` files, the returned instance
+        of NpzFile class must be closed to avoid leaking file descriptors.
+
+    Raises
+    ------
+    IOError
+        If the input file does not exist or cannot be read.
+    ValueError
+        The file contains an object array, but allow_pickle=False given.
+
+    See Also
+    --------
+    save, savez, savez_compressed, loadtxt
+    memmap : Create a memory-map to an array stored in a file on disk.
+
+    Notes
+    -----
+    - If the file contains pickle data, then whatever object is stored
+      in the pickle is returned.
+    - If the file is a ``.npy`` file, then a single array is returned.
+    - If the file is a ``.npz`` file, then a dictionary-like object is
+      returned, containing ``{filename: array}`` key-value pairs, one for
+      each file in the archive.
+    - If the file is a ``.npz`` file, the returned value supports the
+      context manager protocol in a similar fashion to the open function::
+
+        with load('foo.npz') as data:
+            a = data['a']
+
+      The underlying file descriptor is closed when exiting the 'with'
+      block.
+
+    Examples
+    --------
+    Store data to disk, and load it again:
+
+    >>> np.save('/tmp/123', np.array([[1, 2, 3], [4, 5, 6]]))
+    >>> np.load('/tmp/123.npy')
+    array([[1, 2, 3],
+           [4, 5, 6]])
+
+    Store compressed data to disk, and load it again:
+
+    >>> a=np.array([[1, 2, 3], [4, 5, 6]])
+    >>> b=np.array([1, 2])
+    >>> np.savez('/tmp/123.npz', a=a, b=b)
+    >>> data = np.load('/tmp/123.npz')
+    >>> data['a']
+    array([[1, 2, 3],
+           [4, 5, 6]])
+    >>> data['b']
+    array([1, 2])
+    >>> data.close()
+
+    Mem-map the stored array, and then access the second row
+    directly from disk:
+
+    >>> X = np.load('/tmp/123.npy', mmap_mode='r')
+    >>> X[1, :]
+    memmap([4, 5, 6])
+
+    "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [7754 7758])
+                    ("mmap_mode" variable nil (reparse-symbol function_parameters) [7760 7769])
+                    ("allow_pickle" variable nil (reparse-symbol function_parameters) [7776 7788])
+                    ("fix_imports" variable nil (reparse-symbol function_parameters) [7795 7806])
+                    ("encoding" variable nil (reparse-symbol function_parameters) [7822 7830]))                  )
+                nil [7745 14007])
+            ("save" function
+               (:documentation "
+    Save an array to a binary file in NumPy ``.npy`` format.
+
+    Parameters
+    ----------
+    file : file or str
+        File or filename to which the data is saved.  If file is a file-object,
+        then the filename is unchanged.  If file is a string, a ``.npy``
+        extension will be appended to the file name if it does not already
+        have one.
+    allow_pickle : bool, optional
+        Allow saving object arrays using Python pickles. Reasons for disallowing
+        pickles include security (loading pickled data can execute arbitrary
+        code) and portability (pickled objects may not be loadable on different
+        Python installations, for example if the stored objects require libraries
+        that are not available, and not all pickled data is compatible between
+        Python 2 and Python 3).
+        Default: True
+    fix_imports : bool, optional
+        Only useful in forcing objects in object arrays on Python 3 to be
+        pickled in a Python 2 compatible way. If `fix_imports` is True, pickle
+        will try to map the new Python 3 names to the old module names used in
+        Python 2, so that the pickle data stream is readable with Python 2.
+    arr : array_like
+        Array data to be saved.
+
+    See Also
+    --------
+    savez : Save several arrays into a ``.npz`` archive
+    savetxt, load
+
+    Notes
+    -----
+    For a description of the ``.npy`` format, see the module docstring
+    of `numpy.lib.format` or the Numpy Enhancement Proposal
+    http://docs.scipy.org/doc/numpy/neps/npy-format.html
+
+    Examples
+    --------
+    >>> from tempfile import TemporaryFile
+    >>> outfile = TemporaryFile()
+
+    >>> x = np.arange(10)
+    >>> np.save(outfile, x)
+
+    >>> outfile.seek(0) # Only needed here to simulate closing & reopening file
+    >>> np.load(outfile)
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [14018 14022])
+                    ("arr" variable nil (reparse-symbol function_parameters) [14024 14027])
+                    ("allow_pickle" variable nil (reparse-symbol function_parameters) [14029 14041])
+                    ("fix_imports" variable nil (reparse-symbol function_parameters) [14048 14059]))                  )
+                nil [14009 16537])
+            ("savez" function
+               (:documentation "
+    Save several arrays into a single file in uncompressed ``.npz`` format.
+
+    If arguments are passed in with no keywords, the corresponding variable
+    names, in the ``.npz`` file, are 'arr_0', 'arr_1', etc. If keyword
+    arguments are given, the corresponding variable names, in the ``.npz``
+    file will match the keyword names.
+
+    Parameters
+    ----------
+    file : str or file
+        Either the file name (string) or an open file (file-like object)
+        where the data will be saved. If file is a string, the ``.npz``
+        extension will be appended to the file name if it is not already there.
+    args : Arguments, optional
+        Arrays to save to the file. Since it is not possible for Python to
+        know the names of the arrays outside `savez`, the arrays will be saved
+        with names \"arr_0\", \"arr_1\", and so on. These arguments can be any
+        expression.
+    kwds : Keyword arguments, optional
+        Arrays to save to the file. Arrays will be saved in the file with the
+        keyword names.
+
+    Returns
+    -------
+    None
+
+    See Also
+    --------
+    save : Save a single array to a binary file in NumPy format.
+    savetxt : Save an array to a file as plain text.
+    savez_compressed : Save several arrays into a compressed ``.npz`` archive
+
+    Notes
+    -----
+    The ``.npz`` file format is a zipped archive of files named after the
+    variables they contain.  The archive is not compressed and each file
+    in the archive contains one variable in ``.npy`` format. For a
+    description of the ``.npy`` format, see `numpy.lib.format` or the
+    Numpy Enhancement Proposal
+    http://docs.scipy.org/doc/numpy/neps/npy-format.html
+
+    When opening the saved ``.npz`` file with `load` a `NpzFile` object is
+    returned. This is a dictionary-like object which can be queried for
+    its list of arrays (with the ``.files`` attribute), and for the arrays
+    themselves.
+
+    Examples
+    --------
+    >>> from tempfile import TemporaryFile
+    >>> outfile = TemporaryFile()
+    >>> x = np.arange(10)
+    >>> y = np.sin(x)
+
+    Using `savez` with \\\\*args, the arrays are saved with default names.
+
+    >>> np.savez(outfile, x, y)
+    >>> outfile.seek(0) # Only needed here to simulate closing & reopening file
+    >>> npzfile = np.load(outfile)
+    >>> npzfile.files
+    ['arr_1', 'arr_0']
+    >>> npzfile['arr_0']
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    Using `savez` with \\\\**kwds, the arrays are saved with the keyword names.
+
+    >>> outfile = TemporaryFile()
+    >>> np.savez(outfile, x=x, y=y)
+    >>> outfile.seek(0)
+    >>> npzfile = np.load(outfile)
+    >>> npzfile.files
+    ['y', 'x']
+    >>> npzfile['x']
+    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+    "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [16549 16553])
+                    ("args" variable nil (reparse-symbol function_parameters) [16555 16560])
+                    ("kwds" variable nil (reparse-symbol function_parameters) [16562 16568]))                  )
+                nil [16539 19345])
+            ("savez_compressed" function
+               (:documentation "
+    Save several arrays into a single file in compressed ``.npz`` format.
+
+    If keyword arguments are given, then filenames are taken from the keywords.
+    If arguments are passed in with no keywords, then stored file names are
+    arr_0, arr_1, etc.
+
+    Parameters
+    ----------
+    file : str
+        File name of ``.npz`` file.
+    args : Arguments
+        Function arguments.
+    kwds : Keyword arguments
+        Keywords.
+
+    See Also
+    --------
+    numpy.savez : Save several arrays into an uncompressed ``.npz`` file format
+    numpy.load : Load the files created by savez_compressed.
+
+    "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [19368 19372])
+                    ("args" variable nil (reparse-symbol function_parameters) [19374 19379])
+                    ("kwds" variable nil (reparse-symbol function_parameters) [19381 19387]))                  )
+                nil [19347 20042])
+            ("_savez" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [20055 20059])
+                ("args" variable nil (reparse-symbol function_parameters) [20061 20065])
+                ("kwds" variable nil (reparse-symbol function_parameters) [20067 20071])
+                ("compress" variable nil (reparse-symbol function_parameters) [20073 20081])
+                ("allow_pickle" variable nil (reparse-symbol function_parameters) [20083 20095])
+                ("pickle_kwargs" variable nil (reparse-symbol function_parameters) [20102 20115]))              ) nil [20044 21588])
+            ("_getconv" function
+               (:documentation " Find the correct dtype converter. Adapted from matplotlib "
+                :arguments 
+                  ( ("dtype" variable nil (reparse-symbol function_parameters) [21603 21608]))                  )
+                nil [21590 22401])
+            ("loadtxt" function
+               (:documentation "
+    Load data from a text file.
+
+    Each row in the text file must have the same number of values.
+
+    Parameters
+    ----------
+    fname : file or str
+        File, filename, or generator to read.  If the filename extension is
+        ``.gz`` or ``.bz2``, the file is first decompressed. Note that
+        generators should return byte strings for Python 3k.
+    dtype : data-type, optional
+        Data-type of the resulting array; default: float.  If this is a
+        structured data-type, the resulting array will be 1-dimensional, and
+        each row will be interpreted as an element of the array.  In this
+        case, the number of columns used must match the number of fields in
+        the data-type.
+    comments : str or sequence, optional
+        The characters or list of characters used to indicate the start of a
+        comment;
+        default: '#'.
+    delimiter : str, optional
+        The string used to separate values.  By default, this is any
+        whitespace.
+    converters : dict, optional
+        A dictionary mapping column number to a function that will convert
+        that column to a float.  E.g., if column 0 is a date string:
+        ``converters = {0: datestr2num}``.  Converters can also be used to
+        provide a default value for missing data (but see also `genfromtxt`):
+        ``converters = {3: lambda s: float(s.strip() or 0)}``.  Default: None.
+    skiprows : int, optional
+        Skip the first `skiprows` lines; default: 0.
+    usecols : sequence, optional
+        Which columns to read, with 0 being the first.  For example,
+        ``usecols = (1,4,5)`` will extract the 2nd, 5th and 6th columns.
+        The default, None, results in all columns being read.
+    unpack : bool, optional
+        If True, the returned array is transposed, so that arguments may be
+        unpacked using ``x, y, z = loadtxt(...)``.  When used with a structured
+        data-type, arrays are returned for each field.  Default is False.
+    ndmin : int, optional
+        The returned array will have at least `ndmin` dimensions.
+        Otherwise mono-dimensional axes will be squeezed.
+        Legal values: 0 (default), 1 or 2.
+
+        .. versionadded:: 1.6.0
+
+    Returns
+    -------
+    out : ndarray
+        Data read from the text file.
+
+    See Also
+    --------
+    load, fromstring, fromregex
+    genfromtxt : Load data with missing values handled as specified.
+    scipy.io.loadmat : reads MATLAB data files
+
+    Notes
+    -----
+    This function aims to be a fast reader for simply formatted files.  The
+    `genfromtxt` function provides more sophisticated handling of, e.g.,
+    lines with missing values.
+
+    .. versionadded:: 1.10.0
+
+    The strings produced by the Python float.hex method can be used as
+    input for floats.
+
+    Examples
+    --------
+    >>> from io import StringIO   # StringIO behaves like a file object
+    >>> c = StringIO(\"0 1\\\\n2 3\")
+    >>> np.loadtxt(c)
+    array([[ 0.,  1.],
+           [ 2.,  3.]])
+
+    >>> d = StringIO(\"M 21 72\\\\nF 35 58\")
+    >>> np.loadtxt(d, dtype={'names': ('gender', 'age', 'weight'),
+    ...                      'formats': ('S1', 'i4', 'f4')})
+    array([('M', 21, 72.0), ('F', 35, 58.0)],
+          dtype=[('gender', '|S1'), ('age', '<i4'), ('weight', '<f4')])
+
+    >>> c = StringIO(\"1,0,2\\\\n3,0,4\")
+    >>> x, y = np.loadtxt(c, delimiter=',', usecols=(0, 2), unpack=True)
+    >>> x
+    array([ 1.,  3.])
+    >>> y
+    array([ 2.,  4.])
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [22415 22420])
+                    ("dtype" variable nil (reparse-symbol function_parameters) [22422 22427])
+                    ("comments" variable nil (reparse-symbol function_parameters) [22435 22443])
+                    ("delimiter" variable nil (reparse-symbol function_parameters) [22449 22458])
+                    ("converters" variable nil (reparse-symbol function_parameters) [22477 22487])
+                    ("skiprows" variable nil (reparse-symbol function_parameters) [22494 22502])
+                    ("usecols" variable nil (reparse-symbol function_parameters) [22506 22513])
+                    ("unpack" variable nil (reparse-symbol function_parameters) [22520 22526])
+                    ("ndmin" variable nil (reparse-symbol function_parameters) [22546 22551]))                  )
+                nil [22403 32800])
+            ("savetxt" function
+               (:documentation "
+    Save an array to a text file.
+
+    Parameters
+    ----------
+    fname : filename or file handle
+        If the filename ends in ``.gz``, the file is automatically saved in
+        compressed gzip format.  `loadtxt` understands gzipped files
+        transparently.
+    X : array_like
+        Data to be saved to a text file.
+    fmt : str or sequence of strs, optional
+        A single format (%10.5f), a sequence of formats, or a
+        multi-format string, e.g. 'Iteration %d -- %10.5f', in which
+        case `delimiter` is ignored. For complex `X`, the legal options
+        for `fmt` are:
+            a) a single specifier, `fmt='%.4e'`, resulting in numbers formatted
+                like `' (%s+%sj)' % (fmt, fmt)`
+            b) a full string specifying every real and imaginary part, e.g.
+                `' %.4e %+.4j %.4e %+.4j %.4e %+.4j'` for 3 columns
+            c) a list of specifiers, one per column - in this case, the real
+                and imaginary part must have separate specifiers,
+                e.g. `['%.3e + %.3ej', '(%.15e%+.15ej)']` for 2 columns
+    delimiter : str, optional
+        String or character separating columns.
+    newline : str, optional
+        String or character separating lines.
+
+        .. versionadded:: 1.5.0
+    header : str, optional
+        String that will be written at the beginning of the file.
+
+        .. versionadded:: 1.7.0
+    footer : str, optional
+        String that will be written at the end of the file.
+
+        .. versionadded:: 1.7.0
+    comments : str, optional
+        String that will be prepended to the ``header`` and ``footer`` strings,
+        to mark them as comments. Default: '# ',  as expected by e.g.
+        ``numpy.loadtxt``.
+
+        .. versionadded:: 1.7.0
+
+
+    See Also
+    --------
+    save : Save an array to a binary file in NumPy ``.npy`` format
+    savez : Save several arrays into an uncompressed ``.npz`` archive
+    savez_compressed : Save several arrays into a compressed ``.npz`` archive
+
+    Notes
+    -----
+    Further explanation of the `fmt` parameter
+    (``%[flag]width[.precision]specifier``):
+
+    flags:
+        ``-`` : left justify
+
+        ``+`` : Forces to precede result with + or -.
+
+        ``0`` : Left pad the number with zeros instead of space (see width).
+
+    width:
+        Minimum number of characters to be printed. The value is not truncated
+        if it has more characters.
+
+    precision:
+        - For integer specifiers (eg. ``d,i,o,x``), the minimum number of
+          digits.
+        - For ``e, E`` and ``f`` specifiers, the number of digits to print
+          after the decimal point.
+        - For ``g`` and ``G``, the maximum number of significant digits.
+        - For ``s``, the maximum number of characters.
+
+    specifiers:
+        ``c`` : character
+
+        ``d`` or ``i`` : signed decimal integer
+
+        ``e`` or ``E`` : scientific notation with ``e`` or ``E``.
+
+        ``f`` : decimal floating point
+
+        ``g,G`` : use the shorter of ``e,E`` or ``f``
+
+        ``o`` : signed octal
+
+        ``s`` : string of characters
+
+        ``u`` : unsigned decimal integer
+
+        ``x,X`` : unsigned hexadecimal integer
+
+    This explanation of ``fmt`` is not complete, for an exhaustive
+    specification see [1]_.
+
+    References
+    ----------
+    .. [1] `Format Specification Mini-Language
+           <http://docs.python.org/library/string.html#
+           format-specification-mini-language>`_, Python Documentation.
+
+    Examples
+    --------
+    >>> x = y = z = np.arange(0.0,5.0,1.0)
+    >>> np.savetxt('test.out', x, delimiter=',')   # X is an array
+    >>> np.savetxt('test.out', (x,y,z))   # x,y,z equal sized 1D arrays
+    >>> np.savetxt('test.out', x, fmt='%1.4e')   # use exponential notation
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [32814 32819])
+                    ("X" variable nil (reparse-symbol function_parameters) [32821 32822])
+                    ("fmt" variable nil (reparse-symbol function_parameters) [32824 32827])
+                    ("delimiter" variable nil (reparse-symbol function_parameters) [32837 32846])
+                    ("newline" variable nil (reparse-symbol function_parameters) [32852 32859])
+                    ("header" variable nil (reparse-symbol function_parameters) [32866 32872])
+                    ("footer" variable nil (reparse-symbol function_parameters) [32889 32895])
+                    ("comments" variable nil (reparse-symbol function_parameters) [32900 32908]))                  )
+                nil [32802 39740])
+            ("fromregex" function
+               (:documentation "
+    Construct an array from a text file, using regular expression parsing.
+
+    The returned array is always a structured array, and is constructed from
+    all matches of the regular expression in the file. Groups in the regular
+    expression are converted to fields of the structured array.
+
+    Parameters
+    ----------
+    file : str or file
+        File name or file object to read.
+    regexp : str or regexp
+        Regular expression used to parse the file.
+        Groups in the regular expression correspond to fields in the dtype.
+    dtype : dtype or list of dtypes
+        Dtype for the structured array.
+
+    Returns
+    -------
+    output : ndarray
+        The output array, containing the part of the content of `file` that
+        was matched by `regexp`. `output` is always a structured array.
+
+    Raises
+    ------
+    TypeError
+        When `dtype` is not a valid dtype for a structured array.
+
+    See Also
+    --------
+    fromstring, loadtxt
+
+    Notes
+    -----
+    Dtypes for structured arrays can be specified in several forms, but all
+    forms specify at least the data type and field name. For details see
+    `doc.structured_arrays`.
+
+    Examples
+    --------
+    >>> f = open('test.dat', 'w')
+    >>> f.write(\"1312 foo\\\\n1534  bar\\\\n444   qux\")
+    >>> f.close()
+
+    >>> regexp = r\"(\\\\d+)\\\\s+(...)\"  # match [digits, whitespace, anything]
+    >>> output = np.fromregex('test.dat', regexp,
+    ...                       [('num', np.int64), ('key', 'S3')])
+    >>> output
+    array([(1312L, 'foo'), (1534L, 'bar'), (444L, 'qux')],
+          dtype=[('num', '<i8'), ('key', '|S3')])
+    >>> output['num']
+    array([1312, 1534,  444], dtype=int64)
+
+    "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [39756 39760])
+                    ("regexp" variable nil (reparse-symbol function_parameters) [39762 39768])
+                    ("dtype" variable nil (reparse-symbol function_parameters) [39770 39775]))                  )
+                nil [39742 42314])
+            ("genfromtxt" function
+               (:documentation "
+    Load data from a text file, with missing values handled as specified.
+
+    Each line past the first `skip_header` lines is split at the `delimiter`
+    character, and characters following the `comments` character are discarded.
+
+    Parameters
+    ----------
+    fname : file, str, list of str, generator
+        File, filename, list, or generator to read.  If the filename
+        extension is `.gz` or `.bz2`, the file is first decompressed. Mote
+        that generators must return byte strings in Python 3k.  The strings
+        in a list or produced by a generator are treated as lines.
+    dtype : dtype, optional
+        Data type of the resulting array.
+        If None, the dtypes will be determined by the contents of each
+        column, individually.
+    comments : str, optional
+        The character used to indicate the start of a comment.
+        All the characters occurring on a line after a comment are discarded
+    delimiter : str, int, or sequence, optional
+        The string used to separate values.  By default, any consecutive
+        whitespaces act as delimiter.  An integer or sequence of integers
+        can also be provided as width(s) of each field.
+    skiprows : int, optional
+        `skiprows` was removed in numpy 1.10. Please use `skip_header` instead.
+    skip_header : int, optional
+        The number of lines to skip at the beginning of the file.
+    skip_footer : int, optional
+        The number of lines to skip at the end of the file.
+    converters : variable, optional
+        The set of functions that convert the data of a column to a value.
+        The converters can also be used to provide a default value
+        for missing data: ``converters = {3: lambda s: float(s or 0)}``.
+    missing : variable, optional
+        `missing` was removed in numpy 1.10. Please use `missing_values`
+        instead.
+    missing_values : variable, optional
+        The set of strings corresponding to missing data.
+    filling_values : variable, optional
+        The set of values to be used as default when the data are missing.
+    usecols : sequence, optional
+        Which columns to read, with 0 being the first.  For example,
+        ``usecols = (1, 4, 5)`` will extract the 2nd, 5th and 6th columns.
+    names : {None, True, str, sequence}, optional
+        If `names` is True, the field names are read from the first valid line
+        after the first `skip_header` lines.
+        If `names` is a sequence or a single-string of comma-separated names,
+        the names will be used to define the field names in a structured dtype.
+        If `names` is None, the names of the dtype fields will be used, if any.
+    excludelist : sequence, optional
+        A list of names to exclude. This list is appended to the default list
+        ['return','file','print']. Excluded names are appended an underscore:
+        for example, `file` would become `file_`.
+    deletechars : str, optional
+        A string combining invalid characters that must be deleted from the
+        names.
+    defaultfmt : str, optional
+        A format used to define default field names, such as \"f%i\" or \"f_%02i\".
+    autostrip : bool, optional
+        Whether to automatically strip white spaces from the variables.
+    replace_space : char, optional
+        Character(s) used in replacement of white spaces in the variables
+        names. By default, use a '_'.
+    case_sensitive : {True, False, 'upper', 'lower'}, optional
+        If True, field names are case sensitive.
+        If False or 'upper', field names are converted to upper case.
+        If 'lower', field names are converted to lower case.
+    unpack : bool, optional
+        If True, the returned array is transposed, so that arguments may be
+        unpacked using ``x, y, z = loadtxt(...)``
+    usemask : bool, optional
+        If True, return a masked array.
+        If False, return a regular array.
+    loose : bool, optional
+        If True, do not raise errors for invalid values.
+    invalid_raise : bool, optional
+        If True, an exception is raised if an inconsistency is detected in the
+        number of columns.
+        If False, a warning is emitted and the offending lines are skipped.
+    max_rows : int,  optional
+        The maximum number of rows to read. Must not be used with skip_footer
+        at the same time.  If given, the value must be at least 1. Default is
+        to read the entire file.
+
+        .. versionadded:: 1.10.0
+
+    Returns
+    -------
+    out : ndarray
+        Data read from the text file. If `usemask` is True, this is a
+        masked array.
+
+    See Also
+    --------
+    numpy.loadtxt : equivalent function when no data is missing.
+
+    Notes
+    -----
+    * When spaces are used as delimiters, or when no delimiter has been given
+      as input, there should not be any missing data between two fields.
+    * When the variables are named (either by a flexible dtype or with `names`,
+      there must not be any header in the file (else a ValueError
+      exception is raised).
+    * Individual values are not stripped of spaces by default.
+      When using a custom converter, make sure the function does remove spaces.
+
+    References
+    ----------
+    .. [1] Numpy User Guide, section `I/O with Numpy
+           <http://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html>`_.
+
+    Examples
+    ---------
+    >>> from io import StringIO
+    >>> import numpy as np
+
+    Comma delimited file with mixed dtype
+
+    >>> s = StringIO(\"1,1.3,abcde\")
+    >>> data = np.genfromtxt(s, dtype=[('myint','i8'),('myfloat','f8'),
+    ... ('mystring','S5')], delimiter=\",\")
+    >>> data
+    array((1, 1.3, 'abcde'),
+          dtype=[('myint', '<i8'), ('myfloat', '<f8'), ('mystring', '|S5')])
+
+    Using dtype = None
+
+    >>> s.seek(0) # needed for StringIO example only
+    >>> data = np.genfromtxt(s, dtype=None,
+    ... names = ['myint','myfloat','mystring'], delimiter=\",\")
+    >>> data
+    array((1, 1.3, 'abcde'),
+          dtype=[('myint', '<i8'), ('myfloat', '<f8'), ('mystring', '|S5')])
+
+    Specifying dtype and names
+
+    >>> s.seek(0)
+    >>> data = np.genfromtxt(s, dtype=\"i8,f8,S5\",
+    ... names=['myint','myfloat','mystring'], delimiter=\",\")
+    >>> data
+    array((1, 1.3, 'abcde'),
+          dtype=[('myint', '<i8'), ('myfloat', '<f8'), ('mystring', '|S5')])
+
+    An example with fixed-width columns
+
+    >>> s = StringIO(\"11.3abcde\")
+    >>> data = np.genfromtxt(s, dtype=None, names=['intvar','fltvar','strvar'],
+    ...     delimiter=[1,3,5])
+    >>> data
+    array((1, 1.3, 'abcde'),
+          dtype=[('intvar', '<i8'), ('fltvar', '<f8'), ('strvar', '|S5')])
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [42523 42528])
+                    ("dtype" variable nil (reparse-symbol function_parameters) [42530 42535])
+                    ("comments" variable nil (reparse-symbol function_parameters) [42543 42551])
+                    ("delimiter" variable nil (reparse-symbol function_parameters) [42557 42566])
+                    ("skip_header" variable nil (reparse-symbol function_parameters) [42588 42599])
+                    ("skip_footer" variable nil (reparse-symbol function_parameters) [42603 42614])
+                    ("converters" variable nil (reparse-symbol function_parameters) [42618 42628])
+                    ("missing_values" variable nil (reparse-symbol function_parameters) [42650 42664])
+                    ("filling_values" variable nil (reparse-symbol function_parameters) [42671 42685])
+                    ("usecols" variable nil (reparse-symbol function_parameters) [42692 42699])
+                    ("names" variable nil (reparse-symbol function_parameters) [42721 42726])
+                    ("excludelist" variable nil (reparse-symbol function_parameters) [42733 42744])
+                    ("deletechars" variable nil (reparse-symbol function_parameters) [42751 42762])
+                    ("replace_space" variable nil (reparse-symbol function_parameters) [42784 42797])
+                    ("autostrip" variable nil (reparse-symbol function_parameters) [42803 42812])
+                    ("case_sensitive" variable nil (reparse-symbol function_parameters) [42820 42834])
+                    ("defaultfmt" variable nil (reparse-symbol function_parameters) [42856 42866])
+                    ("unpack" variable nil (reparse-symbol function_parameters) [42874 42880])
+                    ("usemask" variable nil (reparse-symbol function_parameters) [42887 42894])
+                    ("loose" variable nil (reparse-symbol function_parameters) [42902 42907])
+                    ("invalid_raise" variable nil (reparse-symbol function_parameters) [42929 42942])
+                    ("max_rows" variable nil (reparse-symbol function_parameters) [42949 42957]))                  )
+                nil [42508 68695])
+            ("ndfromtxt" function
+               (:documentation "
+    Load ASCII data stored in a file and return it as a single array.
+
+    Parameters
+    ----------
+    fname, kwargs : For a description of input parameters, see `genfromtxt`.
+
+    See Also
+    --------
+    numpy.genfromtxt : generic function.
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [68711 68716])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [68718 68726]))                  )
+                nil [68697 69061])
+            ("mafromtxt" function
+               (:documentation "
+    Load ASCII data stored in a text file and return a masked array.
+
+    Parameters
+    ----------
+    fname, kwargs : For a description of input parameters, see `genfromtxt`.
+
+    See Also
+    --------
+    numpy.genfromtxt : generic function to load ASCII data.
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [69077 69082])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [69084 69092]))                  )
+                nil [69063 69444])
+            ("recfromtxt" function
+               (:documentation "
+    Load ASCII data from a file and return it in a record array.
+
+    If ``usemask=False`` a standard `recarray` is returned,
+    if ``usemask=True`` a MaskedRecords array is returned.
+
+    Parameters
+    ----------
+    fname, kwargs : For a description of input parameters, see `genfromtxt`.
+
+    See Also
+    --------
+    numpy.genfromtxt : generic function
+
+    Notes
+    -----
+    By default, `dtype` is None, which means that the data-type of the output
+    array will be determined from the data.
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [69461 69466])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [69468 69476]))                  )
+                nil [69446 70302])
+            ("recfromcsv" function
+               (:documentation "
+    Load ASCII data stored in a comma-separated file.
+
+    The returned array is a record array (if ``usemask=False``, see
+    `recarray`) or a masked record array (if ``usemask=True``,
+    see `ma.mrecords.MaskedRecords`).
+
+    Parameters
+    ----------
+    fname, kwargs : For a description of input parameters, see `genfromtxt`.
+
+    See Also
+    --------
+    numpy.genfromtxt : generic function to load ASCII data.
+
+    Notes
+    -----
+    By default, `dtype` is None, which means that the data-type of the output
+    array will be determined from the data.
+
+    "
+                :arguments 
+                  ( ("fname" variable nil (reparse-symbol function_parameters) [70319 70324])
+                    ("kwargs" variable nil (reparse-symbol function_parameters) [70326 70334]))                  )
+                nil [70304 71413]))          
+      :file "npyio.py"
+      :pointmax 71413
+      :fsize 71412
+      :lastmodtime '(22130 8144 20058 843000)
+      :unmatched-syntax nil)
+    (semanticdb-table "format.py"
+      :file "format.py"
+      :fsize 28234
+      :lastmodtime '(22130 8144 16725 506000)))
+  :file "!home!seshu!dev!numpy!numpy!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

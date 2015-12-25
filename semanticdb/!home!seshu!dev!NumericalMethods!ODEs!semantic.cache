@@ -1,0 +1,633 @@
+;; Object ODEs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ODEs/"
+  :tables
+  (list
+    (semanticdb-table "explicit_euler.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_EXPLICIT_EULER_H" variable (:constant-flag t) nil [179 200])
+            ("vector" include (:system-flag t) nil [202 219])
+            ("IVP.hpp" include nil nil [220 238])
+            ("ODEs" type
+               (:members 
+                  ( ("ExplicitEuler" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [332 342])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [360 366]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [347 432])
+                            ("public" label nil (reparse-symbol classsubparts) [437 444])
+                            ("ExplicitEuler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [463 467])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [468 472])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [473 485])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [486 496]))                                  
+                                :type ("ExplicitEuler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [449 541]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [259 547]))                  
+                :type "namespace")
+                nil [240 549]))          
+      :file "explicit_euler.hpp"
+      :pointmax 557
+      :fsize 556
+      :lastmodtime '(22138 483 537754 879000)
+      :unmatched-syntax '((punctuation 541 . 542) (punctuation 432 . 433))
+      :lexical-table 
+        '(("ODES_EXPLICIT_EULER_H")
+          )
+)
+    (semanticdb-table "IVP.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_IVP_H" variable (:constant-flag t) nil [28 38])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("valarray" include (:system-flag t) nil [58 77])
+            ("boost/format.hpp" include (:system-flag t) nil [78 105])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [107 125])
+            ("std::valarray" using (:type ("std::valarray" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [126 146])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [147 163])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [164 180])
+            ("std::ostream" using (:type ("std::ostream" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [181 200])
+            ("ODEs" type
+               (:members 
+                  ( ("IVP" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [265 275])
+                            ("y_n" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [280 294])
+                            ("f_n" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [299 313])
+                            ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol classsubparts) [318 330])
+                            ("steps" variable (:type "int") (reparse-symbol classsubparts) [335 345])
+                            ("y_nplusone" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [371 377]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [350 382])
+                            ("public" label nil (reparse-symbol classsubparts) [385 392])
+                            ("IVP" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [401 405])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [406 410])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [411 423])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [424 434]))                                  
+                                :type ("IVP" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [397 533])
+                            ("IVP" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y_n" variable
+                                       (:reference 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [544 559])
+                                    ("f_n" variable
+                                       (:reference 1
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [560 575])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [576 588])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [589 599]))                                  
+                                :type ("IVP" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [540 665])
+                            ("IVP" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [672 689])
+                            ("iterate" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [696 907])
+                            ("derivative" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("t_n" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [935 941])
+                                    ("y_n" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [942 948]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [914 953])
+                            ("<<" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil))                                  
+                                :type ("ostream" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1025 1037])
+                                    ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IVP" type
+                                             (:template-specifier 
+                                                ( ("U" type nil nil nil)
+                                                  ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1038 1059]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [959 1331])
+                            ("<<" function
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil))                                  
+                                :type ("ostream" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1404 1416])
+                                    ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IVP" type
+                                             (:template-specifier 
+                                                ( ("valarray" type nil nil nil)
+                                                  ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1417 1448]))                                  
+                                :operator-flag t)
+                                (reparse-symbol classsubparts) [1338 1833])
+                            ("AdamsMoulton" type
+                               (:template 
+                                  ( ("U" type (:type "class") nil nil)
+                                    ("V" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol classsubparts) [1841 1898]))                          )
+                        (reparse-symbol namespacesubparts) [221 1903]))                  
+                :type "namespace")
+                nil [202 1905]))          
+      :file "IVP.hpp"
+      :pointmax 1913
+      :fsize 1912
+      :lastmodtime '(22138 1483 905668 754000)
+      :unmatched-syntax '((punctuation 1833 . 1834) (punctuation 1331 . 1332) (punctuation 907 . 908) (punctuation 689 . 690) (punctuation 665 . 666) (punctuation 533 . 534))
+      :lexical-table 
+        '(("ODES_IVP_H")
+          )
+)
+    (semanticdb-table "extrapolated_midpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_EXTRAPOLATED_MIDPOINT_H" variable (:constant-flag t) nil [46 74])
+            ("vector" include (:system-flag t) nil [76 93])
+            ("IVP.hpp" include nil nil [94 112])
+            ("ODEs" type
+               (:members 
+                  ( ("ExtrapolatedMidpoint" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [213 223])
+                            ("M" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol classsubparts) [228 232])
+                            ("h" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol classsubparts) [237 241])
+                            ("z_i" function
+                               (:arguments 
+                                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [253 259])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [260 266]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [247 633])
+                            ("public" label nil (reparse-symbol classsubparts) [638 645])
+                            ("ExtrapolatedMidpoint" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [669 673])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [674 678])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [679 691])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [692 702])
+                                    ("M" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [703 707]))                                  
+                                :type ("ExtrapolatedMidpoint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [648 772])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [792 798]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [779 994]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [133 1000]))                  
+                :type "namespace")
+                nil [114 1002]))          
+      :file "extrapolated_midpoint.hpp"
+      :pointmax 1010
+      :fsize 1009
+      :lastmodtime '(22138 29547 212762 799000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ODES_EXTRAPOLATED_MIDPOINT_H")
+          )
+)
+    (semanticdb-table "modified_euler.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_MODIFIED_EULER_H" variable (:constant-flag t) nil [39 60])
+            ("vector" include (:system-flag t) nil [62 79])
+            ("IVP.hpp" include nil nil [80 98])
+            ("ODEs" type
+               (:members 
+                  ( ("ModifiedEuler" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [182 192])
+                            ("yp_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [211 217]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [197 283])
+                            ("fp_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [304 310]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [290 384])
+                            ("yc_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [405 411]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [391 502])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [522 528]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [509 565])
+                            ("public" label nil (reparse-symbol classsubparts) [570 577])
+                            ("ModifiedEuler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 598])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [599 603])
+                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 616])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [617 627]))                                  
+                                :type ("ModifiedEuler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [580 667]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [119 673]))                  
+                :type "namespace")
+                nil [100 675]))          
+      :file "modified_euler.hpp"
+      :pointmax 683
+      :fsize 677
+      :lastmodtime '(22138 1108 171037 617000)
+      :unmatched-syntax '((punctuation 667 . 668) (punctuation 565 . 566) (punctuation 502 . 503) (punctuation 384 . 385) (punctuation 283 . 284))
+      :lexical-table 
+        '(("ODES_MODIFIED_EULER_H")
+          )
+)
+    (semanticdb-table "modified_midpoint.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_MODIFIED_MIDPOINT_H" variable (:constant-flag t) nil [42 66])
+            ("IVP.hpp" include nil nil [68 86])
+            ("ODEs" type
+               (:members 
+                  ( ("ModifiedMidpoint" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [183 193])
+                            ("yp_nplusonehalf" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [216 222]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [198 294])
+                            ("fp_nplusonehalf" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [319 325]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [301 403])
+                            ("yc_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [424 430]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [410 504])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [524 530]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [511 567])
+                            ("public" label nil (reparse-symbol classsubparts) [572 579])
+                            ("ModifiedMidpoint" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [599 603])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [604 608])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [609 621])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [622 632]))                                  
+                                :type ("ModifiedMidpoint" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [582 675]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [107 681]))                  
+                :type "namespace")
+                nil [88 683]))          
+      :file "modified_midpoint.hpp"
+      :pointmax 691
+      :fsize 690
+      :lastmodtime '(22138 3518 811311 391000)
+      :unmatched-syntax '((punctuation 675 . 676) (punctuation 567 . 568) (punctuation 504 . 505) (punctuation 403 . 404) (punctuation 294 . 295))
+      :lexical-table 
+        '(("ODES_MODIFIED_MIDPOINT_H")
+          )
+)
+    (semanticdb-table "runge_kutta.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_RUNGE_KUTTA_H" variable (:constant-flag t) nil [36 54])
+            ("vector" include (:system-flag t) nil [56 73])
+            ("IVP.hpp" include nil nil [74 92])
+            ("ODEs" type
+               (:members 
+                  ( ("RungeKutta" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [183 193])
+                            ("del_y1" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [207 213]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [198 301])
+                            ("del_y2" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [317 323]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [308 495])
+                            ("del_y3" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [511 517]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [502 689])
+                            ("del_y4" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [705 711]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [696 875])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [895 901]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [882 1043])
+                            ("public" label nil (reparse-symbol classsubparts) [1047 1054])
+                            ("RungeKutta" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1068 1072])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1073 1077])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1078 1090])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1091 1101]))                                  
+                                :type ("RungeKutta" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1057 1144]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [113 1150]))                  
+                :type "namespace")
+                nil [94 1152]))          
+      :file "runge_kutta.hpp"
+      :pointmax 1160
+      :fsize 1159
+      :lastmodtime '(22138 960 798502 669000)
+      :unmatched-syntax '((punctuation 1144 . 1145) (punctuation 1043 . 1044) (punctuation 875 . 876) (punctuation 689 . 690) (punctuation 495 . 496) (punctuation 301 . 302))
+      :lexical-table 
+        '(("ODES_RUNGE_KUTTA_H")
+          )
+)
+    (semanticdb-table "implicit_euler.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_IMPLICIT_EULER_H" variable (:constant-flag t) nil [39 60])
+            ("vector" include (:system-flag t) nil [62 79])
+            ("NonlinearSystems/newton.hpp" include nil nil [80 118])
+            ("IVP.hpp" include nil nil [119 137])
+            ("ODEs" type
+               (:members 
+                  ( ("ImplicitEuler" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [267 277])
+                            ("cur_step" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [282 299])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [318 324]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [305 442])
+                            ("f" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [452 458])
+                                    ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [459 463]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [448 559])
+                            ("df" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [571 577])
+                                    ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [578 582]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [566 664])
+                            ("public" label nil (reparse-symbol classsubparts) [669 676])
+                            ("ImplicitEuler" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [695 699])
+                                    ("f" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [700 704])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [705 717])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [718 728]))                                  
+                                :type ("ImplicitEuler" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [681 814])
+                            ("f" function
+                               (:arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [825 829]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [821 880])
+                            ("df" function
+                               (:arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [892 896]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [887 948])
+                            ("dderivative" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("t_n" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [977 983])
+                                    ("y_n" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [984 990]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [955 995])
+                            ("iterate" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1001 1249]))                          
+                        :superclasses 
+                          ( ("NonlinearSystems::Newton" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [158 1255]))                  
+                :type "namespace")
+                nil [139 1257]))          
+      :file "implicit_euler.hpp"
+      :pointmax 1266
+      :fsize 1265
+      :lastmodtime '(22139 58046 953979 297000)
+      :unmatched-syntax '((punctuation 1249 . 1250) (punctuation 948 . 949) (punctuation 880 . 881) (punctuation 814 . 815) (punctuation 664 . 665) (punctuation 559 . 560))
+      :lexical-table 
+        '(("ODES_IMPLICIT_EULER_H")
+          )
+)
+    (semanticdb-table "adams_moulton.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ODES_ADAMS_MOULTON_H" variable (:constant-flag t) nil [38 58])
+            ("IVP.hpp" include nil nil [60 78])
+            ("ODEs" type
+               (:members 
+                  ( ("AdamsMoulton" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("S" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [171 181])
+                            ("yp_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [201 207]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [187 412])
+                            ("fp_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [433 439]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [419 516])
+                            ("yc_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [537 543]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [523 742])
+                            ("y_nplusone" function
+                               (:arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [762 768]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [749 805])
+                            ("public" label nil (reparse-symbol classsubparts) [809 816])
+                            ("AdamsMoulton" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ic" variable
+                                       (:reference 1
+                                        :type ("IVP" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil)
+                                                  ("S" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [834 848])
+                                    ("step_size" variable (:type ("S" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [849 861])
+                                    ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [862 872]))                                  
+                                :type ("AdamsMoulton" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [821 927])
+                            ("iterate" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [934 1148]))                          
+                        :superclasses 
+                          ( ("IVP" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [99 1153]))                  
+                :type "namespace")
+                nil [80 1155]))          
+      :file "adams_moulton.hpp"
+      :pointmax 1164
+      :fsize 1163
+      :lastmodtime '(22138 30349 465544 947000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ODES_ADAMS_MOULTON_H")
+          )
+))
+  :file "!home!seshu!dev!NumericalMethods!ODEs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

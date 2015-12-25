@@ -1,0 +1,742 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "armanpy.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("INIT_ARMA_CAPSULE" variable (:constant-flag t) nil [708 725])
+            ("INIT_ARMA_CAPSULE" variable (:constant-flag t) nil [708 725])
+            ("tp_new" variable
+               (:default-value "PyType_GenericNew"
+                :type "int")
+                nil [775 802])
+            ("ArmaCapsule" type
+               (:template 
+                  ( ("MatT" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("mat" variable
+                       (:pointer 1
+                        :type ("MatT" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [947 957]))                  )
+                nil [878 961])
+            ("ArmaMat_dealloc" function
+               (:template 
+                  ( ("MatT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("PyObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1018 1034]))                  
+                :typemodifiers ("static"))
+                nil [963 1239])
+            ("ArmaCapsulePyType" type
+               (:template 
+                  ( ("MatT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1293 1300])
+                    ("object" variable
+                       (:typemodifiers ("static")
+                        :type ("PyTypeObject" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1305 1332])
+                    ("private" label nil (reparse-symbol classsubparts) [1333 1341])
+                    ("_dummy" variable (:type ("MatT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1346 1358]))                  )
+                nil [1242 1361])
+            ("ArmaCapsulePyType::object" variable
+               (:default-value "{ \\
+    PyObject_HEAD_INIT(NULL)   \\
+    \"ArmaCapsule\", /*tp_name*/ \\
+    sizeof( ArmaCapsule< MatT > ), /*tp_basicsize*/ \\
+    0, /*tp_itemsize*/ \\
+    ArmaMat_dealloc< MatT >, /*tp_dealloc*/ \\
+    0, /*tp_print*/ \\
+    0, /*tp_getattr*/ \\
+    0, /*tp_setattr*/ \\
+    0, /*tp_compare*/ \\
+    0, /*tp_repr*/ \\
+    0, /*tp_as_number*/ \\
+    0, /*tp_as_sequence*/ \\
+    0, /*tp_as_mapping*/ \\
+    0, /*tp_hash */ \\
+    0, /*tp_call*/ \\
+    0, /*tp_str*/ \\
+    0, /*tp_getattro*/ \\
+    0, /*tp_setattro*/ \\
+    0, /*tp_as_buffer*/ \\
+    Py_TPFLAGS_DEFAULT, /*tp_flags*/ \\
+    \"Internal armadillo capsulation object\", /* tp_doc */ \\
+    }"
+                :type ("PyTypeObject" type (:type "class") nil nil))
+                nil [1364 2072])
+            ("numpy/arrayobject.h" include (:system-flag t) nil [4206 4236])
+            ("NumpyType" type
+               (:template 
+                  ( ("elem_type" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [4288 4296])
+                    ("_d" variable (:type ("elem_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4297 4310]))                  )
+                nil [4238 4313])
+            ("ASSOCIATE_NUMPY_TYPE" variable (:constant-flag t) nil [4323 4343])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("double" type nil nil nil))                  )
+                nil [4474 4518])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( double,   NPY_DOUBLE )"
+                :type "int")
+                nil [4474 4518])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("float" type nil nil nil))                  )
+                nil [4519 4562])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( float,    NPY_FLOAT )"
+                :type "int")
+                nil [4519 4562])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("int" type nil nil nil))                  )
+                nil [4563 4604])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( int,      NPY_INT )"
+                :type "int")
+                nil [4563 4604])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("unsigned int" type nil nil nil))                  )
+                nil [4605 4647])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( unsigned, NPY_UINT )"
+                :type "int")
+                nil [4605 4647])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("unsigned int" type nil nil nil))                  )
+                nil [4648 4696])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("std" type nil nil nil))                  )
+                nil [4828 4890])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( std::complex< double >, NPY_COMPLEX128 )"
+                :type "int")
+                nil [4828 4890])
+            ("NumpyType" type
+               (:type "struct"
+                :members 
+                  ( ("val" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("std" type nil nil nil))                  )
+                nil [4891 4952])
+            ("NumpyType::val" variable
+               (:default-value "ASSOCIATE_NUMPY_TYPE( std::complex< float >,  NPY_COMPLEX64 )"
+                :type "int")
+                nil [4891 4952])
+            ("ArmaTypeInfo" type
+               (:template 
+                  ( ("MatT" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [5002 5010])
+                    ("_d" variable (:type ("MatT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5011 5019]))                  )
+                nil [4954 5022])
+            ("ARMA_TYPE_INFO" variable (:constant-flag t) nil [5031 5045])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5260 5299])
+            ("NumpyType::val" variable (:type "int") nil [5260 5299])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::vec,          1 )"
+                :type "int")
+                nil [5260 5299])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5300 5339])
+            ("NumpyType::val" variable (:type "int") nil [5300 5339])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::fvec,         1 )"
+                :type "int")
+                nil [5300 5339])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5340 5379])
+            ("NumpyType::val" variable (:type "int") nil [5340 5379])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::ivec,         1 )"
+                :type "int")
+                nil [5340 5379])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5380 5419])
+            ("NumpyType::val" variable (:type "int") nil [5380 5419])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::uvec,         1 )"
+                :type "int")
+                nil [5380 5419])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5420 5459])
+            ("NumpyType::val" variable (:type "int") nil [5420 5459])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::uchar_vec,    1 )"
+                :type "int")
+                nil [5420 5459])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5576 5615])
+            ("NumpyType::val" variable (:type "int") nil [5576 5615])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_vec,       1 )"
+                :type "int")
+                nil [5576 5615])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5616 5655])
+            ("NumpyType::val" variable (:type "int") nil [5616 5655])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_fvec,      1 )"
+                :type "int")
+                nil [5616 5655])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5657 5696])
+            ("NumpyType::val" variable (:type "int") nil [5657 5696])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::rowvec,       1 )"
+                :type "int")
+                nil [5657 5696])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5697 5736])
+            ("NumpyType::val" variable (:type "int") nil [5697 5736])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::frowvec,      1 )"
+                :type "int")
+                nil [5697 5736])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5737 5776])
+            ("NumpyType::val" variable (:type "int") nil [5737 5776])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::irowvec,      1 )"
+                :type "int")
+                nil [5737 5776])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5777 5816])
+            ("NumpyType::val" variable (:type "int") nil [5777 5816])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::urowvec,      1 )"
+                :type "int")
+                nil [5777 5816])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5817 5856])
+            ("NumpyType::val" variable (:type "int") nil [5817 5856])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::uchar_rowvec, 1 )"
+                :type "int")
+                nil [5817 5856])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [5973 6012])
+            ("NumpyType::val" variable (:type "int") nil [5973 6012])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_rowvec,    1 )"
+                :type "int")
+                nil [5973 6012])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6013 6052])
+            ("NumpyType::val" variable (:type "int") nil [6013 6052])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_frowvec,   1 )"
+                :type "int")
+                nil [6013 6052])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6054 6090])
+            ("NumpyType::val" variable (:type "int") nil [6054 6090])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::mat,       2 )"
+                :type "int")
+                nil [6054 6090])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6091 6127])
+            ("NumpyType::val" variable (:type "int") nil [6091 6127])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::fmat,      2 )"
+                :type "int")
+                nil [6091 6127])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6128 6164])
+            ("NumpyType::val" variable (:type "int") nil [6128 6164])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::imat,      2 )"
+                :type "int")
+                nil [6128 6164])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6165 6201])
+            ("NumpyType::val" variable (:type "int") nil [6165 6201])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::umat,      2 )"
+                :type "int")
+                nil [6165 6201])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6202 6238])
+            ("NumpyType::val" variable (:type "int") nil [6202 6238])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::uchar_mat, 2 )"
+                :type "int")
+                nil [6202 6238])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6349 6385])
+            ("NumpyType::val" variable (:type "int") nil [6349 6385])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_mat,    2 )"
+                :type "int")
+                nil [6349 6385])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6386 6422])
+            ("NumpyType::val" variable (:type "int") nil [6386 6422])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_fmat,   2 )"
+                :type "int")
+                nil [6386 6422])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6424 6461])
+            ("NumpyType::val" variable (:type "int") nil [6424 6461])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cube,       3 )"
+                :type "int")
+                nil [6424 6461])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6462 6499])
+            ("NumpyType::val" variable (:type "int") nil [6462 6499])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::fcube,      3 )"
+                :type "int")
+                nil [6462 6499])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6500 6537])
+            ("NumpyType::val" variable (:type "int") nil [6500 6537])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::icube,      3 )"
+                :type "int")
+                nil [6500 6537])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6538 6575])
+            ("NumpyType::val" variable (:type "int") nil [6538 6575])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::ucube,      3 )"
+                :type "int")
+                nil [6538 6575])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6576 6613])
+            ("NumpyType::val" variable (:type "int") nil [6576 6613])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::uchar_cube, 3 )"
+                :type "int")
+                nil [6576 6613])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6726 6763])
+            ("NumpyType::val" variable (:type "int") nil [6726 6763])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_cube,    3 )"
+                :type "int")
+                nil [6726 6763])
+            ("ArmaTypeInfo" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil)
+                    ("numdim" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) nil))                  
+                :template-specifier 
+                  ( ("arma" type nil nil nil))                  )
+                nil [6764 6801])
+            ("NumpyType::val" variable (:type "int") nil [6764 6801])
+            ("ArmaTypeInfo::numdim" variable
+               (:default-value "ARMA_TYPE_INFO( arma::cx_fcube,   3 )"
+                :type "int")
+                nil [6764 6801])
+            ("armanpy_allow_conversion_flag" variable
+               (:typemodifiers ("static")
+                :default-value "false"
+                :type "bool")
+                nil [6943 6995])
+            ("armanpy_warn_on_conversion_flag" variable
+               (:typemodifiers ("static")
+                :default-value "true"
+                :type "bool")
+                nil [6996 7047]))          
+      :file "armanpy.hpp"
+      :pointmax 7375
+      :fsize 7374
+      :lastmodtime '(22106 64852 669104 394000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("INIT_ARMA_CAPSULE" (spp-arg-list ("MatT") 725 . 733) . 
+              ((symbol "ArmaCapsulePyType" 741 . 758) (punctuation "<" 758 . 759) (symbol "MatT" 760 . 764) (punctuation ">" 765 . 766) (punctuation ":" 766 . 767) (punctuation ":" 767 . 768) (symbol "object" 768 . 774) (punctuation "." 774 . 775) (symbol "tp_new" 775 . 781) (punctuation "=" 782 . 783) (symbol "PyType_GenericNew" 784 . 801) (punctuation ";" 801 . 802) (IF "if" 809 . 811) (semantic-list "(PyType_Ready(&ArmaCapsulePyType< MatT >::object) < 0)" 812 . 866) (RETURN "return" 867 . 873) (punctuation ";" 873 . 874)))
+          )
+))
+  :file "!home!seshu!dev!armanpy-0.1.4!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,619 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "example.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("warnings" include nil nil [462 486])
+            ("sys" include nil nil [462 486])
+            ("os" include nil nil [462 486])
+            ("numpy" include nil nil [487 504])
+            ("sys" code nil nil [506 538])
+            ("armanpyexample" include nil nil [539 567])
+            ("example_usage" function nil nil [569 1814])
+            ("if" code nil nil [1824 1871]))          
+      :file "example.py"
+      :pointmax 1871
+      :fsize 1892
+      :lastmodtime '(22106 65326 709612 830000)
+      :unmatched-syntax nil)
+    (semanticdb-table "armanpyexample.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [208 236])
+            ("if" code nil nil [237 881])
+            ("del" code nil nil [881 897])
+            ("try" code nil nil [898 1001])
+            ("_swig_setattr_nondynamic" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1032 1036])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [1038 1048])
+                    ("name" variable nil (reparse-symbol function_parameters) [1050 1054])
+                    ("value" variable nil (reparse-symbol function_parameters) [1056 1061])
+                    ("static" variable nil (reparse-symbol function_parameters) [1063 1069]))                  )
+                nil [1003 1611])
+            ("_swig_setattr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1631 1635])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [1637 1647])
+                    ("name" variable nil (reparse-symbol function_parameters) [1649 1653])
+                    ("value" variable nil (reparse-symbol function_parameters) [1655 1660]))                  )
+                nil [1613 1733])
+            ("_swig_getattr_nondynamic" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1764 1768])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [1770 1780])
+                    ("name" variable nil (reparse-symbol function_parameters) [1782 1786])
+                    ("static" variable nil (reparse-symbol function_parameters) [1788 1794]))                  )
+                nil [1735 2073])
+            ("_swig_getattr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [2092 2096])
+                    ("class_type" variable nil (reparse-symbol function_parameters) [2098 2108])
+                    ("name" variable nil (reparse-symbol function_parameters) [2110 2114]))                  )
+                nil [2074 2180])
+            ("_swig_repr" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [2197 2201]))                  )
+                nil [2182 2390])
+            ("try" code nil nil [2391 2508])
+            ("_armanpyexample" code nil nil [2511 2574])
+            ("SHARED_PTR_DISOWN" variable nil nil [2575 2628])
+            ("Example" type
+               (:superclasses ("_object")
+                :members 
+                  ( ("__swig_setmethods__" variable nil (reparse-symbol indented_block_body) [2657 2681])
+                    ("__setattr__" variable nil (reparse-symbol indented_block_body) [2686 2767])
+                    ("__swig_getmethods__" variable nil (reparse-symbol indented_block_body) [2772 2796])
+                    ("__getattr__" variable nil (reparse-symbol indented_block_body) [2801 2868])
+                    ("__repr__" variable nil (reparse-symbol indented_block_body) [2873 2894])
+                    ("__init__" function
+                       (:suite 
+                          ( ("this" variable nil (reparse-symbol indented_block_body) [2932 2970])
+                            ("try" code nil (reparse-symbol indented_block_body) [2979 3064]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2913 2917])
+                            ("sz" variable nil (reparse-symbol function_parameters) [2919 2921]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2900 3064])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3077 3081]))                          )
+                        (reparse-symbol indented_block_body) [3069 3133])
+                    ("get_sptr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3151 3155]))                          )
+                        (reparse-symbol indented_block_body) [3138 3212])
+                    ("set" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3225 3229])
+                            ("m" variable nil (reparse-symbol function_parameters) [3231 3232]))                          )
+                        (reparse-symbol indented_block_body) [3217 3287])
+                    ("rnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3300 3304])
+                            ("s" variable nil (reparse-symbol function_parameters) [3306 3307]))                          )
+                        (reparse-symbol indented_block_body) [3292 3362])
+                    ("modify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3378 3382])
+                            ("A" variable nil (reparse-symbol function_parameters) [3384 3385])
+                            ("r" variable nil (reparse-symbol function_parameters) [3387 3388])
+                            ("c" variable nil (reparse-symbol function_parameters) [3390 3391]))                          )
+                        (reparse-symbol indented_block_body) [3367 3455])
+                    ("mult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3469 3473])
+                            ("A" variable nil (reparse-symbol function_parameters) [3475 3476])
+                            ("B" variable nil (reparse-symbol function_parameters) [3478 3479]))                          )
+                        (reparse-symbol indented_block_body) [3460 3538])
+                    ("__swig_destroy__" variable nil (reparse-symbol indented_block_body) [3542 3591])
+                    ("__del__" variable nil (reparse-symbol indented_block_body) [3596 3623]))                  
+                :type "class")
+                nil [2629 3624])
+            ("Example_swigregister" variable nil nil [3624 3683])
+            ("Example_swigregister" code nil nil [3684 3713]))          
+      :file "armanpyexample.py"
+      :pointmax 3784
+      :fsize 3783
+      :lastmodtime '(22106 65483 669749 803000)
+      :unmatched-syntax nil)
+    (semanticdb-table "armanpy_test_run.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [461 471])
+            ("unittest" include nil nil [472 487])
+            ("warnings" include nil nil [488 503])
+            ("numpy" include nil nil [504 521])
+            ("armanpytest" include nil nil [522 547])
+            ("sys" code nil nil [549 579])
+            ("MatUnitTests" type
+               (:members 
+                  ( ("init_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [618 622])
+                            ("m" variable nil (reparse-symbol function_parameters) [624 625])
+                            ("n" variable nil (reparse-symbol function_parameters) [627 628])
+                            ("order" variable nil (reparse-symbol function_parameters) [630 635]))                          )
+                        (reparse-symbol indented_block_body) [607 827])
+                    ("test_i" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [843 847]))                          )
+                        (reparse-symbol indented_block_body) [832 919])
+                    ("test_set_get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [941 945]))                          )
+                        (reparse-symbol indented_block_body) [924 1068])
+                    ("test_get_sptr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1091 1095]))                          )
+                        (reparse-symbol indented_block_body) [1073 1336])
+                    ("test_get_sptr_and_use_as_input" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1376 1380]))                          )
+                        (reparse-symbol indented_block_body) [1341 1643])
+                    ("test_rnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1661 1665]))                          )
+                        (reparse-symbol indented_block_body) [1648 1769])
+                    ("test_mult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1788 1792]))                          )
+                        (reparse-symbol indented_block_body) [1774 1934])
+                    ("test_mod_nothing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1960 1964]))                          )
+                        (reparse-symbol indented_block_body) [1939 2096])
+                    ("test_mod_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2122 2126]))                          )
+                        (reparse-symbol indented_block_body) [2101 2385])
+                    ("test_mod_small_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2414 2418]))                          )
+                        (reparse-symbol indented_block_body) [2390 2586])
+                    ("test_mode_large_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2616 2620]))                          
+                        :documentation "Change size such that arma allocs new memory. This is the challange.")
+                        (reparse-symbol indented_block_body) [2591 2856])
+                    ("test_mode_large_size_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2890 2894]))                          )
+                        (reparse-symbol indented_block_body) [2861 3154])
+                    ("test_mode_large_size_copy_resize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3196 3200]))                          )
+                        (reparse-symbol indented_block_body) [3159 3470])
+                    ("test_check_no_conversion_allowed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3512 3516]))                          )
+                        (reparse-symbol indented_block_body) [3475 3714]))                  
+                :type "class")
+                nil [582 3714])
+            ("self" code nil nil [2459 2483])
+            ("MatDoubleUnitTests" type
+               (:superclasses ("MatUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3789 3793]))                          )
+                        (reparse-symbol indented_block_body) [3779 3861]))                  
+                :type "class")
+                nil [3716 3861])
+            ("MatFloatUnitTests" type
+               (:superclasses ("MatUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3935 3939]))                          )
+                        (reparse-symbol indented_block_body) [3925 4006]))                  
+                :type "class")
+                nil [3863 4006])
+            ("RowColUnitTests" type
+               (:members 
+                  ( ("init_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4047 4051])
+                            ("p" variable nil (reparse-symbol function_parameters) [4053 4054])
+                            ("order" variable nil (reparse-symbol function_parameters) [4056 4061]))                          )
+                        (reparse-symbol indented_block_body) [4036 4202])
+                    ("set_non_numpy_arra" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4230 4234]))                          )
+                        (reparse-symbol indented_block_body) [4207 4351])
+                    ("test_set_get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4373 4377]))                          )
+                        (reparse-symbol indented_block_body) [4356 4493])
+                    ("test_set_get_both_orders" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4527 4531]))                          )
+                        (reparse-symbol indented_block_body) [4498 4782])
+                    ("test_get_sptr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4805 4809]))                          )
+                        (reparse-symbol indented_block_body) [4787 5032])
+                    ("test_rnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5050 5054]))                          )
+                        (reparse-symbol indented_block_body) [5037 5152])
+                    ("test_mod_nothing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5178 5182]))                          )
+                        (reparse-symbol indented_block_body) [5157 5308])
+                    ("test_mod_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5334 5338]))                          )
+                        (reparse-symbol indented_block_body) [5313 5475])
+                    ("test_mod_small_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5504 5508]))                          )
+                        (reparse-symbol indented_block_body) [5480 5635])
+                    ("test_mode_large_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5665 5669]))                          
+                        :documentation "Change size such that arma allocs new memory. This is the challange.")
+                        (reparse-symbol indented_block_body) [5640 5888])
+                    ("test_mode_large_size_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5922 5926]))                          )
+                        (reparse-symbol indented_block_body) [5893 6157])
+                    ("test_mode_large_size_copy_resize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6199 6203]))                          )
+                        (reparse-symbol indented_block_body) [6162 6450])
+                    ("test_check_dimensions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6481 6485]))                          )
+                        (reparse-symbol indented_block_body) [6455 6733])
+                    ("test_check_no_conversion_allowed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6775 6779]))                          )
+                        (reparse-symbol indented_block_body) [6738 6975]))                  
+                :type "class")
+                nil [4008 6975])
+            ("ColDoubleUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7053 7057]))                          )
+                        (reparse-symbol indented_block_body) [7043 7125]))                  
+                :type "class")
+                nil [6977 7125])
+            ("ColFloatUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7202 7206]))                          )
+                        (reparse-symbol indented_block_body) [7192 7273]))                  
+                :type "class")
+                nil [7127 7273])
+            ("ColInt32UnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7350 7354]))                          )
+                        (reparse-symbol indented_block_body) [7340 7417]))                  
+                :type "class")
+                nil [7275 7417])
+            ("ColUint32UnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7495 7499]))                          )
+                        (reparse-symbol indented_block_body) [7485 7565]))                  
+                :type "class")
+                nil [7419 7565])
+            ("RowDoubleUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7643 7647]))                          )
+                        (reparse-symbol indented_block_body) [7633 7715]))                  
+                :type "class")
+                nil [7567 7715])
+            ("RowFloatUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7792 7796]))                          )
+                        (reparse-symbol indented_block_body) [7782 7863]))                  
+                :type "class")
+                nil [7717 7863])
+            ("RowIntUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7938 7942]))                          )
+                        (reparse-symbol indented_block_body) [7928 8005]))                  
+                :type "class")
+                nil [7865 8005])
+            ("RowUintUnitTests" type
+               (:superclasses ("RowColUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8081 8085]))                          )
+                        (reparse-symbol indented_block_body) [8071 8151]))                  
+                :type "class")
+                nil [8007 8151])
+            ("CubeUnitTests" type
+               (:members 
+                  ( ("init_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8190 8194])
+                            ("m" variable nil (reparse-symbol function_parameters) [8196 8197])
+                            ("n" variable nil (reparse-symbol function_parameters) [8199 8200])
+                            ("s" variable nil (reparse-symbol function_parameters) [8202 8203])
+                            ("order" variable nil (reparse-symbol function_parameters) [8205 8210]))                          )
+                        (reparse-symbol indented_block_body) [8179 8462])
+                    ("test_set_get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8484 8488]))                          )
+                        (reparse-symbol indented_block_body) [8467 8614])
+                    ("test_set_get_sptr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8641 8645]))                          )
+                        (reparse-symbol indented_block_body) [8619 8776])
+                    ("test_rnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8794 8798]))                          )
+                        (reparse-symbol indented_block_body) [8781 8905])
+                    ("test_mod_nothing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8931 8935]))                          )
+                        (reparse-symbol indented_block_body) [8910 9073])
+                    ("test_mod_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9099 9103]))                          )
+                        (reparse-symbol indented_block_body) [9078 9343])
+                    ("test_mod_small_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9372 9376]))                          )
+                        (reparse-symbol indented_block_body) [9348 9645])
+                    ("test_mode_large_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9675 9679]))                          
+                        :documentation "Change size such that arma allocs new memory. This is the challange.")
+                        (reparse-symbol indented_block_body) [9650 9933])
+                    ("test_mode_large_size_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9967 9971]))                          )
+                        (reparse-symbol indented_block_body) [9938 10261])
+                    ("test_mode_large_size_copy_resize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10303 10307]))                          )
+                        (reparse-symbol indented_block_body) [10266 10603])
+                    ("test_check_no_conversion_allowed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10645 10649]))                          )
+                        (reparse-symbol indented_block_body) [10608 10815])
+                    ("test_check_dimension_assertion" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10855 10859]))                          )
+                        (reparse-symbol indented_block_body) [10820 11131]))                  
+                :type "class")
+                nil [8153 11131])
+            ("CubeDoubleTests" type
+               (:superclasses ("CubeUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11204 11208]))                          )
+                        (reparse-symbol indented_block_body) [11194 11277]))                  
+                :type "class")
+                nil [11133 11277])
+            ("CubeFloatTests" type
+               (:superclasses ("CubeUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11349 11353]))                          )
+                        (reparse-symbol indented_block_body) [11339 11421]))                  
+                :type "class")
+                nil [11279 11421])
+            ("MatComplexUnitTests" type
+               (:members 
+                  ( ("init_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11466 11470])
+                            ("m" variable nil (reparse-symbol function_parameters) [11472 11473])
+                            ("n" variable nil (reparse-symbol function_parameters) [11475 11476])
+                            ("order" variable nil (reparse-symbol function_parameters) [11478 11483]))                          )
+                        (reparse-symbol indented_block_body) [11455 11700])
+                    ("test_set_get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11722 11726]))                          )
+                        (reparse-symbol indented_block_body) [11705 11849])
+                    ("test_set_get_sptr" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11876 11880]))                          )
+                        (reparse-symbol indented_block_body) [11854 12008])
+                    ("test_rnd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12026 12030]))                          )
+                        (reparse-symbol indented_block_body) [12013 12134])
+                    ("test_mod_nothing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12160 12164]))                          )
+                        (reparse-symbol indented_block_body) [12139 12296])
+                    ("test_mod_content" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12322 12326]))                          )
+                        (reparse-symbol indented_block_body) [12301 12596])
+                    ("test_mod_small_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12625 12629]))                          )
+                        (reparse-symbol indented_block_body) [12601 12952])
+                    ("test_mode_large_size" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12982 12986]))                          
+                        :documentation "Change size such that arma allocs new memory. This is the challange.")
+                        (reparse-symbol indented_block_body) [12957 13222])
+                    ("test_mode_large_size_mod" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13256 13260]))                          )
+                        (reparse-symbol indented_block_body) [13227 13550])
+                    ("test_mode_large_size_copy_resize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13592 13596]))                          )
+                        (reparse-symbol indented_block_body) [13555 13866])
+                    ("test_check_no_conversion_allowed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13908 13912]))                          )
+                        (reparse-symbol indented_block_body) [13871 14078]))                  
+                :type "class")
+                nil [11423 14078])
+            ("MatComplexDoubleTests" type
+               (:superclasses ("MatComplexUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14163 14167]))                          )
+                        (reparse-symbol indented_block_body) [14153 14245]))                  
+                :type "class")
+                nil [14080 14245])
+            ("MatComplexFloatTests" type
+               (:superclasses ("MatComplexUnitTests" "unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14329 14333]))                          )
+                        (reparse-symbol indented_block_body) [14319 14409]))                  
+                :type "class")
+                nil [14247 14409])
+            ("OverloadColTests" type
+               (:superclasses ("unittest.TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14468 14472]))                          )
+                        (reparse-symbol indented_block_body) [14458 14488])
+                    ("test_mul_scalar_ret_cx_default" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14528 14532]))                          )
+                        (reparse-symbol indented_block_body) [14493 14956])
+                    ("test_mul_scalar_ret_cx_32_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14993 14997]))                          )
+                        (reparse-symbol indented_block_body) [14961 15454])
+                    ("test_mul_scalar_ret_cx_64_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15491 15495]))                          )
+                        (reparse-symbol indented_block_body) [15459 15953])
+                    ("test_mul_scalar_ret_cx_32" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15988 15992]))                          )
+                        (reparse-symbol indented_block_body) [15958 16442])
+                    ("test_mul_scalar_ret_cx_64" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16477 16481]))                          )
+                        (reparse-symbol indented_block_body) [16447 16932]))                  
+                :type "class")
+                nil [14411 16932])
+            ("if" code nil nil [16934 16981]))          
+      :file "armanpy_test_run.py"
+      :pointmax 16981
+      :fsize 17532
+      :lastmodtime '(22107 1624 544717 684000)
+      :unmatched-syntax nil)
+    (semanticdb-table "armanpytest.py"
+      :file "armanpytest.py"
+      :fsize 21495
+      :lastmodtime '(22106 65485 356418 13000)))
+  :file "!home!seshu!dev!armanpy-0.1.4!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

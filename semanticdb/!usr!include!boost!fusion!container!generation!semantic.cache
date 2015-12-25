@@ -1,0 +1,52 @@
+;; Object generation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generation/"
+  :tables
+  (list
+    (semanticdb-table "ignore.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_IGNORE_07192005_0329" variable (:constant-flag t) nil [488 515])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [517 559])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("swallow_assign" type
+                                       (:members 
+                                          ( ("=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [868 877]))                                                  
+                                                :type ("swallow_assign" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [824 941]))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [682 952]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [651 958])
+                            ("ignore" variable
+                               (:default-value "detail::swallow_assign()"
+                                :type ("detail::swallow_assign" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1061 1118]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [579 1120]))                  
+                :type "namespace")
+                nil [561 1121]))          
+      :file "ignore.hpp"
+      :pointmax 1130
+      :fsize 1129
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((symbol 1036 . 1060) (symbol 787 . 811) (symbol 759 . 786) (punctuation 745 . 746) (symbol 744 . 745) (TYPENAME 735 . 743) (punctuation 734 . 735) (TEMPLATE 726 . 734))
+      :lexical-table 
+        '(("FUSION_IGNORE_07192005_0329")
+          )
+))
+  :file "!usr!include!boost!fusion!container!generation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

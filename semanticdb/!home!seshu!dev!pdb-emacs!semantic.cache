@@ -1,0 +1,87 @@
+;; Object pdb-emacs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdb-emacs/"
+  :tables
+  (list
+    (semanticdb-table "mi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cmd" include nil nil [1 11])
+            ("argparse" include nil nil [12 27])
+            ("bdb" include nil nil [28 38])
+            ("inspect" include nil nil [39 53])
+            ("OutputRecord" type
+               (:superclasses ("object")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [88 92]))                  
+                :type "class")
+                nil [56 93])
+            ("ResultRecord" type
+               (:superclasses ("OutputRecord")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [133 137]))                  
+                :type "class")
+                nil [95 138])
+            ("StreamRecord" type
+               (:superclasses ("OutputRecord")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [178 182]))                  
+                :type "class")
+                nil [140 183])
+            ("AsyncRecord" type
+               (:superclasses ("OutputRecord")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [222 226]))                  
+                :type "class")
+                nil [185 227])
+            ("FrameRecord" type
+               (:superclasses ("OutputRecord")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [2627 2631]))                  
+                :type "class")
+                nil [2590 2632])
+            ("ExceptionRecord" type
+               (:superclasses ("OutputRecord")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [2675 2679]))                  
+                :type "class")
+                nil [2634 2680])
+            ("Interpreter" type
+               (:documentation "Implements GDB MI interface"
+                :superclasses ("cmd.Cmd")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2845 2863])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2872 2897])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2906 2953])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2962 2983]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2766 2770])
+                            ("filename" variable nil (reparse-symbol function_parameters) [2772 2780]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2753 2930])
+                    ("do_break_insert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2955 2959])
+                            ("args" variable nil (reparse-symbol function_parameters) [2961 2965]))                          )
+                        (reparse-symbol indented_block_body) [2935 3816])
+                    ("do_EOF" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3832 3836])
+                            ("args" variable nil (reparse-symbol function_parameters) [3838 3842]))                          )
+                        (reparse-symbol indented_block_body) [3821 3865]))                  
+                :type "class")
+                nil [2682 3865])
+            ("if" code nil nil [3866 4083]))          
+      :file "mi.py"
+      :pointmax 4083
+      :fsize 4082
+      :lastmodtime '(22083 64833 708330 252000)
+      :unmatched-syntax nil))
+  :file "!home!seshu!dev!pdb-emacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

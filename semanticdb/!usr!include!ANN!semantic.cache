@@ -1,0 +1,609 @@
+;; Object ANN/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ANN/"
+  :tables
+  (list
+    (semanticdb-table "ANN.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ANN_H" variable (:constant-flag t) nil [2660 2665])
+            ("DLL_API" variable (:constant-flag t) nil [3846 3853])
+            ("cstdlib" include (:system-flag t) nil [4028 4046])
+            ("cmath" include (:system-flag t) nil [4074 4090])
+            ("iostream" include (:system-flag t) nil [4110 4129])
+            ("cstring" include (:system-flag t) nil [4147 4165])
+            ("climits" include (:system-flag t) nil [5210 5230])
+            ("cfloat" include (:system-flag t) nil [5231 5250])
+            ("ANN_DBL_MAX" variable
+               (:constant-flag t
+                :default-value "DBL_MAX"
+                :type "double")
+                nil [5253 5288])
+            ("ANNversion" variable (:constant-flag t) nil [5305 5315])
+            ("ANNversionCmt" variable (:constant-flag t) nil [5367 5380])
+            ("ANNcopyright" variable (:constant-flag t) nil [5392 5404])
+            ("ANNlatestRev" variable (:constant-flag t) nil [5445 5457])
+            ("ANNbool" type
+               (:members 
+                  ( ("ANNfalse" variable
+                       (:constant-flag t
+                        :default-value (5781 5782)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5770 5782])
+                    ("ANNtrue" variable
+                       (:constant-flag t
+                        :default-value (5794 5795)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5784 5795]))                  
+                :type "enum")
+                nil [5756 5797])
+            ("ANNcoord" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [6867 6891])
+            ("ANNdist" type
+               (:typedef ("double")
+                :type "typedef")
+                nil [6919 6942])
+            ("ANNidx" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [7689 7709])
+            ("ANN_NULL_IDX" variable
+               (:constant-flag t
+                :default-value "-1"
+                :type ("ANNidx" type (:type "class") nil nil))
+                nil [7729 7760])
+            ("ANN_DIST_INF" variable
+               (:constant-flag t
+                :default-value "ANN_DBL_MAX"
+                :type ("ANNdist" type (:type "class") nil nil))
+                nil [8744 8785])
+            ("ANNcoordPrec" variable
+               (:constant-flag t
+                :default-value "15"
+                :type "int")
+                nil [9732 9761])
+            ("ANN_ALLOW_SELF_MATCH" variable
+               (:constant-flag t
+                :default-value "ANNtrue"
+                :type ("ANNbool" type (:type "class") nil nil))
+                nil [10297 10342])
+            ("ANN_POW" variable (:constant-flag t) nil [14196 14203])
+            ("ANN_ROOT" variable (:constant-flag t) nil [14227 14235])
+            ("ANN_SUM" variable (:constant-flag t) nil [14257 14264])
+            ("ANN_DIFF" variable (:constant-flag t) nil [14291 14299])
+            ("ANNpoint" type
+               (:typedef ("ANNcoord" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [15869 15896])
+            ("ANNpointArray" type
+               (:typedef ("ANNpoint" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [15910 15942])
+            ("ANNdistArray" type
+               (:typedef ("ANNdist" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [15966 15997])
+            ("ANNidxArray" type
+               (:typedef ("ANNidx" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [16025 16055])
+            ("annDist" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [17661 17672])
+                    ("p" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17697 17709])
+                    ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17723 17735]))                  
+                :type ("ANNdist" type (:type "class") nil nil))
+                nil [17643 17736])
+            ("annAllocPt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [17768 17779])
+                    ("c" variable
+                       (:default-value "0"
+                        :type ("ANNcoord" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17795 17810]))                  
+                :type ("ANNpoint" type (:type "class") nil nil))
+                nil [17746 17812])
+            ("annAllocPts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [17883 17892])
+                    ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [17916 17927]))                  
+                :type ("ANNpointArray" type (:type "class") nil nil))
+                nil [17855 17928])
+            ("annDeallocPt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :type ("ANNpoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17972 17985]))                  
+                :type "void")
+                nil [17952 17986])
+            ("annDeallocPts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pa" variable
+                       (:reference 1
+                        :type ("ANNpointArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18043 18061]))                  
+                :type "void")
+                nil [18022 18062])
+            ("annCopyPt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [18109 18120])
+                    ("source" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18136 18153]))                  
+                :type ("ANNpoint" type (:type "class") nil nil))
+                nil [18088 18154])
+            ("ANNpointSet" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [20894 20901])
+                    ("ANNpointSet" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [20903 20928])
+                    ("annkSearch" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21017 21029])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [21050 21059])
+                            ("nn_idx" variable (:type ("ANNidxArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21103 21123])
+                            ("dd" variable (:type ("ANNdistArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21165 21181])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [21224 21240]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20955 21266])
+                    ("annkFRSearch" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21375 21387])
+                            ("sqRad" variable (:type ("ANNdist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21408 21424])
+                            ("k" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [21447 21459])
+                            ("nn_idx" variable
+                               (:default-value "NULL"
+                                :type ("ANNidxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21503 21529])
+                            ("dd" variable
+                               (:default-value "NULL"
+                                :type ("ANNdistArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21570 21592])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [21634 21650]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [21311 21676])
+                    ("theDim" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [21721 21746])
+                    ("nPoints" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [21779 21805])
+                    ("thePoints" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("ANNpointArray" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [21874 21912]))                  
+                :type "class")
+                nil [20866 21915])
+            ("ANNbruteForce" type
+               (:superclasses 
+                  ( ("ANNpointSet" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("dim" variable (:type "int") (reparse-symbol classsubparts) [22867 22878])
+                    ("n_pts" variable (:type "int") (reparse-symbol classsubparts) [22896 22909])
+                    ("pts" variable (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22934 22952])
+                    ("public" label nil (reparse-symbol classsubparts) [22971 22978])
+                    ("ANNbruteForce" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pa" variable (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23034 23051])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [23072 23081])
+                            ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [23107 23117]))                          
+                        :type ("ANNbruteForce" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [22980 23118])
+                    ("ANNbruteForce" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [23136 23153])
+                    ("annkSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23230 23242])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [23263 23272])
+                            ("nn_idx" variable (:type ("ANNidxArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23316 23336])
+                            ("dd" variable (:type ("ANNdistArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23378 23394])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [23437 23453]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [23174 23455])
+                    ("annkFRSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23532 23544])
+                            ("sqRad" variable (:type ("ANNdist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23565 23581])
+                            ("k" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [23604 23616])
+                            ("nn_idx" variable
+                               (:default-value "NULL"
+                                :type ("ANNidxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23660 23686])
+                            ("dd" variable
+                               (:default-value "NULL"
+                                :type ("ANNdistArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23727 23749])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [23791 23807]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [23474 23809])
+                    ("theDim" function (:type "int") (reparse-symbol classsubparts) [23828 23892])
+                    ("nPoints" function (:type "int") (reparse-symbol classsubparts) [23895 23960])
+                    ("thePoints" function (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23963 24038]))                  
+                :type "class")
+                nil [22816 24041])
+            ("ANNsplitRule" type
+               (:members 
+                  ( ("ANN_KD_STD" variable
+                       (:constant-flag t
+                        :default-value (25206 25207)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25190 25207])
+                    ("ANN_KD_MIDPT" variable
+                       (:constant-flag t
+                        :default-value (25263 25264)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25246 25264])
+                    ("ANN_KD_FAIR" variable
+                       (:constant-flag t
+                        :default-value (25303 25304)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25286 25304])
+                    ("ANN_KD_SL_MIDPT" variable
+                       (:constant-flag t
+                        :default-value (25342 25343)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25322 25343])
+                    ("ANN_KD_SL_FAIR" variable
+                       (:constant-flag t
+                        :default-value (25403 25404)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25384 25404])
+                    ("ANN_KD_SUGGEST" variable
+                       (:constant-flag t
+                        :default-value (25456 25457)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25437 25457]))                  
+                :type "enum")
+                nil [25168 25459])
+            ("ANN_N_SPLIT_RULES" variable
+               (:constant-flag t
+                :default-value "6"
+                :type "int")
+                nil [25496 25529])
+            ("ANNshrinkRule" type
+               (:members 
+                  ( ("ANN_BD_NONE" variable
+                       (:constant-flag t
+                        :default-value (25596 25597)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25579 25597])
+                    ("ANN_BD_SIMPLE" variable
+                       (:constant-flag t
+                        :default-value (25657 25658)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25639 25658])
+                    ("ANN_BD_CENTROID" variable
+                       (:constant-flag t
+                        :default-value (25702 25703)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25682 25703])
+                    ("ANN_BD_SUGGEST" variable
+                       (:constant-flag t
+                        :default-value (25748 25749)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [25729 25749]))                  
+                :type "enum")
+                nil [25556 25751])
+            ("ANN_N_SHRINK_RULES" variable
+               (:constant-flag t
+                :default-value "4"
+                :type "int")
+                nil [25785 25818])
+            ("ANNkdStats" type
+               (:prototype t
+                :type "class")
+                nil [29932 29949])
+            ("ANNkd_node" type
+               (:prototype t
+                :type "class")
+                nil [29973 29990])
+            ("ANNkd_ptr" type
+               (:typedef ("ANNkd_node" type (:type "class") nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [30023 30053])
+            ("ANNkd_tree" type
+               (:superclasses 
+                  ( ("ANNpointSet" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [30131 30141])
+                    ("dim" variable (:type "int") (reparse-symbol classsubparts) [30143 30154])
+                    ("n_pts" variable (:type "int") (reparse-symbol classsubparts) [30181 30194])
+                    ("bkt_size" variable (:type "int") (reparse-symbol classsubparts) [30227 30243])
+                    ("pts" variable (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30262 30280])
+                    ("pidx" variable (:type ("ANNidxArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30299 30317])
+                    ("root" variable (:type ("ANNkd_ptr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30354 30370])
+                    ("bnd_box_lo" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30394 30415])
+                    ("bnd_box_hi" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [30445 30466])
+                    ("SkeletonTree" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [30550 30559])
+                            ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [30585 30595])
+                            ("bs" variable (:type "int") (reparse-symbol arg-sub-list) [30614 30624])
+                            ("pa" variable
+                               (:default-value "NULL"
+                                :type ("ANNpointArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30645 30668])
+                            ("pi" variable
+                               (:default-value "NULL"
+                                :type ("ANNidxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30699 30720]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [30498 30722])
+                    ("public" label nil (reparse-symbol classsubparts) [30754 30761])
+                    ("ANNkd_tree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("n" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [30806 30818])
+                            ("dd" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [30844 30857])
+                            ("bs" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [30876 30889]))                          
+                        :type ("ANNkd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [30763 30891])
+                    ("ANNkd_tree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pa" variable (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30956 30973])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [30994 31003])
+                            ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [31029 31039])
+                            ("bs" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [31058 31071])
+                            ("split" variable
+                               (:default-value "ANN_KD_SUGGEST"
+                                :type ("ANNsplitRule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31092 31127]))                          
+                        :type ("ANNkd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [30910 31129])
+                    ("ANNkd_tree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("in" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31196 31213]))                          
+                        :type ("ANNkd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [31152 31214])
+                    ("ANNkd_tree" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [31249 31263])
+                    ("annkSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31346 31358])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [31379 31388])
+                            ("nn_idx" variable (:type ("ANNidxArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31432 31452])
+                            ("dd" variable (:type ("ANNdistArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31494 31510])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [31553 31569]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [31290 31571])
+                    ("annkPriSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31651 31663])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [31684 31693])
+                            ("nn_idx" variable (:type ("ANNidxArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31737 31757])
+                            ("dd" variable (:type ("ANNdistArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31799 31815])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [31858 31874]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [31590 31876])
+                    ("annkFRSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("ANNpoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31953 31965])
+                            ("sqRad" variable (:type ("ANNdist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31990 32006])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [32043 32052])
+                            ("nn_idx" variable
+                               (:default-value "NULL"
+                                :type ("ANNidxArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32091 32117])
+                            ("dd" variable
+                               (:default-value "NULL"
+                                :type ("ANNdistArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32158 32180])
+                            ("eps" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [32222 32238]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [31895 32240])
+                    ("theDim" function (:type "int") (reparse-symbol classsubparts) [32259 32323])
+                    ("nPoints" function (:type "int") (reparse-symbol classsubparts) [32326 32391])
+                    ("thePoints" function (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32394 32469])
+                    ("Print" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("with_pts" variable (:type ("ANNbool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32532 32551])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32580 32598]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [32472 32599])
+                    ("Dump" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("with_pts" variable (:type ("ANNbool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32666 32685])
+                            ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32714 32732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [32621 32733])
+                    ("getStats" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("st" variable
+                               (:reference 1
+                                :type ("ANNkdStats" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32818 32834]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [32763 32835]))                  
+                :type "class")
+                nil [30084 32869])
+            ("ANNbd_tree" type
+               (:superclasses 
+                  ( ("ANNkd_tree" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [33679 33686])
+                    ("ANNbd_tree" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [33731 33740])
+                            ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [33766 33776])
+                            ("bs" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33795 33808]))                          
+                        :type ("ANNbd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33688 33855])
+                    ("ANNbd_tree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("pa" variable (:type ("ANNpointArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33927 33944])
+                            ("n" variable (:type "int") (reparse-symbol arg-sub-list) [33965 33974])
+                            ("dd" variable (:type "int") (reparse-symbol arg-sub-list) [34000 34010])
+                            ("bs" variable
+                               (:default-value "1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [34029 34042])
+                            ("split" variable
+                               (:default-value "ANN_KD_SUGGEST"
+                                :type ("ANNsplitRule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34063 34099])
+                            ("shrink" variable
+                               (:default-value "ANN_BD_SUGGEST"
+                                :type ("ANNshrinkRule" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34121 34158]))                          
+                        :type ("ANNbd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [33881 34160])
+                    ("ANNbd_tree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("in" variable
+                               (:reference 1
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [34225 34242]))                          
+                        :type ("ANNbd_tree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [34181 34243]))                  
+                :type "class")
+                nil [33633 34278])
+            ("annMaxPtsVisit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("maxPts" variable (:type "int") (reparse-symbol arg-sub-list) [34707 34721]))                  
+                :type "void")
+                nil [34654 34722])
+            ("annClose" function
+               (:prototype-flag t
+                :type "void")
+                nil [34745 34761]))          
+      :file "ANN.h"
+      :pointmax 34799
+      :fsize 34798
+      :lastmodtime '(21046 64570 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ANNcopyright" . ((string "\"David M. Mount and Sunil Arya\"" 5405 . 5436)))
+          ("ANN_DIFF" (spp-arg-list ("x" "y") 14299 . 14304) . ((semantic-list "((y) - (x))" 14306 . 14317)))
+          ("ANN_SUM" (spp-arg-list ("x" "y") 14264 . 14269) . ((semantic-list "((x) + (y))" 14271 . 14282)))
+          ("ANNversionCmt" . ((string "\"\"" 5381 . 5383)))
+          ("ANN_H")
+          ("ANNlatestRev" . ((string "\"Jan 27, 2010\"" 5458 . 5472)))
+          ("ANN_POW" (spp-arg-list ("v") 14203 . 14206) . ((semantic-list "((v)*(v))" 14209 . 14218)))
+          ("ANN_ROOT" (spp-arg-list ("x") 14235 . 14238) . ((symbol "sqrt" 14241 . 14245) (semantic-list "(x)" 14245 . 14248)))
+          ("DLL_API")
+          ("ANNversion" . ((string "\"1.1.2\"" 5318 . 5325)))
+          )
+))
+  :file "!usr!include!ANN!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

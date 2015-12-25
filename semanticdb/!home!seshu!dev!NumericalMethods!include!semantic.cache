@@ -1,0 +1,43 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+
+
+    (semanticdb-table "radians.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("RADIANS_H" variable (:constant-flag t) nil [27 36])
+            ("cmath" include (:system-flag t) nil [38 54])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [56 76])
+            ("rad_to_deg" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112 116]))                  )
+                nil [78 145])
+            ("deg_to_rad" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [187 191]))                  
+                :constant-flag t)
+                nil [147 220]))          
+      :file "radians.hpp"
+      :pointmax 229
+      :fsize 228
+      :lastmodtime '(22105 42541 177423 442000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RADIANS_H")
+          )
+))
+  :file "!home!seshu!dev!NumericalMethods!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

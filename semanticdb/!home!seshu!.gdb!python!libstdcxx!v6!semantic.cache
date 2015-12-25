@@ -1,0 +1,1310 @@
+;; Object v6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "v6/"
+  :tables
+  (list
+    (semanticdb-table "printers.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("gdb" include nil nil [728 738])
+            ("itertools" include nil nil [739 755])
+            ("re" include nil nil [756 765])
+            ("sys" include nil nil [766 776])
+            ("if" code nil nil [1395 2127])
+            ("_use_gdb_pp" variable nil nil [2185 2203])
+            ("try" code nil nil [2204 2277])
+            ("_use_type_printing" variable nil nil [2310 2336])
+            ("try" code nil nil [2337 2468])
+            ("find_type" function (:arguments 
+              ( ("orig" variable nil (reparse-symbol function_parameters) [2689 2693])
+                ("name" variable nil (reparse-symbol function_parameters) [2695 2699]))              ) nil [2675 3337])
+            ("SharedPointerPrinter" type
+               (:members 
+                  ( ("\"Print a shared_ptr or weak_ptr\"" code nil (reparse-symbol indented_block_body) [3370 3402])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3452 3476])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3485 3499]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3422 3426])
+                            ("typename" variable nil (reparse-symbol function_parameters) [3428 3436])
+                            ("val" variable nil (reparse-symbol function_parameters) [3438 3441]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3408 3500])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3520 3524]))                          )
+                        (reparse-symbol indented_block_body) [3505 3979]))                  
+                :type "class")
+                nil [3338 3979])
+            ("UniquePointerPrinter" type
+               (:members 
+                  ( ("\"Print a unique_ptr\"" code nil (reparse-symbol indented_block_body) [4012 4032])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4082 4096]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4052 4056])
+                            ("typename" variable nil (reparse-symbol function_parameters) [4058 4066])
+                            ("val" variable nil (reparse-symbol function_parameters) [4068 4071]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4038 4097])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4117 4121]))                          )
+                        (reparse-symbol indented_block_body) [4102 4310]))                  
+                :type "class")
+                nil [3980 4310])
+            ("get_value_from_list_node" function
+               (:documentation "Returns the value held in an _List_node<_Val>"
+                :arguments 
+                  ( ("node" variable nil (reparse-symbol function_parameters) [4340 4344]))                  )
+                nil [4311 4963])
+            ("StdListPrinter" type
+               (:members 
+                  ( ("\"Print a std::list\"" code nil (reparse-symbol indented_block_body) [4990 5009])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [5098 5122])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [5135 5162])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [5175 5199])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [5212 5226]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5063 5067])
+                                    ("nodetype" variable nil (reparse-symbol function_parameters) [5069 5077])
+                                    ("head" variable nil (reparse-symbol function_parameters) [5079 5083]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [5050 5227])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5249 5253]))                                  )
+                                (reparse-symbol indented_block_body) [5236 5280])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [5302 5306]))                                  )
+                                (reparse-symbol indented_block_body) [5289 5645]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [5015 5645])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5693 5717])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5726 5740]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5663 5667])
+                            ("typename" variable nil (reparse-symbol function_parameters) [5669 5677])
+                            ("val" variable nil (reparse-symbol function_parameters) [5679 5682]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [5650 5741])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5759 5763]))                          )
+                        (reparse-symbol indented_block_body) [5746 5946])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5965 5969]))                          )
+                        (reparse-symbol indented_block_body) [5951 6154]))                  
+                :type "class")
+                nil [4964 6154])
+            ("StdListIteratorPrinter" type
+               (:members 
+                  ( ("\"Print std::list::iterator\"" code nil (reparse-symbol indented_block_body) [6189 6216])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [6265 6279])
+                            ("self" variable nil (reparse-symbol indented_block_body) [6288 6312]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6235 6239])
+                            ("typename" variable nil (reparse-symbol function_parameters) [6241 6249])
+                            ("val" variable nil (reparse-symbol function_parameters) [6251 6254]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [6222 6313])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6332 6336]))                          )
+                        (reparse-symbol indented_block_body) [6318 6557]))                  
+                :type "class")
+                nil [6155 6557])
+            ("StdSlistPrinter" type
+               (:members 
+                  ( ("\"Print a __gnu_cxx::slist\"" code nil (reparse-symbol indented_block_body) [6585 6611])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [6700 6724])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [6737 6775])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [6788 6802]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [6665 6669])
+                                    ("nodetype" variable nil (reparse-symbol function_parameters) [6671 6679])
+                                    ("head" variable nil (reparse-symbol function_parameters) [6681 6685]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [6652 6803])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [6825 6829]))                                  )
+                                (reparse-symbol indented_block_body) [6812 6856])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [6878 6882]))                                  )
+                                (reparse-symbol indented_block_body) [6865 7176]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [6617 7176])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7224 7238]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7194 7198])
+                            ("typename" variable nil (reparse-symbol function_parameters) [7200 7208])
+                            ("val" variable nil (reparse-symbol function_parameters) [7210 7213]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7181 7239])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7257 7261]))                          )
+                        (reparse-symbol indented_block_body) [7244 7422])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7441 7445]))                          )
+                        (reparse-symbol indented_block_body) [7427 7574]))                  
+                :type "class")
+                nil [6558 7574])
+            ("StdSlistIteratorPrinter" type
+               (:members 
+                  ( ("\"Print __gnu_cxx::slist::iterator\"" code nil (reparse-symbol indented_block_body) [7610 7644])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [7693 7707]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7663 7667])
+                            ("typename" variable nil (reparse-symbol function_parameters) [7669 7677])
+                            ("val" variable nil (reparse-symbol function_parameters) [7679 7682]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7650 7708])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7727 7731]))                          )
+                        (reparse-symbol indented_block_body) [7713 7917]))                  
+                :type "class")
+                nil [7575 7917])
+            ("StdVectorPrinter" type
+               (:members 
+                  ( ("\"Print a std::vector\"" code nil (reparse-symbol indented_block_body) [7946 7967])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [8064 8084])
+                                    ("if" code nil (reparse-symbol indented_block_body) [8097 8484])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [8496 8510]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8022 8026])
+                                    ("start" variable nil (reparse-symbol function_parameters) [8028 8033])
+                                    ("finish" variable nil (reparse-symbol function_parameters) [8035 8041])
+                                    ("bitvec" variable nil (reparse-symbol function_parameters) [8043 8049]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [8008 8511])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8533 8537]))                                  )
+                                (reparse-symbol indented_block_body) [8520 8564])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [8586 8590]))                                  )
+                                (reparse-symbol indented_block_body) [8573 9407]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [7973 9407])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [9455 9479])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9488 9502])
+                            ("self" code nil (reparse-symbol indented_block_body) [9511 9583]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9425 9429])
+                            ("typename" variable nil (reparse-symbol function_parameters) [9431 9439])
+                            ("val" variable nil (reparse-symbol function_parameters) [9441 9444]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9412 9584])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9602 9606]))                          )
+                        (reparse-symbol indented_block_body) [9589 9780])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9799 9803]))                          )
+                        (reparse-symbol indented_block_body) [9785 10698])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10720 10724]))                          )
+                        (reparse-symbol indented_block_body) [10703 10750]))                  
+                :type "class")
+                nil [7918 10750])
+            ("StdVectorIteratorPrinter" type
+               (:members 
+                  ( ("\"Print std::vector::iterator\"" code nil (reparse-symbol indented_block_body) [10787 10816])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [10865 10879]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10835 10839])
+                            ("typename" variable nil (reparse-symbol function_parameters) [10841 10849])
+                            ("val" variable nil (reparse-symbol function_parameters) [10851 10854]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10822 10880])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10899 10903]))                          )
+                        (reparse-symbol indented_block_body) [10885 10958]))                  
+                :type "class")
+                nil [10751 10958])
+            ("StdTuplePrinter" type
+               (:members 
+                  ( ("\"Print a std::tuple\"" code nil (reparse-symbol indented_block_body) [10986 11006])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [11086 11102])
+                                    ("nodes" variable nil (reparse-symbol indented_block_body) [11197 11229])
+                                    ("if" code nil (reparse-symbol indented_block_body) [11242 11504])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [11516 11530]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11061 11065])
+                                    ("head" variable nil (reparse-symbol function_parameters) [11067 11071]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [11047 11531])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11554 11558]))                                  )
+                                (reparse-symbol indented_block_body) [11540 11585])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [11608 11612]))                                  )
+                                (reparse-symbol indented_block_body) [11594 13329]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [11012 13329])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [13378 13402])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13411 13425]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13348 13352])
+                            ("typename" variable nil (reparse-symbol function_parameters) [13354 13362])
+                            ("val" variable nil (reparse-symbol function_parameters) [13364 13367]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [13334 13427])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13446 13450]))                          )
+                        (reparse-symbol indented_block_body) [13432 13494])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13514 13518]))                          )
+                        (reparse-symbol indented_block_body) [13499 13665]))                  
+                :type "class")
+                nil [10959 13665])
+            ("StdStackOrQueuePrinter" type
+               (:members 
+                  ( ("\"Print a std::stack or std::queue\"" code nil (reparse-symbol indented_block_body) [13700 13734])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [13784 13808])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13817 13867]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13754 13758])
+                            ("typename" variable nil (reparse-symbol function_parameters) [13760 13768])
+                            ("val" variable nil (reparse-symbol function_parameters) [13770 13773]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [13740 13868])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13887 13891]))                          )
+                        (reparse-symbol indented_block_body) [13873 13936])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13956 13960]))                          )
+                        (reparse-symbol indented_block_body) [13941 14079])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14102 14106]))                          )
+                        (reparse-symbol indented_block_body) [14084 14234]))                  
+                :type "class")
+                nil [13666 14234])
+            ("RbtreeIterator" type
+               (:superclasses ("Iterator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [14307 14361])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14370 14431])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14440 14454]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14284 14288])
+                            ("rbtree" variable nil (reparse-symbol function_parameters) [14290 14296]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [14271 14455])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14473 14477]))                          )
+                        (reparse-symbol indented_block_body) [14460 14500])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14517 14521]))                          )
+                        (reparse-symbol indented_block_body) [14505 14555])
+                    ("__next__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14573 14577]))                          )
+                        (reparse-symbol indented_block_body) [14560 15405]))                  
+                :type "class")
+                nil [14235 15405])
+            ("get_value_from_Rb_tree_node" function
+               (:documentation "Returns the value held in an _Rb_tree_node<_Val>"
+                :arguments 
+                  ( ("node" variable nil (reparse-symbol function_parameters) [15438 15442]))                  )
+                nil [15406 16078])
+            ("StdRbtreeIteratorPrinter" type
+               (:members 
+                  ( ("\"Print std::map::iterator\"" code nil (reparse-symbol indented_block_body) [16263 16289])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16339 16353])
+                            ("valtype" variable nil (reparse-symbol indented_block_body) [16362 16423])
+                            ("nodetype" variable nil (reparse-symbol indented_block_body) [16432 16502])
+                            ("self" variable nil (reparse-symbol indented_block_body) [16511 16563]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16309 16313])
+                            ("typename" variable nil (reparse-symbol function_parameters) [16315 16323])
+                            ("val" variable nil (reparse-symbol function_parameters) [16325 16328]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16295 16564])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16584 16588]))                          )
+                        (reparse-symbol indented_block_body) [16569 16710]))                  
+                :type "class")
+                nil [16227 16710])
+            ("StdDebugIteratorPrinter" type
+               (:members 
+                  ( ("\"Print a debug enabled version of an iterator\"" code nil (reparse-symbol indented_block_body) [16746 16792])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [16842 16856]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16812 16816])
+                            ("typename" variable nil (reparse-symbol function_parameters) [16818 16826])
+                            ("val" variable nil (reparse-symbol function_parameters) [16828 16831]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [16798 16857])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16990 16994]))                          )
+                        (reparse-symbol indented_block_body) [16975 17084]))                  
+                :type "class")
+                nil [16711 17084])
+            ("StdMapPrinter" type
+               (:members 
+                  ( ("\"Print a std::map or std::multimap\"" code nil (reparse-symbol indented_block_body) [17110 17145])
+                    ("_iter" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [17287 17307])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [17320 17334])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [17347 17363]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [17254 17258])
+                                    ("rbiter" variable nil (reparse-symbol function_parameters) [17260 17266])
+                                    ("type" variable nil (reparse-symbol function_parameters) [17268 17272]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [17241 17364])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [17386 17390]))                                  )
+                                (reparse-symbol indented_block_body) [17373 17417])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [17439 17443]))                                  )
+                                (reparse-symbol indented_block_body) [17426 17863]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [17210 17863])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [17912 17936])
+                            ("self" variable nil (reparse-symbol indented_block_body) [17945 17959]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17882 17886])
+                            ("typename" variable nil (reparse-symbol function_parameters) [17888 17896])
+                            ("val" variable nil (reparse-symbol function_parameters) [17898 17901]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [17868 17960])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17980 17984]))                          )
+                        (reparse-symbol indented_block_body) [17965 18115])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18134 18138]))                          )
+                        (reparse-symbol indented_block_body) [18120 18344])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18367 18371]))                          )
+                        (reparse-symbol indented_block_body) [18349 18395]))                  
+                :type "class")
+                nil [17085 18395])
+            ("StdSetPrinter" type
+               (:members 
+                  ( ("\"Print a std::set or std::multiset\"" code nil (reparse-symbol indented_block_body) [18421 18456])
+                    ("_iter" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [18598 18618])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [18631 18645])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [18658 18674]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [18565 18569])
+                                    ("rbiter" variable nil (reparse-symbol function_parameters) [18571 18577])
+                                    ("type" variable nil (reparse-symbol function_parameters) [18579 18583]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [18552 18675])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [18697 18701]))                                  )
+                                (reparse-symbol indented_block_body) [18684 18728])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [18750 18754]))                                  )
+                                (reparse-symbol indented_block_body) [18737 19109]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [18521 19109])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [19158 19182])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19191 19205]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19128 19132])
+                            ("typename" variable nil (reparse-symbol function_parameters) [19134 19142])
+                            ("val" variable nil (reparse-symbol function_parameters) [19144 19147]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [19114 19206])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19226 19230]))                          )
+                        (reparse-symbol indented_block_body) [19211 19361])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19380 19384]))                          )
+                        (reparse-symbol indented_block_body) [19366 19590]))                  
+                :type "class")
+                nil [18396 19590])
+            ("StdBitsetPrinter" type
+               (:members 
+                  ( ("\"Print a std::bitset\"" code nil (reparse-symbol indented_block_body) [19619 19640])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [19689 19713])
+                            ("self" variable nil (reparse-symbol indented_block_body) [19722 19736]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19659 19663])
+                            ("typename" variable nil (reparse-symbol function_parameters) [19665 19673])
+                            ("val" variable nil (reparse-symbol function_parameters) [19675 19678]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [19646 19737])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19757 19761]))                          )
+                        (reparse-symbol indented_block_body) [19742 19923])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19942 19946]))                          )
+                        (reparse-symbol indented_block_body) [19928 20829]))                  
+                :type "class")
+                nil [19591 20829])
+            ("StdDequePrinter" type
+               (:members 
+                  ( ("\"Print a std::deque\"" code nil (reparse-symbol indented_block_body) [20857 20877])
+                    ("_iter" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [20983 20999])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [21012 21026])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [21039 21053])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [21066 21082])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [21095 21125])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [21138 21152]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [20927 20931])
+                                    ("node" variable nil (reparse-symbol function_parameters) [20933 20937])
+                                    ("start" variable nil (reparse-symbol function_parameters) [20939 20944])
+                                    ("end" variable nil (reparse-symbol function_parameters) [20946 20949])
+                                    ("last" variable nil (reparse-symbol function_parameters) [20951 20955])
+                                    ("buffer_size" variable nil (reparse-symbol function_parameters) [20957 20968]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [20914 21153])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [21175 21179]))                                  )
+                                (reparse-symbol indented_block_body) [21162 21206])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [21228 21232]))                                  )
+                                (reparse-symbol indented_block_body) [21215 21780]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [20883 21780])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [21828 21852])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21861 21875])
+                            ("self" variable nil (reparse-symbol indented_block_body) [21884 21928])
+                            ("size" variable nil (reparse-symbol indented_block_body) [21937 21963])
+                            ("if" code nil (reparse-symbol indented_block_body) [21972 22082]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21798 21802])
+                            ("typename" variable nil (reparse-symbol function_parameters) [21804 21812])
+                            ("val" variable nil (reparse-symbol function_parameters) [21814 21817]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [21785 22082])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22101 22105]))                          )
+                        (reparse-symbol indented_block_body) [22087 22495])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22513 22517]))                          )
+                        (reparse-symbol indented_block_body) [22500 22753])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22776 22780]))                          )
+                        (reparse-symbol indented_block_body) [22758 22806]))                  
+                :type "class")
+                nil [20830 22806])
+            ("StdDequeIteratorPrinter" type
+               (:members 
+                  ( ("\"Print std::deque::iterator\"" code nil (reparse-symbol indented_block_body) [22842 22870])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [22919 22933]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22889 22893])
+                            ("typename" variable nil (reparse-symbol function_parameters) [22895 22903])
+                            ("val" variable nil (reparse-symbol function_parameters) [22905 22908]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [22876 22934])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22953 22957]))                          )
+                        (reparse-symbol indented_block_body) [22939 23008]))                  
+                :type "class")
+                nil [22807 23008])
+            ("StdStringPrinter" type
+               (:members 
+                  ( ("\"Print a std::basic_string of some kind\"" code nil (reparse-symbol indented_block_body) [23037 23077])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [23126 23140])
+                            ("self" code nil (reparse-symbol indented_block_body) [23149 23213]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23096 23100])
+                            ("typename" variable nil (reparse-symbol function_parameters) [23102 23110])
+                            ("val" variable nil (reparse-symbol function_parameters) [23112 23115]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [23083 23214])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23233 23237]))                          )
+                        (reparse-symbol indented_block_body) [23219 24186])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24209 24213]))                          )
+                        (reparse-symbol indented_block_body) [24191 24240]))                  
+                :type "class")
+                nil [23009 24240])
+            ("Tr1HashtableIterator" type
+               (:superclasses ("Iterator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [24318 24351])
+                            ("self" variable nil (reparse-symbol indented_block_body) [24360 24375])
+                            ("self" variable nil (reparse-symbol indented_block_body) [24384 24427])
+                            ("self" variable nil (reparse-symbol indented_block_body) [24436 24492])
+                            ("self" variable nil (reparse-symbol indented_block_body) [24501 24514])
+                            ("while" code nil (reparse-symbol indented_block_body) [24523 24711]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24297 24301])
+                            ("hash" variable nil (reparse-symbol function_parameters) [24303 24307]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [24283 24711])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24730 24734]))                          )
+                        (reparse-symbol indented_block_body) [24716 24757])
+                    ("__next__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24776 24780]))                          )
+                        (reparse-symbol indented_block_body) [24762 25282]))                  
+                :type "class")
+                nil [24241 25282])
+            ("StdHashtableIterator" type
+               (:superclasses ("Iterator")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [25359 25404])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25413 25475]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25338 25342])
+                            ("hash" variable nil (reparse-symbol function_parameters) [25344 25348]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [25325 25476])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25494 25498]))                          )
+                        (reparse-symbol indented_block_body) [25481 25521])
+                    ("__next__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25539 25543]))                          )
+                        (reparse-symbol indented_block_body) [25526 25847]))                  
+                :type "class")
+                nil [25283 25847])
+            ("Tr1UnorderedSetPrinter" type
+               (:members 
+                  ( ("\"Print a tr1::unordered_set\"" code nil (reparse-symbol indented_block_body) [25882 25910])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [25960 25984])
+                            ("self" variable nil (reparse-symbol indented_block_body) [25993 26007]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25930 25934])
+                            ("typename" variable nil (reparse-symbol function_parameters) [25936 25944])
+                            ("val" variable nil (reparse-symbol function_parameters) [25946 25949]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [25916 26008])
+                    ("hashtable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26028 26032]))                          )
+                        (reparse-symbol indented_block_body) [26013 26144])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26164 26168]))                          )
+                        (reparse-symbol indented_block_body) [26149 26264])
+                    ("format_count" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("i" variable nil (reparse-symbol function_parameters) [26305 26306]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [26269 26335])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26354 26358]))                          )
+                        (reparse-symbol indented_block_body) [26340 26618]))                  
+                :type "class")
+                nil [25848 26618])
+            ("Tr1UnorderedMapPrinter" type
+               (:members 
+                  ( ("\"Print a tr1::unordered_map\"" code nil (reparse-symbol indented_block_body) [26653 26681])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [26731 26755])
+                            ("self" variable nil (reparse-symbol indented_block_body) [26764 26778]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26701 26705])
+                            ("typename" variable nil (reparse-symbol function_parameters) [26707 26715])
+                            ("val" variable nil (reparse-symbol function_parameters) [26717 26720]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [26687 26779])
+                    ("hashtable" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26799 26803]))                          )
+                        (reparse-symbol indented_block_body) [26784 26915])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26935 26939]))                          )
+                        (reparse-symbol indented_block_body) [26920 27035])
+                    ("flatten" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("list" variable nil (reparse-symbol function_parameters) [27071 27075]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [27040 27153])
+                    ("format_one" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("elt" variable nil (reparse-symbol function_parameters) [27192 27195]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [27158 27243])
+                    ("format_count" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("i" variable nil (reparse-symbol function_parameters) [27284 27285]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [27248 27314])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27333 27337]))                          )
+                        (reparse-symbol indented_block_body) [27319 27865])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27897 27901]))                          )
+                        (reparse-symbol indented_block_body) [27879 27925]))                  
+                :type "class")
+                nil [26619 27925])
+            ("StdForwardListPrinter" type
+               (:members 
+                  ( ("\"Print a std::forward_list\"" code nil (reparse-symbol indented_block_body) [27959 27986])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [28075 28099])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28112 28139])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [28152 28166]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28040 28044])
+                                    ("nodetype" variable nil (reparse-symbol function_parameters) [28046 28054])
+                                    ("head" variable nil (reparse-symbol function_parameters) [28056 28060]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [28027 28167])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28189 28193]))                                  )
+                                (reparse-symbol indented_block_body) [28176 28220])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [28242 28246]))                                  )
+                                (reparse-symbol indented_block_body) [28229 28667]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [27992 28667])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [28715 28729])
+                            ("self" variable nil (reparse-symbol indented_block_body) [28738 28762]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28685 28689])
+                            ("typename" variable nil (reparse-symbol function_parameters) [28691 28699])
+                            ("val" variable nil (reparse-symbol function_parameters) [28701 28704]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [28672 28763])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28781 28785]))                          )
+                        (reparse-symbol indented_block_body) [28768 28968])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28987 28991]))                          )
+                        (reparse-symbol indented_block_body) [28973 29139]))                  
+                :type "class")
+                nil [27926 29139])
+            ("SingleObjContainerPrinter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("\"Base class for printers of containers of single objects\"" code nil (reparse-symbol indented_block_body) [29185 29242])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [29287 29313])
+                            ("self" variable nil (reparse-symbol indented_block_body) [29322 29343]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29262 29266])
+                            ("val" variable nil (reparse-symbol function_parameters) [29268 29271])
+                            ("viz" variable nil (reparse-symbol function_parameters) [29273 29276]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [29248 29344])
+                    ("_recognize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29364 29368])
+                            ("type" variable nil (reparse-symbol function_parameters) [29370 29374]))                          
+                        :documentation "Return TYPE as a string after applying type printers")
+                        (reparse-symbol indented_block_body) [29349 29691])
+                    ("_contained" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [29770 29784]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29746 29750])
+                                    ("val" variable nil (reparse-symbol function_parameters) [29752 29755]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [29732 29785])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29808 29812]))                                  )
+                                (reparse-symbol indented_block_body) [29794 29839])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [29861 29865]))                                  )
+                                (reparse-symbol indented_block_body) [29848 30044]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [29696 30044])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30063 30067]))                          )
+                        (reparse-symbol indented_block_body) [30049 30304])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30327 30331]))                          )
+                        (reparse-symbol indented_block_body) [30309 30574]))                  
+                :type "class")
+                nil [29140 30574])
+            ("StdExpAnyPrinter" type
+               (:superclasses ("SingleObjContainerPrinter")
+                :members 
+                  ( ("\"Print a std::experimental::any\"" code nil (reparse-symbol indented_block_body) [30631 30663])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [30713 30753])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30762 30776])
+                            ("self" variable nil (reparse-symbol indented_block_body) [30785 30811])
+                            ("contained_value" variable nil (reparse-symbol indented_block_body) [30820 30842])
+                            ("visualizer" variable nil (reparse-symbol indented_block_body) [30851 30868])
+                            ("mgr" variable nil (reparse-symbol indented_block_body) [30877 30905])
+                            ("if" code nil (reparse-symbol indented_block_body) [30914 32207])
+                            ("super" code nil (reparse-symbol indented_block_body) [32215 32283]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30683 30687])
+                            ("typename" variable nil (reparse-symbol function_parameters) [30689 30697])
+                            ("val" variable nil (reparse-symbol function_parameters) [30699 30702]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [30669 32284])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32304 32308]))                          )
+                        (reparse-symbol indented_block_body) [32289 32651]))                  
+                :type "class")
+                nil [30576 32651])
+            ("StdExpOptionalPrinter" type
+               (:superclasses ("SingleObjContainerPrinter")
+                :members 
+                  ( ("\"Print a std::experimental::optional\"" code nil (reparse-symbol indented_block_body) [32712 32749])
+                    ("__init__" function
+                       (:suite 
+                          ( ("valtype" variable nil (reparse-symbol indented_block_body) [32799 32856])
+                            ("self" code nil (reparse-symbol indented_block_body) [32865 32924])
+                            ("self" variable nil (reparse-symbol indented_block_body) [32933 32947])
+                            ("None" code nil (reparse-symbol indented_block_body) [33023 33027])
+                            ("visualizer" variable nil (reparse-symbol indented_block_body) [33036 33091])
+                            ("super" code nil (reparse-symbol indented_block_body) [33100 33174]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32769 32773])
+                            ("typename" variable nil (reparse-symbol function_parameters) [32775 32783])
+                            ("val" variable nil (reparse-symbol function_parameters) [32785 32788]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [32755 33175])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33195 33199]))                          )
+                        (reparse-symbol indented_block_body) [33180 33462]))                  
+                :type "class")
+                nil [32652 33462])
+            ("StdExpStringViewPrinter" type
+               (:members 
+                  ( ("\"Print a std::experimental::basic_string_view\"" code nil (reparse-symbol indented_block_body) [33498 33544])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [33594 33608]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33564 33568])
+                            ("typename" variable nil (reparse-symbol function_parameters) [33570 33578])
+                            ("val" variable nil (reparse-symbol function_parameters) [33580 33583]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [33550 33609])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33629 33633]))                          )
+                        (reparse-symbol indented_block_body) [33614 33834])
+                    ("display_hint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33857 33861]))                          )
+                        (reparse-symbol indented_block_body) [33839 33888]))                  
+                :type "class")
+                nil [33463 33888])
+            ("StdExpPathPrinter" type
+               (:members 
+                  ( ("\"Print a std::experimental::filesystem::path\"" code nil (reparse-symbol indented_block_body) [33918 33963])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [34013 34027])
+                            ("start" variable nil (reparse-symbol indented_block_body) [34036 34087])
+                            ("finish" variable nil (reparse-symbol indented_block_body) [34096 34149])
+                            ("self" variable nil (reparse-symbol indented_block_body) [34158 34195]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33983 33987])
+                            ("typename" variable nil (reparse-symbol function_parameters) [33989 33997])
+                            ("val" variable nil (reparse-symbol function_parameters) [33999 34002]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [33969 34196])
+                    ("_path_type" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34216 34220]))                          )
+                        (reparse-symbol indented_block_body) [34201 34417])
+                    ("to_string" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34437 34441]))                          )
+                        (reparse-symbol indented_block_body) [34422 34664])
+                    ("_iterator" type
+                       (:superclasses ("Iterator")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [34743 34783])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [34796 34839])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [34852 34866]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [34717 34721])
+                                    ("cmpts" variable nil (reparse-symbol function_parameters) [34723 34728]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [34704 34867])
+                            ("__iter__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [34889 34893]))                                  )
+                                (reparse-symbol indented_block_body) [34876 34920])
+                            ("__next__" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [34942 34946]))                                  )
+                                (reparse-symbol indented_block_body) [34929 35372]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [34669 35372])
+                    ("children" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35390 35394]))                          )
+                        (reparse-symbol indented_block_body) [35377 35449]))                  
+                :type "class")
+                nil [33889 35449])
+            ("RxPrinter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [35628 35661])
+                            ("self" variable nil (reparse-symbol indented_block_body) [35670 35686])
+                            ("self" variable nil (reparse-symbol indented_block_body) [35695 35719])
+                            ("self" variable nil (reparse-symbol indented_block_body) [35728 35747]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35597 35601])
+                            ("name" variable nil (reparse-symbol function_parameters) [35603 35607])
+                            ("function" variable nil (reparse-symbol function_parameters) [35609 35617]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [35584 35748])
+                    ("invoke" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35764 35768])
+                            ("value" variable nil (reparse-symbol function_parameters) [35770 35775]))                          )
+                        (reparse-symbol indented_block_body) [35753 36032]))                  
+                :type "class")
+                nil [35555 36032])
+            ("Printer" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [36235 36266])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36275 36291])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36300 36321])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36330 36346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36355 36374])
+                            ("self" variable nil (reparse-symbol indented_block_body) [36383 36441]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36214 36218])
+                            ("name" variable nil (reparse-symbol function_parameters) [36220 36224]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [36201 36442])
+                    ("add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36455 36459])
+                            ("name" variable nil (reparse-symbol function_parameters) [36461 36465])
+                            ("function" variable nil (reparse-symbol function_parameters) [36467 36475]))                          )
+                        (reparse-symbol indented_block_body) [36447 36780])
+                    ("add_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [36858 36862])
+                            ("base" variable nil (reparse-symbol function_parameters) [36864 36868])
+                            ("name" variable nil (reparse-symbol function_parameters) [36870 36874])
+                            ("function" variable nil (reparse-symbol function_parameters) [36876 36884]))                          )
+                        (reparse-symbol indented_block_body) [36842 36977])
+                    ("add_container" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37059 37063])
+                            ("base" variable nil (reparse-symbol function_parameters) [37065 37069])
+                            ("name" variable nil (reparse-symbol function_parameters) [37071 37075])
+                            ("function" variable nil (reparse-symbol function_parameters) [37077 37085]))                          )
+                        (reparse-symbol indented_block_body) [37041 37198])
+                    ("get_basic_type" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("type" variable nil (reparse-symbol function_parameters) [37240 37244]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [37203 37519])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [37537 37541])
+                            ("val" variable nil (reparse-symbol function_parameters) [37543 37546]))                          )
+                        (reparse-symbol indented_block_body) [37524 38181]))                  
+                :type "class")
+                nil [36174 38181])
+            ("libstdcxx_printer" variable nil nil [38182 38206])
+            ("TemplateTypePrinter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("r\"\"\"A type printer for class templates.
+
+    Recognizes type names that match a regular expression.
+    Replaces them with a formatted string which can use replacement field
+    {N} to refer to the \\N subgroup of the regex match.
+    Type printers are recusively applied to the subgroups.
+
+    This allows recognizing e.g. \"std::vector<(.*), std::allocator<\\\\1> >\"
+    and replacing it with \"std::vector<{1}>\", omitting the template argument
+    that uses the default type.
+    \"\"\"" code nil (reparse-symbol indented_block_body) [38247 38728])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [38784 38800])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38809 38843])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38852 38870])
+                            ("self" variable nil (reparse-symbol indented_block_body) [38879 38898]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [38747 38751])
+                            ("name" variable nil (reparse-symbol function_parameters) [38753 38757])
+                            ("pattern" variable nil (reparse-symbol function_parameters) [38759 38766])
+                            ("subst" variable nil (reparse-symbol function_parameters) [38768 38773]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [38734 38899])
+                    ("_recognizer" type
+                       (:superclasses ("object")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [38987 39009])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [39022 39040])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [39053 39073]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [38952 38956])
+                                    ("pattern" variable nil (reparse-symbol function_parameters) [38958 38965])
+                                    ("subst" variable nil (reparse-symbol function_parameters) [38967 38972]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [38939 39074])
+                            ("recognize" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [39097 39101])
+                                    ("type_obj" variable nil (reparse-symbol function_parameters) [39103 39111]))                                  )
+                                (reparse-symbol indented_block_body) [39083 39812]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [38904 39812])
+                    ("instantiate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39833 39837]))                          )
+                        (reparse-symbol indented_block_body) [39817 39898]))                  
+                :type "class")
+                nil [38208 39898])
+            ("add_one_template_type_printer" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [39933 39936])
+                ("name" variable nil (reparse-symbol function_parameters) [39938 39942])
+                ("match" variable nil (reparse-symbol function_parameters) [39944 39949])
+                ("subst" variable nil (reparse-symbol function_parameters) [39951 39956]))              ) nil [39899 40090])
+            ("FilteringTypePrinter" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [40172 40190])
+                            ("self" variable nil (reparse-symbol indented_block_body) [40199 40215])
+                            ("self" variable nil (reparse-symbol indented_block_body) [40224 40243]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40144 40148])
+                            ("match" variable nil (reparse-symbol function_parameters) [40150 40155])
+                            ("name" variable nil (reparse-symbol function_parameters) [40157 40161]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [40131 40244])
+                    ("_recognizer" type
+                       (:superclasses ("object")
+                        :members 
+                          ( ("__init__" function
+                               (:suite 
+                                  ( ("self" variable nil (reparse-symbol indented_block_body) [40329 40347])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [40360 40376])
+                                    ("self" variable nil (reparse-symbol indented_block_body) [40389 40409]))                                  
+                                :parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [40297 40301])
+                                    ("match" variable nil (reparse-symbol function_parameters) [40303 40308])
+                                    ("name" variable nil (reparse-symbol function_parameters) [40310 40314]))                                  
+                                :constructor-flag t)
+                                (reparse-symbol indented_block_body) [40284 40410])
+                            ("recognize" function
+                               (:parent "dummy"
+                                :arguments 
+                                  ( ("self" variable nil (reparse-symbol function_parameters) [40433 40437])
+                                    ("type_obj" variable nil (reparse-symbol function_parameters) [40439 40447]))                                  )
+                                (reparse-symbol indented_block_body) [40419 40929]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [40249 40929])
+                    ("instantiate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40950 40954]))                          )
+                        (reparse-symbol indented_block_body) [40934 41012]))                  
+                :type "class")
+                nil [40091 41012])
+            ("add_one_type_printer" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [41038 41041])
+                ("match" variable nil (reparse-symbol function_parameters) [41043 41048])
+                ("name" variable nil (reparse-symbol function_parameters) [41050 41054]))              ) nil [41013 41165])
+            ("register_type_printers" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [41193 41196]))              ) nil [41166 46955])
+            ("register_libstdcxx_printers" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [46989 46992]))              ) nil [46956 47340])
+            ("build_libstdcxx_dictionary" function nil nil [47341 55106])
+            ("build_libstdcxx_dictionary" code nil nil [55107 55136]))          
+      :file "printers.py"
+      :pointmax 55137
+      :fsize 55136
+      :lastmodtime '(22135 3299 486032 133000)
+      :unmatched-syntax '((NAME 32956 . 32971) (IF 32992 . 32994) (ELSE 33018 . 33022))))
+  :file "!home!seshu!.gdb!python!libstdcxx!v6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

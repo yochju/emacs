@@ -1,0 +1,233 @@
+;; Object Nonlinear Systems/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Nonlinear Systems/"
+  :tables
+  (list
+
+    (semanticdb-table "link_systems.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("vector" include (:system-flag t) nil [1 18])
+            ("cmath" include (:system-flag t) nil [19 35])
+            ("newton_systems.hpp" include nil nil [36 65])
+            ("radians.hpp" include nil nil [66 88])
+            ("r1" variable
+               (:default-value "10.0"
+                :type "double")
+                nil [107 124])
+            ("r2" variable
+               (:default-value "6.0"
+                :type "double")
+                nil [142 158])
+            ("r3" variable
+               (:default-value "8.0"
+                :type "double")
+                nil [176 192])
+            ("r4" variable
+               (:default-value "4.0"
+                :type "double")
+                nil [210 226])
+            ("theta_4" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "deg_to_rad<double>(220.0)"
+                :type "double")
+                nil [227 283])
+            ("Systems_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [369 376])
+                    ("Systems_Link" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_guesses" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("R" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [392 418])
+                            ("e" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("R" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [419 431]))                          
+                        :type ("Systems_Link" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [379 495])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [512 525]))                          
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("R" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [500 684])
+                    ("df" function
+                       (:arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [746 759]))                          
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [725 896]))                  
+                :superclasses 
+                  ( ("NonlinearSystems::NewtonSystems" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [285 900])
+            ("main" function (:type "int") nil [902 1276]))          
+      :file "link_systems.cpp"
+      :pointmax 1278
+      :fsize 1277
+      :lastmodtime '(22108 60774 500307 884000)
+      :unmatched-syntax nil)
+
+
+    (semanticdb-table "link.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("cmath" include (:system-flag t) nil [21 37])
+            ("radians.hpp" include nil nil [38 60])
+            ("iterative.hpp" include nil nil [61 85])
+            ("newton.hpp" include nil nil [86 107])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [109 125])
+            ("Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [159 169])
+                    ("alpha" variable
+                       (:constant-flag t
+                        :default-value "deg_to_rad<R>(40.0)"
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [172 208])
+                    ("public" label nil (reparse-symbol classsubparts) [209 216])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [223 227]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [219 319]))                  )
+                nil [127 322])
+            ("Iterative_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [421 428])
+                    ("Iterative" function
+                       (:template-specifier 
+                          ( ("R" type nil nil nil))                          
+                        :parent "NonlinearSystems"
+                        :arguments 
+                          ( ("" variable (:type ("a" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [494 496])
+                            ("" variable (:type ("b" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 499])
+                            ("" variable (:type ("e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [500 502]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [463 505])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [513 517]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [509 549]))                  
+                :superclasses 
+                  ( ("Link" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("NonlinearSystems::Iterative" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [324 552])
+            ("Newton_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [645 652])
+                    ("Newton" function
+                       (:template-specifier 
+                          ( ("R" type nil nil nil))                          
+                        :parent "NonlinearSystems"
+                        :arguments 
+                          ( ("" variable (:type ("initial_guess" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [719 733])
+                            ("" variable (:type ("e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [734 736]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [691 739])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [747 751]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [743 783])
+                    ("df" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [791 795]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [786 851]))                  
+                :superclasses 
+                  ( ("Link" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("NonlinearSystems::Newton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [554 854])
+            ("main" function (:type "int") nil [856 1384]))          
+      :file "link.cpp"
+      :pointmax 1385
+      :fsize 1384
+      :lastmodtime '(22108 60768 676988 145000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("link" "link_systems")) nil [104 127])
+            ("link_systems" function (:arguments ("link_systems.o")) nil [128 207])
+            ("link_systems.o" function (:arguments ("link_systems.cpp" "newton_systems.hpp")) nil [208 300])
+            ("link" function (:arguments ("link.o")) nil [301 348])
+            ("link.o" function (:arguments ("link.cpp" "iterative.hpp" "newton.hpp")) nil [349 423])
+            ("clean" function nil nil [424 463]))          
+      :file "Makefile"
+      :pointmax 463
+      :fsize 462
+      :lastmodtime '(22108 60762 7003 739000)
+      :unmatched-syntax nil)
+    (semanticdb-table "newton_systems.hpp"
+      :file "newton_systems.hpp"
+      :fsize 1467
+      :lastmodtime '(22105 44994 685581 54000))
+    (semanticdb-table "iterative.hpp"
+      :file "iterative.hpp"
+      :fsize 1496
+      :lastmodtime '(22098 20784 72067 316000))
+    (semanticdb-table "newton.hpp"
+      :file "newton.hpp"
+      :fsize 733
+      :lastmodtime '(22098 20733 922141 316000)))
+  :file "!home!seshu!dev!NumericalMethods!Nonlinear Systems!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

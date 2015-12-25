@@ -1,0 +1,9 @@
+;; Object emacs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs/"
+  :tables
+  (list
+)
+  :file "!home!seshu!.oh-my-zsh!plugins!emacs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

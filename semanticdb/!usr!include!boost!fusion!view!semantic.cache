@@ -1,0 +1,23 @@
+;; Object view/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "view/"
+  :tables
+  (list
+    (semanticdb-table "iterator_range.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_SEQUENCE_VIEW_ITERATOR_RANGE_10022005_0610" variable (:constant-flag t) nil [434 483])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [485 527])
+            ("boost/fusion/view/iterator_range/iterator_range.hpp" include (:system-flag t) nil [528 590]))          
+      :file "iterator_range.hpp"
+      :pointmax 599
+      :fsize 598
+      :lastmodtime '(22070 2373 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_SEQUENCE_VIEW_ITERATOR_RANGE_10022005_0610")
+          )
+))
+  :file "!usr!include!boost!fusion!view!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

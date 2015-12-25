@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/dev/NumericalMethods/" "~/dev/armanpy3/" "~/dev/test/" "~/.gdb/python/" "~/.oh-my-zsh/" "~/.emacs.d/elpa/swiper-0.7.0/" "~/dev/numpy/" "~/dev/swig/" "~/rtags/" "~/Documents/resume/tex/" "~/dev/ex/" "~/dev/armanpy-0.1.4/" "~/Downloads/armanpy-0.1.4/" "~/dev/cython/" "~/dev/rectangle/" "~/dev/euler/")

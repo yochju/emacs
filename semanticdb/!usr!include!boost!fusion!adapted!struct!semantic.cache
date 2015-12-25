@@ -1,0 +1,91 @@
+;; Object struct/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "struct/"
+  :tables
+  (list
+    (semanticdb-table "adapt_struct.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ADAPTED_STRUCT_ADAPT_STRUCT_HPP" variable (:constant-flag t) nil [511 555])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [557 599])
+            ("boost/preprocessor/config/config.hpp" include (:system-flag t) nil [600 647])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [648 685])
+            ("boost/preprocessor/empty.hpp" include (:system-flag t) nil [686 725])
+            ("boost/preprocessor/control/if.hpp" include (:system-flag t) nil [726 770])
+            ("boost/preprocessor/comparison/less.hpp" include (:system-flag t) nil [771 820])
+            ("boost/preprocessor/comparison/equal.hpp" include (:system-flag t) nil [821 871])
+            ("boost/preprocessor/seq/seq.hpp" include (:system-flag t) nil [872 913])
+            ("boost/preprocessor/variadic/to_seq.hpp" include (:system-flag t) nil [914 963])
+            ("boost/type_traits/add_reference.hpp" include (:system-flag t) nil [964 1010])
+            ("boost/type_traits/is_const.hpp" include (:system-flag t) nil [1011 1052])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [1053 1095])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [1096 1141])
+            ("boost/fusion/adapted/struct/detail/extension.hpp" include (:system-flag t) nil [1143 1202])
+            ("boost/fusion/adapted/struct/detail/adapt_base.hpp" include (:system-flag t) nil [1203 1263])
+            ("boost/fusion/adapted/struct/detail/adapt_base_attr_filler.hpp" include (:system-flag t) nil [1264 1336])
+            ("boost/fusion/adapted/struct/detail/at_impl.hpp" include (:system-flag t) nil [1337 1394])
+            ("boost/fusion/adapted/struct/detail/is_view_impl.hpp" include (:system-flag t) nil [1395 1457])
+            ("boost/fusion/adapted/struct/detail/is_sequence_impl.hpp" include (:system-flag t) nil [1458 1524])
+            ("boost/fusion/adapted/struct/detail/value_at_impl.hpp" include (:system-flag t) nil [1525 1588])
+            ("boost/fusion/adapted/struct/detail/category_of_impl.hpp" include (:system-flag t) nil [1589 1655])
+            ("boost/fusion/adapted/struct/detail/size_impl.hpp" include (:system-flag t) nil [1656 1715])
+            ("boost/fusion/adapted/struct/detail/begin_impl.hpp" include (:system-flag t) nil [1716 1776])
+            ("boost/fusion/adapted/struct/detail/end_impl.hpp" include (:system-flag t) nil [1777 1835])
+            ("boost/fusion/adapted/struct/detail/value_of_impl.hpp" include (:system-flag t) nil [1836 1899])
+            ("boost/fusion/adapted/struct/detail/deref_impl.hpp" include (:system-flag t) nil [1900 1960])
+            ("BOOST_FUSION_ADAPT_STRUCT_C" variable (:constant-flag t) nil [1970 1997])
+            ("BOOST_FUSION_ADAPT_TPL_STRUCT" variable (:constant-flag t) nil [5222 5251])
+            ("BOOST_FUSION_ADAPT_STRUCT" variable (:constant-flag t) nil [6002 6027])
+            ("BOOST_FUSION_ADAPT_STRUCT_AS_VIEW" variable (:constant-flag t) nil [6782 6815]))          
+      :file "adapt_struct.hpp"
+      :pointmax 7589
+      :fsize 7588
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_FUSION_ADAPT_STRUCT" (spp-arg-list ("NAME" "ATTRIBUTES") 6027 . 6045) . ((symbol "BOOST_FUSION_ADAPT_STRUCT_BASE" 6081 . 6111) (semantic-list "(                                         \\
+            (0),                                                                \\
+            (0)(NAME),                                                          \\
+            struct_tag,                                                         \\
+            0,                                                                  \\
+            BOOST_PP_CAT(                                                       \\
+                BOOST_FUSION_ADAPT_STRUCT_FILLER_0(0,0)ATTRIBUTES,              \\
+                _END),                                                          \\
+            BOOST_FUSION_ADAPT_STRUCT_C)" 6111 . 6769)))
+          ("BOOST_FUSION_ADAPT_STRUCT_AS_VIEW" (spp-arg-list ("NAME" "ATTRIBUTES") 6815 . 6833) . ((symbol "BOOST_FUSION_ADAPT_STRUCT_BASE" 6861 . 6891) (semantic-list "(                                         \\
+            (0),                                                                \\
+            (0)(NAME),                                                          \\
+            struct_tag,                                                         \\
+            1,                                                                  \\
+            BOOST_PP_CAT(                                                       \\
+                BOOST_FUSION_ADAPT_STRUCT_FILLER_0(0,0)ATTRIBUTES,              \\
+                _END),                                                          \\
+            BOOST_FUSION_ADAPT_STRUCT_C)" 6891 . 7549)))
+          ("BOOST_FUSION_ADAPT_STRUCT_C" (spp-arg-list ("\\
+" "TEMPLATE_PARAMS_SEQ" "NAME_SEQ" "IS_VIEW" "I" "ATTRIBUTE") 1997 . 2101) . ((symbol "BOOST_FUSION_ADAPT_STRUCT_C_BASE" 2134 . 2166) (semantic-list "(                                       \\
+            TEMPLATE_PARAMS_SEQ,                                                \\
+            NAME_SEQ,                                                           \\
+            IS_VIEW,                                                            \\
+            I,                                                                  \\
+            BOOST_PP_IF(IS_VIEW, BOOST_FUSION_PROXY_PREFIX, BOOST_PP_EMPTY),    \\
+            BOOST_FUSION_ADAPT_STRUCT_WRAPPEDATTR(ATTRIBUTE),                   \\
+            BOOST_FUSION_ADAPT_STRUCT_WRAPPEDATTR_SIZE(ATTRIBUTE),              \\
+            BOOST_PP_IF(                                                        \\
+                BOOST_PP_LESS(                                                  \\
+                    BOOST_FUSION_ADAPT_STRUCT_WRAPPEDATTR_SIZE(ATTRIBUTE), 2)   \\
+                , 1, 0))" 2166 . 3052)))
+          ("BOOST_FUSION_ADAPT_TPL_STRUCT" (spp-arg-list ("\\
+" "TEMPLATE_PARAMS_SEQ" "NAME_SEQ" "ATTRIBUTES") 5251 . 5342) . ((symbol "BOOST_FUSION_ADAPT_STRUCT_BASE" 5383 . 5413) (semantic-list "(                                         \\
+            (1)TEMPLATE_PARAMS_SEQ,                                             \\
+            (1)NAME_SEQ,                                                        \\
+            struct_tag,                                                         \\
+            0,                                                                  \\
+            BOOST_PP_CAT(                                                       \\
+                BOOST_FUSION_ADAPT_STRUCT_FILLER_0(0,0)ATTRIBUTES,_END),        \\
+            BOOST_FUSION_ADAPT_STRUCT_C)" 5413 . 5989)))
+          ("BOOST_FUSION_ADAPTED_STRUCT_ADAPT_STRUCT_HPP")
+          )
+))
+  :file "!usr!include!boost!fusion!adapted!struct!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

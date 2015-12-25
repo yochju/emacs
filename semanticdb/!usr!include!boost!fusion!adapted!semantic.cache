@@ -1,0 +1,24 @@
+;; Object adapted/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adapted/"
+  :tables
+  (list
+    (semanticdb-table "std_pair.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_ADAPTED_STD_PAIR_HPP" variable (:constant-flag t) nil [500 533])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [535 577])
+            ("boost/fusion/adapted/struct/adapt_struct.hpp" include (:system-flag t) nil [578 633])
+            ("utility" include (:system-flag t) nil [634 652]))          
+      :file "std_pair.hpp"
+      :pointmax 751
+      :fsize 750
+      :lastmodtime '(22070 2373 0 0)
+      :unmatched-syntax '((semantic-list 683 . 742) (symbol 654 . 683) (semantic-list 729 . 741) (semantic-list 718 . 729) (semantic-list 713 . 717) (semantic-list 709 . 713) (semantic-list 698 . 709) (semantic-list 693 . 697) (semantic-list 689 . 693))
+      :lexical-table 
+        '(("BOOST_FUSION_ADAPTED_STD_PAIR_HPP")
+          )
+))
+  :file "!usr!include!boost!fusion!adapted!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

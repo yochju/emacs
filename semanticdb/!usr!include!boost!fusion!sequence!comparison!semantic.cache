@@ -1,0 +1,430 @@
+;; Object comparison/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "comparison/"
+  :tables
+  (list
+    (semanticdb-table "equal_to.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_EQUAL_TO_05052005_0431" variable (:constant-flag t) nil [454 483])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [485 527])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [528 580])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [581 631])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [632 683])
+            ("boost/fusion/sequence/comparison/detail/equal_to.hpp" include (:system-flag t) nil [684 747])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [748 813])
+            ("boost/config.hpp" include (:system-flag t) nil [814 841])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("equal_to" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1122 1136])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1137 1151]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1097 1448])
+                            ("operators" type
+                               (:members 
+                                  ( ("==" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1743 1757])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1758 1772]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1585 1835]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1454 1841]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [985 1876]))                  
+                :type "namespace")
+                nil [967 1877]))          
+      :file "equal_to.hpp"
+      :pointmax 1942
+      :fsize 1941
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1873 . 1874) (punctuation 1872 . 1873) (punctuation 1871 . 1872) (OPERATOR 1863 . 1871) (punctuation 1862 . 1863) (punctuation 1861 . 1862) (symbol 1852 . 1861) (USING 1846 . 1851) (symbol 1552 . 1576) (symbol 1536 . 1551) (punctuation 1526 . 1527) (symbol 1522 . 1526) (TYPENAME 1513 . 1521) (punctuation 1511 . 1512) (symbol 1507 . 1511) (TYPENAME 1498 . 1506) (punctuation 1497 . 1498) (TEMPLATE 1488 . 1496) (symbol 1068 . 1092) (symbol 1052 . 1067) (punctuation 1046 . 1047) (symbol 1042 . 1046) (TYPENAME 1033 . 1041) (punctuation 1031 . 1032) (symbol 1027 . 1031) (TYPENAME 1018 . 1026) (punctuation 1017 . 1018) (TEMPLATE 1008 . 1016))
+      :lexical-table 
+        '(("FUSION_EQUAL_TO_05052005_0431")
+          )
+)
+    (semanticdb-table "greater.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_GREATER_05052005_0432" variable (:constant-flag t) nil [453 481])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [483 525])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [526 578])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [579 629])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [630 681])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [682 747])
+            ("boost/fusion/sequence/comparison/less.hpp" include (:system-flag t) nil [860 912])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("greater" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1075 1089])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1090 1104]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1051 1315])
+                            ("operators" type
+                               (:members 
+                                  ( (">" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1611 1625])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1626 1640]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1452 1702]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1321 1708]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [939 1742]))                  
+                :type "namespace")
+                nil [921 1743]))          
+      :file "greater.hpp"
+      :pointmax 1752
+      :fsize 1751
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1739 . 1740) (punctuation 1738 . 1739) (OPERATOR 1730 . 1738) (punctuation 1729 . 1730) (punctuation 1728 . 1729) (symbol 1719 . 1728) (USING 1713 . 1718) (symbol 1419 . 1443) (symbol 1403 . 1418) (punctuation 1393 . 1394) (symbol 1389 . 1393) (TYPENAME 1380 . 1388) (punctuation 1378 . 1379) (symbol 1374 . 1378) (TYPENAME 1365 . 1373) (punctuation 1364 . 1365) (TEMPLATE 1355 . 1363) (symbol 1022 . 1046) (symbol 1006 . 1021) (punctuation 1000 . 1001) (symbol 996 . 1000) (TYPENAME 987 . 995) (punctuation 985 . 986) (symbol 981 . 985) (TYPENAME 972 . 980) (punctuation 971 . 972) (TEMPLATE 962 . 970))
+      :lexical-table 
+        '(("FUSION_GREATER_05052005_0432")
+          )
+)
+    (semanticdb-table "greater_equal.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_GREATER_EQUAL_05052005_0432" variable (:constant-flag t) nil [459 493])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [495 537])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [538 590])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [591 641])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [642 693])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [694 759])
+            ("boost/fusion/sequence/comparison/less.hpp" include (:system-flag t) nil [878 930])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("greater_equal" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1099 1113])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1114 1128]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1069 1346])
+                            ("operators" type
+                               (:members 
+                                  ( (">=" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1643 1657])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1658 1672]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1483 1740]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1352 1746]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [957 1781]))                  
+                :type "namespace")
+                nil [939 1782]))          
+      :file "greater_equal.hpp"
+      :pointmax 1791
+      :fsize 1790
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1778 . 1779) (punctuation 1777 . 1778) (punctuation 1776 . 1777) (OPERATOR 1768 . 1776) (punctuation 1767 . 1768) (punctuation 1766 . 1767) (symbol 1757 . 1766) (USING 1751 . 1756) (symbol 1450 . 1474) (symbol 1434 . 1449) (punctuation 1424 . 1425) (symbol 1420 . 1424) (TYPENAME 1411 . 1419) (punctuation 1409 . 1410) (symbol 1405 . 1409) (TYPENAME 1396 . 1404) (punctuation 1395 . 1396) (TEMPLATE 1386 . 1394) (symbol 1040 . 1064) (symbol 1024 . 1039) (punctuation 1018 . 1019) (symbol 1014 . 1018) (TYPENAME 1005 . 1013) (punctuation 1003 . 1004) (symbol 999 . 1003) (TYPENAME 990 . 998) (punctuation 989 . 990) (TEMPLATE 980 . 988))
+      :lexical-table 
+        '(("FUSION_GREATER_EQUAL_05052005_0432")
+          )
+)
+    (semanticdb-table "less.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_LESS_05052005_0432" variable (:constant-flag t) nil [450 475])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [477 519])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [520 572])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [573 623])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [624 675])
+            ("boost/fusion/sequence/comparison/detail/less.hpp" include (:system-flag t) nil [676 735])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [736 801])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("less" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [954 968])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [969 983]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [933 1112])
+                            ("operators" type
+                               (:members 
+                                  ( ("<" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1408 1422])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1423 1437]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1249 1496]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1118 1502]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [821 1536]))                  
+                :type "namespace")
+                nil [803 1537]))          
+      :file "less.hpp"
+      :pointmax 1546
+      :fsize 1545
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1533 . 1534) (punctuation 1532 . 1533) (OPERATOR 1524 . 1532) (punctuation 1523 . 1524) (punctuation 1522 . 1523) (symbol 1513 . 1522) (USING 1507 . 1512) (symbol 1216 . 1240) (symbol 1200 . 1215) (punctuation 1190 . 1191) (symbol 1186 . 1190) (TYPENAME 1177 . 1185) (punctuation 1175 . 1176) (symbol 1171 . 1175) (TYPENAME 1162 . 1170) (punctuation 1161 . 1162) (TEMPLATE 1152 . 1160) (symbol 904 . 928) (symbol 888 . 903) (punctuation 882 . 883) (symbol 878 . 882) (TYPENAME 869 . 877) (punctuation 867 . 868) (symbol 863 . 867) (TYPENAME 854 . 862) (punctuation 853 . 854) (TEMPLATE 844 . 852))
+      :lexical-table 
+        '(("FUSION_LESS_05052005_0432")
+          )
+)
+    (semanticdb-table "less_equal.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_LESS_EQUAL_05052005_0432" variable (:constant-flag t) nil [456 487])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [489 531])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [532 584])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [585 635])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [636 687])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [688 753])
+            ("boost/fusion/sequence/comparison/less.hpp" include (:system-flag t) nil [869 921])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("less_equal" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1087 1101])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1102 1116]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1060 1331])
+                            ("operators" type
+                               (:members 
+                                  ( ("<=" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1628 1642])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1643 1657]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1468 1722]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1337 1728]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [948 1763]))                  
+                :type "namespace")
+                nil [930 1764]))          
+      :file "less_equal.hpp"
+      :pointmax 1773
+      :fsize 1772
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1760 . 1761) (punctuation 1759 . 1760) (punctuation 1758 . 1759) (OPERATOR 1750 . 1758) (punctuation 1749 . 1750) (punctuation 1748 . 1749) (symbol 1739 . 1748) (USING 1733 . 1738) (symbol 1435 . 1459) (symbol 1419 . 1434) (punctuation 1409 . 1410) (symbol 1405 . 1409) (TYPENAME 1396 . 1404) (punctuation 1394 . 1395) (symbol 1390 . 1394) (TYPENAME 1381 . 1389) (punctuation 1380 . 1381) (TEMPLATE 1371 . 1379) (symbol 1031 . 1055) (symbol 1015 . 1030) (punctuation 1009 . 1010) (symbol 1005 . 1009) (TYPENAME 996 . 1004) (punctuation 994 . 995) (symbol 990 . 994) (TYPENAME 981 . 989) (punctuation 980 . 981) (TEMPLATE 971 . 979))
+      :lexical-table 
+        '(("FUSION_LESS_EQUAL_05052005_0432")
+          )
+)
+    (semanticdb-table "not_equal_to.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_NOT_EQUAL_TO_05052005_0431" variable (:constant-flag t) nil [458 491])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [493 535])
+            ("boost/fusion/sequence/intrinsic/begin.hpp" include (:system-flag t) nil [536 588])
+            ("boost/fusion/sequence/intrinsic/end.hpp" include (:system-flag t) nil [589 639])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [640 691])
+            ("boost/fusion/sequence/comparison/enable_comparison.hpp" include (:system-flag t) nil [692 757])
+            ("boost/fusion/sequence/comparison/equal_to.hpp" include (:system-flag t) nil [875 931])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("not_equal_to" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1099 1113])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Seq2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1114 1128]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1070 1510])
+                            ("operators" type
+                               (:members 
+                                  ( ("!=" function
+                                       (:operator-flag t
+                                        :typemodifiers ("inline" "typename")
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq1" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1805 1819])
+                                            ("b" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Seq2" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1820 1834]))                                          
+                                        :type ("boost::enable_if::type" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [1647 1901]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1516 1907]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [958 1942]))                  
+                :type "namespace")
+                nil [940 1943]))          
+      :file "not_equal_to.hpp"
+      :pointmax 1952
+      :fsize 1951
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1939 . 1940) (punctuation 1938 . 1939) (punctuation 1937 . 1938) (OPERATOR 1929 . 1937) (punctuation 1928 . 1929) (punctuation 1927 . 1928) (symbol 1918 . 1927) (USING 1912 . 1917) (symbol 1614 . 1638) (symbol 1598 . 1613) (punctuation 1588 . 1589) (symbol 1584 . 1588) (TYPENAME 1575 . 1583) (punctuation 1573 . 1574) (symbol 1569 . 1573) (TYPENAME 1560 . 1568) (punctuation 1559 . 1560) (TEMPLATE 1550 . 1558) (symbol 1041 . 1065) (symbol 1025 . 1040) (punctuation 1019 . 1020) (symbol 1015 . 1019) (TYPENAME 1006 . 1014) (punctuation 1004 . 1005) (symbol 1000 . 1004) (TYPENAME 991 . 999) (punctuation 990 . 991) (TEMPLATE 981 . 989))
+      :lexical-table 
+        '(("FUSION_NOT_EQUAL_TO_05052005_0431")
+          )
+)
+    (semanticdb-table "enable_comparison.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_ENABLE_COMPARISON_09232005_1958" variable (:constant-flag t) nil [422 460])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [462 504])
+            ("boost/mpl/or.hpp" include (:system-flag t) nil [505 532])
+            ("boost/mpl/and.hpp" include (:system-flag t) nil [533 561])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [562 590])
+            ("boost/mpl/equal_to.hpp" include (:system-flag t) nil [591 624])
+            ("boost/fusion/support/sequence_base.hpp" include (:system-flag t) nil [625 674])
+            ("boost/fusion/support/is_sequence.hpp" include (:system-flag t) nil [675 722])
+            ("boost/fusion/sequence/intrinsic/size.hpp" include (:system-flag t) nil [723 774])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("traits" type
+                               (:members 
+                                  ( ("enable_equality" type
+                                       (:superclasses 
+                                          ( ("mpl::or_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [904 1008])
+                                    ("enable_comparison" type
+                                       (:superclasses 
+                                          ( ("mpl::and_" type
+                                               (:protection "unspecified"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :type "struct")
+                                        (reparse-symbol namespacesubparts) [1082 1294]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [813 1296]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [794 1297]))                  
+                :type "namespace")
+                nil [776 1298]))          
+      :file "enable_comparison.hpp"
+      :pointmax 1307
+      :fsize 1306
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 1076 . 1077) (VOID 1072 . 1076) (punctuation 1070 . 1071) (symbol 1063 . 1069) (TYPENAME 1054 . 1062) (punctuation 1052 . 1053) (symbol 1048 . 1052) (TYPENAME 1039 . 1047) (punctuation 1037 . 1038) (symbol 1033 . 1037) (TYPENAME 1024 . 1032) (punctuation 1023 . 1024) (TEMPLATE 1014 . 1022) (punctuation 898 . 899) (VOID 894 . 898) (punctuation 892 . 893) (symbol 885 . 891) (TYPENAME 876 . 884) (punctuation 874 . 875) (symbol 870 . 874) (TYPENAME 861 . 869) (punctuation 859 . 860) (symbol 855 . 859) (TYPENAME 846 . 854) (punctuation 845 . 846) (TEMPLATE 836 . 844))
+      :lexical-table 
+        '(("FUSION_ENABLE_COMPARISON_09232005_1958")
+          )
+))
+  :file "!usr!include!boost!fusion!sequence!comparison!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,84 @@
+;; Object Differentiation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Differentiation/"
+  :tables
+  (list
+
+
+    (semanticdb-table "direct_fit.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DIFFERENTIATION_DIRECT_FIT_H" variable (:constant-flag t) nil [46 74])
+            ("cmath" include (:system-flag t) nil [76 92])
+            ("vector" include (:system-flag t) nil [93 110])
+            ("functional" include (:system-flag t) nil [111 132])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [134 152])
+            ("std::function" using (:type ("std::function" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [153 173])
+            ("Differentiation" type
+               (:members 
+                  ( ("DirectFit" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [246 254])
+                            ("coeffs" variable (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [259 276])
+                            ("public" label nil (reparse-symbol classsubparts) [279 286])
+                            ("DirectFit" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("coeffs" variable
+                                       (:constant-flag t
+                                        :type ("vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [299 322]))                                  
+                                :type ("DirectFit" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [289 342])
+                            ("compute_coeffs" function (:type ("vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [349 537])
+                            ("differentiate" function (:type "int") (reparse-symbol classsubparts) [560 862]))                          )
+                        (reparse-symbol namespacesubparts) [205 869]))                  
+                :type "namespace")
+                nil [175 871]))          
+      :file "direct_fit.hpp"
+      :pointmax 880
+      :fsize 879
+      :lastmodtime '(22141 19224 564049 428000)
+      :unmatched-syntax '((punctuation 862 . 863) (punctuation 558 . 559) (semantic-list 555 . 558) (symbol 553 . 554) (punctuation 552 . 553) (symbol 544 . 552) (punctuation 537 . 538) (punctuation 342 . 343) (punctuation 537 . 538))
+      :lexical-table 
+        '(("DIFFERENTIATION_DIRECT_FIT_H")
+          )
+)
+    (semanticdb-table "lagrange.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("DIFFERENTIATION_LAGRANGE_H" variable (:constant-flag t) nil [44 70])
+            ("Differentiation" type (:type "namespace") nil [72 170]))          
+      :file "lagrange.hpp"
+      :pointmax 179
+      :fsize 178
+      :lastmodtime '(22141 19226 680710 584000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DIFFERENTIATION_LAGRANGE_H")
+          )
+))
+  :file "!home!seshu!dev!NumericalMethods!Differentiation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,35 @@
+;; Object BioSwarmCPP/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "BioSwarmCPP/"
+  :tables
+  (list
+    (semanticdb-table "Scene.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SCENE_H" variable (:constant-flag t) nil [25 32]))          
+      :file "Scene.h"
+      :pointmax 131
+      :fsize 149
+      :lastmodtime '(22021 59192 99758 671000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SCENE_H")
+          )
+)
+    (semanticdb-table "ActorGroup.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ACTORGROUP_H" variable (:constant-flag t) nil [30 42])
+            ("vector" include (:system-flag t) nil [44 61])
+            ("memory" include (:system-flag t) nil [62 79])
+            ("Scene.h" include nil nil [80 98]))          
+      :file "ActorGroup.h"
+      :pointmax 210
+      :unmatched-syntax '((semantic-list 117 . 202) (symbol 106 . 116) (CLASS 100 . 105) (semantic-list 99 . 160) (symbol 88 . 98) (CLASS 82 . 87) (symbol 157 . 158) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (symbol 157 . 158) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (semantic-list 99 . 159) (symbol 88 . 98) (CLASS 82 . 87) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (semantic-list 99 . 160) (symbol 88 . 98) (CLASS 82 . 87) (punctuation 157 . 158) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (punctuation 157 . 158) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (semantic-list 99 . 159) (symbol 88 . 98) (CLASS 82 . 87) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (punctuation 156 . 157) (punctuation 155 . 156) (symbol 152 . 155) (semantic-list 99 . 133) (symbol 88 . 98) (CLASS 82 . 87) (symbol 130 . 131) (punctuation 129 . 130) (punctuation 128 . 129) (symbol 125 . 128) (symbol 130 . 131) (punctuation 129 . 130) (punctuation 128 . 129) (symbol 125 . 128) (semantic-list 99 . 132) (symbol 88 . 98) (CLASS 82 . 87) (punctuation 129 . 130) (punctuation 128 . 129) (symbol 125 . 128) (punctuation 129 . 130) (punctuation 128 . 129) (symbol 125 . 128))
+      :lexical-table 
+        '(("ACTORGROUP_H")
+          )
+))
+  :file "!home!seshu!dev!BioSwarmCPP!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

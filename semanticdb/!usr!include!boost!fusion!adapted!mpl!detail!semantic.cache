@@ -1,0 +1,140 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables
+  (list
+    (semanticdb-table "begin_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_BEGIN_IMPL_31122005_1209" variable (:constant-flag t) nil [462 499])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [501 543])
+            ("boost/fusion/adapted/mpl/mpl_iterator.hpp" include (:system-flag t) nil [544 596])
+            ("boost/mpl/begin.hpp" include (:system-flag t) nil [597 627])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [628 673])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("mpl_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [721 745])
+                            ("extension" type
+                               (:members 
+                                  ( ("begin_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [785 835])
+                                    ("begin_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("iterator" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1114 1128])
+                                                    ("type" type
+                                                       (:typedef ("mpl_iterator" type
+                                                             (:template-specifier 
+                                                                ( ("iterator" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1145 1181])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("" variable (:type ("Sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1305 1314]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1272 1385]))                                                  )
+                                                (reparse-symbol classsubparts) [923 1400]))                                          
+                                        :template-specifier 
+                                          ( ("mpl_sequence_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [845 1411]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [751 1417]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [693 1419]))                  
+                :type "namespace")
+                nil [675 1420]))          
+      :file "begin_impl.hpp"
+      :pointmax 1429
+      :fsize 1428
+      :lastmodtime '(22070 2375 0 0)
+      :unmatched-syntax '((symbol 1231 . 1255) (symbol 1215 . 1230) (punctuation 1113 . 1114) (punctuation 1112 . 1113) (punctuation 1111 . 1112) (symbol 1090 . 1094) (punctuation 1089 . 1090) (punctuation 1088 . 1089) (punctuation 1087 . 1088) (symbol 1079 . 1087) (punctuation 1078 . 1079) (symbol 1066 . 1078) (TYPENAME 1057 . 1065) (punctuation 1035 . 1036) (symbol 1030 . 1035) (punctuation 1029 . 1030) (punctuation 1028 . 1029) (symbol 1025 . 1028) (TYPENAME 1016 . 1024) (TYPEDEF 1008 . 1015))
+      :lexical-table 
+        '(("BOOST_FUSION_BEGIN_IMPL_31122005_1209")
+          )
+)
+    (semanticdb-table "end_impl.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_END_IMPL_31122005_1237" variable (:constant-flag t) nil [460 495])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [497 539])
+            ("boost/fusion/adapted/mpl/mpl_iterator.hpp" include (:system-flag t) nil [540 592])
+            ("boost/mpl/end.hpp" include (:system-flag t) nil [593 621])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [622 664])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("mpl_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [707 731])
+                            ("extension" type
+                               (:members 
+                                  ( ("end_impl" type
+                                       (:template 
+                                          ( ("Tag" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [771 819])
+                                    ("end_impl" type
+                                       (:type "struct"
+                                        :members 
+                                          ( ("apply" type
+                                               (:template 
+                                                  ( ("Sequence" type (:type "class") nil nil))                                                  
+                                                :type "struct"
+                                                :members 
+                                                  ( ("iterator" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1093 1107])
+                                                    ("type" type
+                                                       (:typedef ("mpl_iterator" type
+                                                             (:template-specifier 
+                                                                ( ("iterator" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil)
+                                                        :type "typedef")
+                                                        (reparse-symbol classsubparts) [1124 1160])
+                                                    ("call" function
+                                                       (:typemodifiers ("static")
+                                                        :arguments 
+                                                          ( ("" variable (:type ("Sequence" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1293]))                                                          
+                                                        :type ("type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [1251 1364]))                                                  )
+                                                (reparse-symbol classsubparts) [905 1379]))                                          
+                                        :template-specifier 
+                                          ( ("mpl_sequence_tag" type nil nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [829 1390]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [737 1396]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [684 1398]))                  
+                :type "namespace")
+                nil [666 1399]))          
+      :file "end_impl.hpp"
+      :pointmax 1408
+      :fsize 1407
+      :lastmodtime '(22070 2375 0 0)
+      :unmatched-syntax '((symbol 1210 . 1234) (symbol 1194 . 1209) (punctuation 1092 . 1093) (punctuation 1091 . 1092) (punctuation 1090 . 1091) (symbol 1069 . 1073) (punctuation 1068 . 1069) (punctuation 1067 . 1068) (punctuation 1066 . 1067) (symbol 1058 . 1066) (punctuation 1057 . 1058) (symbol 1045 . 1057) (TYPENAME 1036 . 1044) (punctuation 1014 . 1015) (symbol 1011 . 1014) (punctuation 1010 . 1011) (punctuation 1009 . 1010) (symbol 1006 . 1009) (TYPENAME 997 . 1005) (TYPEDEF 989 . 996))
+      :lexical-table 
+        '(("BOOST_FUSION_END_IMPL_31122005_1237")
+          )
+))
+  :file "!usr!include!boost!fusion!adapted!mpl!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

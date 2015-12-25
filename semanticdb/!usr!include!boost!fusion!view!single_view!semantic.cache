@@ -1,0 +1,209 @@
+;; Object single_view/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "single_view/"
+  :tables
+  (list
+    (semanticdb-table "single_view.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_SINGLE_VIEW_05052005_0335" variable (:constant-flag t) nil [459 497])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [499 541])
+            ("boost/fusion/support/detail/access.hpp" include (:system-flag t) nil [542 591])
+            ("boost/fusion/support/detail/as_fusion_element.hpp" include (:system-flag t) nil [592 652])
+            ("boost/fusion/support/sequence_base.hpp" include (:system-flag t) nil [653 702])
+            ("boost/fusion/view/single_view/single_view_iterator.hpp" include (:system-flag t) nil [703 768])
+            ("boost/fusion/view/single_view/detail/at_impl.hpp" include (:system-flag t) nil [769 828])
+            ("boost/fusion/view/single_view/detail/begin_impl.hpp" include (:system-flag t) nil [829 891])
+            ("boost/fusion/view/single_view/detail/end_impl.hpp" include (:system-flag t) nil [892 952])
+            ("boost/fusion/view/single_view/detail/size_impl.hpp" include (:system-flag t) nil [953 1014])
+            ("boost/fusion/view/single_view/detail/value_at_impl.hpp" include (:system-flag t) nil [1015 1080])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [1081 1110])
+            ("boost/mpl/int.hpp" include (:system-flag t) nil [1111 1139])
+            ("boost/config.hpp" include (:system-flag t) nil [1140 1167])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("single_view_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1348 1371])
+                            ("random_access_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1376 1411])
+                            ("fusion_sequence_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1416 1443])
+                            ("single_view" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("fusion_tag" type
+                                       (:typedef ("single_view_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1541 1576])
+                                    ("tag" type
+                                       (:typedef ("fusion_sequence_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1585 1617])
+                                    ("category" type
+                                       (:typedef ("random_access_traversal_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1656 1701])
+                                    ("is_view" type
+                                       (:typedef ("mpl::true_" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1710 1737])
+                                    ("size" type
+                                       (:typedef ("mpl::int_" type
+                                             (:template-specifier (("1"))
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1746 1772])
+                                    ("value_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1781 1802])
+                                    ("single_view" function
+                                       (:constructor-flag t
+                                        :type ("BOOST_FUSION_GPU_ENABLED" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1828 1897])
+                                    ("single_view" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in_val" variable
+                                               (:typemodifiers ("typename")
+                                                :type ("detail::call_param::type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1977 2021]))                                          
+                                        :type ("single_view" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1965 2050])
+                                    ("val" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2060 2075]))                                  
+                                :superclasses 
+                                  ( ("sequence_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1449 2082])
+                            ("make_single_view" function
+                               (:arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2248 2259]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2231 2347]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1325 2349]))                  
+                :type "namespace")
+                nil [1307 2350]))          
+      :file "single_view.hpp"
+      :pointmax 2417
+      :fsize 2416
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((punctuation 2225 . 2226) (symbol 2221 . 2225) (punctuation 2220 . 2221) (punctuation 2219 . 2220) (punctuation 2218 . 2219) (symbol 2217 . 2218) (punctuation 2216 . 2217) (symbol 2199 . 2216) (punctuation 2198 . 2199) (punctuation 2197 . 2198) (symbol 2191 . 2197) (TYPENAME 2182 . 2190) (punctuation 2181 . 2182) (symbol 2170 . 2181) (INLINE 2163 . 2169) (symbol 2134 . 2158) (symbol 2118 . 2133) (punctuation 2112 . 2113) (symbol 2111 . 2112) (TYPENAME 2102 . 2110) (punctuation 2101 . 2102) (TEMPLATE 2092 . 2100) (EXPLICIT 1956 . 1964) (symbol 1923 . 1947) (symbol 1907 . 1922) (symbol 1812 . 1827))
+      :lexical-table 
+        '(("BOOST_FUSION_SINGLE_VIEW_05052005_0335")
+          )
+)
+    (semanticdb-table "single_view_iterator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_FUSION_SINGLE_VIEW_ITERATOR_05052005_0340" variable (:constant-flag t) nil [468 515])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [517 559])
+            ("boost/fusion/support/detail/access.hpp" include (:system-flag t) nil [560 609])
+            ("boost/fusion/support/iterator_base.hpp" include (:system-flag t) nil [610 659])
+            ("boost/fusion/view/single_view/detail/deref_impl.hpp" include (:system-flag t) nil [660 722])
+            ("boost/fusion/view/single_view/detail/next_impl.hpp" include (:system-flag t) nil [723 784])
+            ("boost/fusion/view/single_view/detail/prior_impl.hpp" include (:system-flag t) nil [785 847])
+            ("boost/fusion/view/single_view/detail/advance_impl.hpp" include (:system-flag t) nil [848 912])
+            ("boost/fusion/view/single_view/detail/distance_impl.hpp" include (:system-flag t) nil [913 978])
+            ("boost/fusion/view/single_view/detail/equal_to_impl.hpp" include (:system-flag t) nil [979 1044])
+            ("boost/fusion/view/single_view/detail/value_of_impl.hpp" include (:system-flag t) nil [1045 1110])
+            ("boost/config.hpp" include (:system-flag t) nil [1111 1138])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("single_view_iterator_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1319 1351])
+                            ("random_access_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1356 1391])
+                            ("single_view_iterator" type
+                               (:template 
+                                  ( ("SingleView" type (:type "class") nil nil)
+                                    ("Pos" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("fusion_tag" type
+                                       (:typedef ("single_view_iterator_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1552 1596])
+                                    ("category" type
+                                       (:typedef ("random_access_traversal_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1605 1650])
+                                    ("value_type" type
+                                       (:typedef ("SingleView::value_type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1659 1710])
+                                    ("position" type
+                                       (:typedef ("Pos" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1719 1740])
+                                    ("single_view_type" type
+                                       (:typedef ("SingleView" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1749 1785])
+                                    ("single_view_iterator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in_view" variable
+                                               (:reference 1
+                                                :type ("single_view_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1874 1900]))                                          
+                                        :type ("single_view_iterator" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1853 1931])
+                                    ("view" variable (:type ("SingleView" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1941 1958])
+                                    ("private" label nil (reparse-symbol classsubparts) [1964 1972])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("single_view_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2013 2041]))                                          
+                                        :type ("single_view_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1981 2042]))                                  
+                                :superclasses 
+                                  ( ("iterator_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1397 2049]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1296 2051]))                  
+                :type "namespace")
+                nil [1278 2052]))          
+      :file "single_view_iterator.hpp"
+      :pointmax 2332
+      :fsize 2331
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((EXPLICIT 1844 . 1852) (symbol 1811 . 1835) (symbol 1795 . 1810))
+      :lexical-table 
+        '(("BOOST_FUSION_SINGLE_VIEW_ITERATOR_05052005_0340")
+          )
+))
+  :file "!usr!include!boost!fusion!view!single_view!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,143 @@
+;; Object vector/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vector/"
+  :tables
+  (list
+    (semanticdb-table "vector.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_VECTOR_11052014_1625" variable (:constant-flag t) nil [401 428])
+            ("boost/config.hpp" include (:system-flag t) nil [430 457])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [458 500])
+            ("boost/fusion/container/vector/vector_fwd.hpp" include (:system-flag t) nil [501 556])
+            ("boost/fusion/container/vector/detail/cpp03/vector.hpp" include (:system-flag t) nil [767 832]))          
+      :file "vector.hpp"
+      :pointmax 842
+      :fsize 841
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_VECTOR_11052014_1625")
+          )
+)
+    (semanticdb-table "vector_fwd.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_VECTOR_FORWARD_11052014_1626" variable (:constant-flag t) nil [409 444])
+            ("boost/config.hpp" include (:system-flag t) nil [446 473])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [474 516])
+            ("boost/fusion/container/vector/detail/cpp03/vector_fwd.hpp" include (:system-flag t) nil [730 799]))          
+      :file "vector_fwd.hpp"
+      :pointmax 809
+      :fsize 808
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FUSION_VECTOR_FORWARD_11052014_1626")
+          )
+)
+    (semanticdb-table "vector_iterator.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("FUSION_VECTOR_ITERATOR_05042005_0635" variable (:constant-flag t) nil [421 457])
+            ("boost/fusion/support/config.hpp" include (:system-flag t) nil [459 501])
+            ("boost/fusion/support/iterator_base.hpp" include (:system-flag t) nil [502 551])
+            ("boost/fusion/container/vector/detail/deref_impl.hpp" include (:system-flag t) nil [552 614])
+            ("boost/fusion/container/vector/detail/value_of_impl.hpp" include (:system-flag t) nil [615 680])
+            ("boost/fusion/container/vector/detail/next_impl.hpp" include (:system-flag t) nil [681 742])
+            ("boost/fusion/container/vector/detail/prior_impl.hpp" include (:system-flag t) nil [743 805])
+            ("boost/fusion/container/vector/detail/equal_to_impl.hpp" include (:system-flag t) nil [806 871])
+            ("boost/fusion/container/vector/detail/distance_impl.hpp" include (:system-flag t) nil [872 937])
+            ("boost/fusion/container/vector/detail/advance_impl.hpp" include (:system-flag t) nil [938 1002])
+            ("boost/type_traits/add_const.hpp" include (:system-flag t) nil [1003 1045])
+            ("boost/mpl/int.hpp" include (:system-flag t) nil [1046 1074])
+            ("boost" type
+               (:members 
+                  ( ("fusion" type
+                       (:members 
+                          ( ("vector_iterator_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1117 1144])
+                            ("random_access_traversal_tag" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1149 1184])
+                            ("vector_iterator_identity" type
+                               (:template 
+                                  ( ("Vector" type (:type "class") nil nil)
+                                    ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [1190 1260])
+                            ("vector_iterator" type
+                               (:template 
+                                  ( ("Vector" type (:type "class") nil nil)
+                                    ("int" type nil nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("index" type
+                                       (:typedef ("mpl::int_" type
+                                             (:template-specifier 
+                                                ( ("N" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1386 1413])
+                                    ("vector" type
+                                       (:typedef ("Vector" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1422 1444])
+                                    ("fusion_tag" type
+                                       (:typedef ("vector_iterator_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1453 1492])
+                                    ("category" type
+                                       (:typedef ("random_access_traversal_tag" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1501 1546])
+                                    ("identity" variable (:type "int") (reparse-symbol classsubparts) [1638 1647])
+                                    ("vector_iterator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("in_vec" variable
+                                               (:reference 1
+                                                :type ("Vector" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1722 1737]))                                          
+                                        :type ("BOOST_FUSION_GPU_ENABLED" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1673 1766])
+                                    ("vec" variable (:type ("Vector" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1776 1788])
+                                    ("private" label nil (reparse-symbol classsubparts) [1794 1802])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("vector_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1921 1944]))                                          
+                                        :type ("vector_iterator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1893 1945]))                                  
+                                :superclasses 
+                                  ( ("iterator_base" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1266 1952]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1094 1954]))                  
+                :type "namespace")
+                nil [1076 1955]))          
+      :file "vector_iterator.hpp"
+      :pointmax 2156
+      :fsize 2155
+      :lastmodtime '(22070 2374 0 0)
+      :unmatched-syntax '((symbol 1657 . 1672) (punctuation 1636 . 1637) (symbol 1635 . 1636) (punctuation 1633 . 1634) (symbol 1629 . 1633) (punctuation 1628 . 1629) (punctuation 1627 . 1628) (punctuation 1626 . 1627) (symbol 1620 . 1626) (punctuation 1619 . 1620) (symbol 1610 . 1619) (TYPENAME 1601 . 1609) (punctuation 1587 . 1588) (symbol 1563 . 1587) (TYPEDEF 1555 . 1562))
+      :lexical-table 
+        '(("FUSION_VECTOR_ITERATOR_05042005_0635")
+          )
+))
+  :file "!usr!include!boost!fusion!container!vector!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

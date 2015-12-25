@@ -1,0 +1,842 @@
+;; Object UnitTests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "UnitTests/"
+  :tables
+  (list
+    (semanticdb-table "NonlinearSystems.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("cmath" include (:system-flag t) nil [39 55])
+            ("include/radians.hpp" include nil nil [56 86])
+            ("NonlinearSystems/iterative.hpp" include nil nil [87 128])
+            ("NonlinearSystems/newton.hpp" include nil nil [129 167])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [169 185])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [186 204])
+            ("Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [238 248])
+                    ("alpha" variable
+                       (:constant-flag t
+                        :default-value "deg_to_rad<R>(40.0)"
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [251 287])
+                    ("public" label nil (reparse-symbol classsubparts) [288 295])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [302 306]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [298 398]))                  )
+                nil [206 401])
+            ("Iterative_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [500 507])
+                    ("Iterative_Link" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [525 529])
+                            ("b" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [530 534])
+                            ("e" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [535 539]))                          
+                        :type ("Iterative_Link" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [510 584])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [592 596]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [588 628]))                  
+                :superclasses 
+                  ( ("Link" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("NonlinearSystems::Iterative" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [403 631])
+            ("Newton_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [724 731])
+                    ("Newton_Link" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_guess" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [746 762])
+                            ("e" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [763 767]))                          
+                        :type ("Newton_Link" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [734 818])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [826 830]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [822 862])
+                    ("df" function
+                       (:arguments 
+                          ( ("x" variable (:type ("R" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [870 874]))                          
+                        :type ("R" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [865 930]))                  
+                :superclasses 
+                  ( ("Link" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("NonlinearSystems::Newton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [633 933])
+            ("r1" variable
+               (:default-value "10.0"
+                :type "double")
+                nil [952 969])
+            ("r2" variable
+               (:default-value "6.0"
+                :type "double")
+                nil [987 1003])
+            ("r3" variable
+               (:default-value "8.0"
+                :type "double")
+                nil [1021 1037])
+            ("r4" variable
+               (:default-value "4.0"
+                :type "double")
+                nil [1055 1071])
+            ("theta_4" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "deg_to_rad<double>(220.0)"
+                :type "double")
+                nil [1072 1128])
+            ("Systems_Link" type
+               (:template 
+                  ( ("R" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1215 1222])
+                    ("Newton" function
+                       (:template-specifier 
+                          ( ("vector" type nil nil nil))                          
+                        :parent "NonlinearSystems"
+                        :arguments 
+                          ( ("" variable (:type ("initial_guesses" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1320 1336])
+                            ("" variable (:type ("e" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1337 1339]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1284 1342])
+                    ("f" function
+                       (:arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1359 1372]))                          
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("R" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1347 1531])
+                    ("df" function
+                       (:arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :type ("vector" type
+                                     (:template-specifier 
+                                        ( ("R" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1593 1606]))                          
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1572 1743]))                  
+                :superclasses 
+                  ( ("NonlinearSystems::Newton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1130 1747])
+            ("main" function (:type "int") nil [1749 2636]))          
+      :file "NonlinearSystems.cpp"
+      :pointmax 2637
+      :fsize 2636
+      :lastmodtime '(22141 17318 685665 686000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Integration.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("Interpolation/direct_fit.hpp" include nil nil [39 78])
+            ("Integration/direct_fit.hpp" include nil nil [79 116])
+            ("Interpolation/newton.hpp" include nil nil [117 152])
+            ("Integration/newton.hpp" include nil nil [153 186])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [188 206])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [207 223])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [224 240])
+            ("direct_fit" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void")
+                nil [242 604])
+            ("newton" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void")
+                nil [606 969])
+            ("simpson13" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void")
+                nil [971 1339])
+            ("main" function (:type "int") nil [1341 1444]))          
+      :file "Integration.cpp"
+      :pointmax 1445
+      :fsize 1444
+      :lastmodtime '(22125 44601 314181 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "IVP.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("math.h" include (:system-flag t) nil [21 38])
+            ("ODEs/IVP.hpp" include nil nil [39 62])
+            ("ODEs/implicit_euler.hpp" include nil nil [63 97])
+            ("ODEs/explicit_euler.hpp" include nil nil [98 132])
+            ("ODEs/modified_midpoint.hpp" include nil nil [133 170])
+            ("ODEs/modified_euler.hpp" include nil nil [171 205])
+            ("ODEs/runge_kutta.hpp" include nil nil [206 237])
+            ("ODEs/extrapolated_midpoint.hpp" include nil nil [238 279])
+            ("ODEs/adams_moulton.hpp" include nil nil [280 313])
+            ("alpha" variable
+               (:default-value "4.0*10.0e-13"
+                :type "double")
+                nil [332 360])
+            ("T_a4" variable
+               (:default-value "pow(250.0, 4)"
+                :type "double")
+                nil [378 406])
+            ("Radiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [446 453])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [469 475])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [476 482]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [456 528]))                  )
+                nil [408 532])
+            ("ImplicitRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [635 642])
+                    ("ImplicitRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [663 683])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [684 696])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [697 707]))                          
+                        :type ("ImplicitRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [645 840])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [857 863])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [864 870]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [844 923])
+                    ("dderivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [942 948])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [949 955]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [928 994]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ImplicitEuler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [534 998])
+            ("ExplicitRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1101 1108])
+                    ("ExplicitRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1129 1149])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1150 1162])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1163 1173]))                          
+                        :type ("ExplicitRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1111 1306])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1325 1331])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1332 1338]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1312 1395]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ExplicitEuler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1000 1399])
+            ("ModifiedMidpointRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1513 1520])
+                    ("ModifiedMidpointRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1549 1569])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1570 1582])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1583 1593]))                          
+                        :type ("ModifiedMidpointRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1523 1732])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1749 1755])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1756 1762]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1736 1815]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ModifiedMidpoint" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1401 1819])
+            ("ModifiedEulerRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1927 1934])
+                    ("ModifiedEulerRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1960 1980])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1981 1993])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1994 2004]))                          
+                        :type ("ModifiedEulerRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1937 2137])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2154 2160])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2161 2167]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2141 2220]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ModifiedEuler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1821 2224])
+            ("RungeKuttaRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2326 2333])
+                    ("RungeKuttaRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2356 2376])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2377 2389])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2390 2400]))                          
+                        :type ("RungeKuttaRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2336 2524])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2541 2547])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2554]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2528 2607]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::RungeKutta" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2226 2611])
+            ("ExtrapolatedMidpointRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2733 2740])
+                    ("ExtrapolatedMidpointRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2773 2793])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2794 2806])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2807 2817])
+                            ("M" variable (:type "int") (reparse-symbol arg-sub-list) [2818 2824]))                          
+                        :type ("ExtrapolatedMidpointRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2743 2968])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2985 2991])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2992 2998]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2972 3051]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ExtrapolatedMidpoint" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2613 3055])
+            ("AdamsMoultonRadiation" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3161 3168])
+                    ("AdamsMoultonRadiation" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ic" variable
+                               (:reference 1
+                                :type ("ODEs::IVP" type
+                                     (:template-specifier 
+                                        ( ("E" type nil nil nil)
+                                          ("E" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3193 3213])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3214 3226])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [3227 3237]))                          
+                        :type ("AdamsMoultonRadiation" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3171 3293])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3310 3316])
+                            ("T_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3317 3323]))                          
+                        :type ("E" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3297 3376]))                  
+                :superclasses 
+                  ( ("Radiation" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::AdamsMoulton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [3057 3380])
+            ("main" function (:type "int") nil [3382 4720]))          
+      :file "IVP.cpp"
+      :pointmax 4722
+      :fsize 4721
+      :lastmodtime '(22138 2590 816338 771000)
+      :unmatched-syntax '((punctuation 3376 . 3377) (punctuation 3293 . 3294) (punctuation 3051 . 3052) (punctuation 2968 . 2969) (punctuation 2607 . 2608) (punctuation 2524 . 2525) (punctuation 2220 . 2221) (punctuation 2137 . 2138) (punctuation 1815 . 1816) (punctuation 1732 . 1733) (punctuation 1395 . 1396) (punctuation 1306 . 1307) (punctuation 994 . 995) (punctuation 923 . 924) (punctuation 840 . 841) (punctuation 528 . 529) (symbol 368 . 377) (STATIC 361 . 367) (symbol 322 . 331) (STATIC 315 . 321)))
+    (semanticdb-table "InterpolationSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("Interpolation/direct_fit.hpp" include nil nil [39 78])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [80 98])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [99 115])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [116 132])
+            ("univariate" function
+               (:template 
+                  ( ("_T" type (:type "class") nil nil))                  
+                :type "void")
+                nil [134 1124])
+            ("main" function (:type "int") nil [1126 1164]))          
+      :file "InterpolationSystem.cpp"
+      :pointmax 1165
+      :fsize 1164
+      :lastmodtime '(22125 44601 314181 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "IVPSystem.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("valarray" include (:system-flag t) nil [21 40])
+            ("ODEs/IVP.hpp" include nil nil [41 64])
+            ("ODEs/explicit_euler.hpp" include nil nil [65 99])
+            ("ODEs/modified_midpoint.hpp" include nil nil [100 137])
+            ("ODEs/modified_euler.hpp" include nil nil [138 172])
+            ("ODEs/runge_kutta.hpp" include nil nil [173 204])
+            ("ODEs/extrapolated_midpoint.hpp" include nil nil [205 246])
+            ("ODEs/adams_moulton.hpp" include nil nil [247 280])
+            ("Rocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [316 323])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [349 355])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [356 370]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [326 457]))                  )
+                nil [282 461])
+            ("ExplicitEulerRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [574 581])
+                    ("ExplicitEulerRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [604 634])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [635 647])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [648 658]))                          
+                        :type ("ExplicitEulerRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [584 814])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [842 848])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [849 863]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [819 911]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ExplicitEuler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [463 915])
+            ("ModifiedMidpointRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1033 1040])
+                    ("ModifiedMidpointRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1066 1096])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1109])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1110 1120]))                          
+                        :type ("ModifiedMidpointRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1043 1325])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1353 1359])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1360 1374]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1330 1422]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ModifiedMidpoint" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [917 1426])
+            ("ModifiedEulerRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1538 1545])
+                    ("ModifiedEulerRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1568 1598])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1599 1611])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [1612 1622]))                          
+                        :type ("ModifiedEulerRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1548 1778])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1806 1812])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1813 1827]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1783 1875]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ModifiedEuler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1428 1879])
+            ("RungeKuttaRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1986 1993])
+                    ("RungeKuttaRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2013 2043])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2044 2056])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2057 2067]))                          
+                        :type ("RungeKuttaRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1996 2217])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2245 2251])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2252 2266]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2222 2314]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::RungeKutta" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [1881 2318])
+            ("ExtrapolatedMidpointRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2480 2487])
+                    ("ExtrapolatedMidpointRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("initial_condition" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2517 2547])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2548 2560])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [2561 2571])
+                            ("M" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2572 2576]))                          
+                        :type ("ExtrapolatedMidpointRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2490 2749])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2777 2783])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2784 2798]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2754 2846]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::ExtrapolatedMidpoint" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2320 2850])
+            ("AdamsMoultonRocket" type
+               (:template 
+                  ( ("E" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2961 2968])
+                    ("AdamsMoultonRocket" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("ic" variable
+                               (:reference 1
+                                :type ("ODEs::IVP" type
+                                     (:template-specifier 
+                                        ( ("valarray" type nil nil nil)
+                                          ("E" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2990 3020])
+                            ("step_size" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3021 3033])
+                            ("steps" variable (:type "int") (reparse-symbol arg-sub-list) [3034 3044]))                          
+                        :type ("AdamsMoultonRocket" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2971 3110])
+                    ("derivative" function
+                       (:arguments 
+                          ( ("t_n" variable (:type ("E" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3138 3144])
+                            ("x" variable (:type ("valarray" type
+                                 (:template-specifier 
+                                    ( ("E" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3145 3159]))                          
+                        :type ("valarray" type
+                             (:template-specifier 
+                                ( ("E" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3115 3207]))                  
+                :superclasses 
+                  ( ("Rocket" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("ODEs::AdamsMoulton" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [2852 3211])
+            ("main" function (:type "int") nil [3213 4341]))          
+      :file "IVPSystem.cpp"
+      :pointmax 4342
+      :fsize 4341
+      :lastmodtime '(22141 17807 727466 661000)
+      :unmatched-syntax '((punctuation 3207 . 3208) (punctuation 3110 . 3111) (punctuation 2846 . 2847) (punctuation 2749 . 2750) (punctuation 2314 . 2315) (punctuation 2217 . 2218) (punctuation 1875 . 1876) (punctuation 1778 . 1779) (punctuation 1422 . 1423) (punctuation 1325 . 1326) (punctuation 911 . 912) (punctuation 814 . 815) (punctuation 457 . 458)))
+    (semanticdb-table "Differentiation.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("Differentiation/direct_fit.hpp" include nil nil [21 62])
+            ("Interpolation/direct_fit.hpp" include nil nil [63 102])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [104 120])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [121 137])
+            ("std::function" using (:type ("std::function" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [138 158])
+            ("main" function (:type "int") nil [160 567]))          
+      :file "Differentiation.cpp"
+      :pointmax 568
+      :fsize 567
+      :lastmodtime '(22125 44601 307514 435000)
+      :unmatched-syntax nil))
+  :file "!home!seshu!dev!NumericalMethods!UnitTests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
