@@ -12,7 +12,7 @@
       :file "lightweight_mutex.hpp"
       :pointmax 1426
       :fsize 1425
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax '((symbol 1337 . 1345) (symbol 1327 . 1336) (symbol 1314 . 1326) (symbol 1308 . 1313) (punctuation 1305 . 1306))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_LIGHTWEIGHT_MUTEX_HPP_INCLUDED")
@@ -42,7 +42,7 @@
       :file "lwm_nop.hpp"
       :pointmax 703
       :fsize 702
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_LWM_NOP_HPP_INCLUDED")
@@ -58,10 +58,11 @@
             ("boost/smart_ptr/bad_weak_ptr.hpp" include (:system-flag t) nil [737 780])
             ("boost/smart_ptr/detail/sp_counted_base.hpp" include (:system-flag t) nil [781 834])
             ("boost/smart_ptr/detail/sp_counted_impl.hpp" include (:system-flag t) nil [835 888])
-            ("boost/detail/workaround.hpp" include (:system-flag t) nil [889 927])
-            ("boost/config/no_tr1/memory.hpp" include (:system-flag t) nil [1149 1190])
-            ("functional" include (:system-flag t) nil [1209 1230])
-            ("boost/core/addressof.hpp" include (:system-flag t) nil [1333 1368])
+            ("boost/smart_ptr/detail/sp_disable_deprecated.hpp" include (:system-flag t) nil [889 948])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [949 987])
+            ("boost/config/no_tr1/memory.hpp" include (:system-flag t) nil [1209 1250])
+            ("functional" include (:system-flag t) nil [1269 1290])
+            ("boost/core/addressof.hpp" include (:system-flag t) nil [1393 1428])
             ("boost" type
                (:members 
                   ( ("movelib" type
@@ -72,32 +73,32 @@
                                     ("D" type (:type "class") nil nil))                                  
                                 :type "class"
                                 :prototype t)
-                                (reparse-symbol namespacesubparts) [1414 1460]))                          
+                                (reparse-symbol namespacesubparts) [1612 1658]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [1389 1463])
+                        (reparse-symbol namespacesubparts) [1587 1661])
                     ("detail" type
                        (:members 
-                          ( ("sp_nothrow_tag" type (:type "struct") (reparse-symbol namespacesubparts) [1637 1662])
+                          ( ("sp_nothrow_tag" type (:type "struct") (reparse-symbol namespacesubparts) [1835 1860])
                             ("sp_inplace_tag" type
                                (:template 
                                   ( ("D" type (:type "class") nil nil))                                  
                                 :type "struct")
-                                (reparse-symbol namespacesubparts) [1664 1710])
+                                (reparse-symbol namespacesubparts) [1862 1908])
                             ("sp_reference_wrapper" type
                                (:template 
                                   ( ("T" type (:type "class") nil nil))                                  
                                 :type "class"
                                 :members 
-                                  ( ("public" label nil (reparse-symbol classsubparts) [1762 1769])
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1960 1967])
                                     ("sp_reference_wrapper" function
                                        (:constructor-flag t
                                         :arguments 
                                           ( ("t" variable
                                                (:reference 1
                                                 :type ("T" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [1806 1812]))                                          
+                                                (reparse-symbol arg-sub-list) [2004 2010]))                                          
                                         :type ("sp_reference_wrapper" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [1784 1853])
+                                        (reparse-symbol classsubparts) [1982 2051])
                                     ("()" function
                                        (:template 
                                           ( ("Y" type (:type "class") nil nil))                                          
@@ -106,15 +107,15 @@
                                           ( ("p" variable
                                                (:pointer 1
                                                 :type ("Y" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [1896 1903]))                                          
+                                                (reparse-symbol arg-sub-list) [2094 2101]))                                          
                                         :operator-flag t)
-                                        (reparse-symbol classsubparts) [1859 1941])
-                                    ("private" label nil (reparse-symbol classsubparts) [1943 1951])
+                                        (reparse-symbol classsubparts) [2057 2139])
+                                    ("private" label nil (reparse-symbol classsubparts) [2141 2149])
                                     ("t_" variable
                                        (:pointer 1
                                         :type ("T" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [1957 1964]))                                  )
-                                (reparse-symbol namespacesubparts) [1712 1967])
+                                        (reparse-symbol classsubparts) [2155 2162]))                                  )
+                                (reparse-symbol namespacesubparts) [1910 2165])
                             ("sp_convert_reference" type
                                (:template 
                                   ( ("D" type (:type "class") nil nil))                                  
@@ -123,8 +124,8 @@
                                   ( ("type" type
                                        (:typedef ("D" type (:type "class") nil nil)
                                         :type "typedef")
-                                        (reparse-symbol classsubparts) [2023 2038]))                                  )
-                                (reparse-symbol namespacesubparts) [1969 2041])
+                                        (reparse-symbol classsubparts) [2221 2236]))                                  )
+                                (reparse-symbol namespacesubparts) [2167 2239])
                             ("sp_convert_reference" type
                                (:template 
                                   ( ("D" type (:type "class") nil nil))                                  
@@ -137,60 +138,60 @@
                                               :type "class")
                                               nil nil)
                                         :type "typedef")
-                                        (reparse-symbol classsubparts) [2103 2142]))                                  
+                                        (reparse-symbol classsubparts) [2301 2340]))                                  
                                 :template-specifier 
                                   ( ("D" type (:reference 1) nil nil))                                  )
-                                (reparse-symbol namespacesubparts) [2043 2145])
+                                (reparse-symbol namespacesubparts) [2241 2343])
                             ("weak_count" type
                                (:prototype t
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [2147 2164])
+                                (reparse-symbol namespacesubparts) [2345 2362])
                             ("shared_count" type
                                (:members 
-                                  ( ("private" label nil (reparse-symbol classsubparts) [2187 2195])
+                                  ( ("private" label nil (reparse-symbol classsubparts) [2385 2393])
                                     ("pi_" variable
                                        (:pointer 1
                                         :type ("sp_counted_base" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [2201 2223])
-                                    ("weak_count" friend nil (reparse-symbol classsubparts) [2291 2314])
-                                    ("public" label nil (reparse-symbol classsubparts) [2317 2324])
+                                        (reparse-symbol classsubparts) [2399 2421])
+                                    ("weak_count" friend nil (reparse-symbol classsubparts) [2489 2512])
+                                    ("public" label nil (reparse-symbol classsubparts) [2515 2522])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [2330 2454])
+                                        (reparse-symbol classsubparts) [2528 2652])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
                                           ( ("p" variable
                                                (:pointer 1
                                                 :type ("Y" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [2501 2508]))                                          
+                                                (reparse-symbol arg-sub-list) [2699 2706]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [2487 3018])
+                                        (reparse-symbol classsubparts) [2685 3216])
                                     ("shared_count" function
                                        (:template 
                                           ( ("P" type (:type "class") nil nil)
                                             ("D" type (:type "class") nil nil))                                          
                                         :type ("shared_count" type (:type "class") nil nil)
                                         :arguments 
-                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3206 3210])
-                                            ("d" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3211 3216]))                                          
+                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3404 3408])
+                                            ("d" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3409 3414]))                                          
                                         :constructor-flag t)
-                                        (reparse-symbol classsubparts) [3165 3815])
+                                        (reparse-symbol classsubparts) [3363 4013])
                                     ("shared_count" function
                                        (:template 
                                           ( ("P" type (:type "class") nil nil)
                                             ("D" type (:type "class") nil nil))                                          
                                         :type ("shared_count" type (:type "class") nil nil)
                                         :arguments 
-                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3917 3921])
+                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4115 4119])
                                             ("" variable (:type ("sp_inplace_tag" type
                                                  (:template-specifier 
                                                     ( ("D" type nil nil nil))                                                    
                                                   :type "class")
-                                                  nil nil)) (reparse-symbol arg-sub-list) [3922 3941]))                                          
+                                                  nil nil)) (reparse-symbol arg-sub-list) [4120 4139]))                                          
                                         :constructor-flag t)
-                                        (reparse-symbol classsubparts) [3874 4506])
+                                        (reparse-symbol classsubparts) [4072 4704])
                                     ("shared_count" function
                                        (:template 
                                           ( ("P" type (:type "class") nil nil)
@@ -198,11 +199,11 @@
                                             ("A" type (:type "class") nil nil))                                          
                                         :type ("shared_count" type (:type "class") nil nil)
                                         :arguments 
-                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4621 4625])
-                                            ("d" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4626 4630])
-                                            ("a" variable (:type ("A" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4631 4636]))                                          
+                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4819 4823])
+                                            ("d" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4824 4828])
+                                            ("a" variable (:type ("A" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4829 4834]))                                          
                                         :constructor-flag t)
-                                        (reparse-symbol classsubparts) [4571 6239])
+                                        (reparse-symbol classsubparts) [4769 6437])
                                     ("shared_count" function
                                        (:template 
                                           ( ("P" type (:type "class") nil nil)
@@ -210,15 +211,15 @@
                                             ("A" type (:type "class") nil nil))                                          
                                         :type ("shared_count" type (:type "class") nil nil)
                                         :arguments 
-                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6350 6354])
+                                          ( ("p" variable (:type ("P" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6548 6552])
                                             ("" variable (:type ("sp_inplace_tag" type
                                                  (:template-specifier 
                                                     ( ("D" type nil nil nil))                                                    
                                                   :type "class")
-                                                  nil nil)) (reparse-symbol arg-sub-list) [6355 6375])
-                                            ("a" variable (:type ("A" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6376 6381]))                                          
+                                                  nil nil)) (reparse-symbol arg-sub-list) [6553 6573])
+                                            ("a" variable (:type ("A" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6574 6579]))                                          
                                         :constructor-flag t)
-                                        (reparse-symbol classsubparts) [6298 8031])
+                                        (reparse-symbol classsubparts) [6496 8229])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -229,9 +230,9 @@
                                                         ( ("Y" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [8237 8259]))                                          
+                                                (reparse-symbol arg-sub-list) [8435 8457]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [8223 8549])
+                                        (reparse-symbol classsubparts) [8421 8747])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -243,9 +244,9 @@
                                                           ("D" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [8660 8687]))                                          
+                                                (reparse-symbol arg-sub-list) [8858 8885]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [8646 9140])
+                                        (reparse-symbol classsubparts) [8844 9338])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -257,13 +258,13 @@
                                                           ("D" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [9208 9246]))                                          
+                                                (reparse-symbol arg-sub-list) [9406 9444]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [9194 9710])
+                                        (reparse-symbol classsubparts) [9392 9908])
                                     ("shared_count" function
                                        (:destructor-flag t
                                         :type "void")
-                                        (reparse-symbol classsubparts) [9716 9858])
+                                        (reparse-symbol classsubparts) [9914 10056])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -271,19 +272,19 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [9877 9900]))                                          
+                                                (reparse-symbol arg-sub-list) [10075 10098]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [9864 10058])
+                                        (reparse-symbol classsubparts) [10062 10256])
                                     ("shared_count" function
                                        (:constructor-flag t
                                         :arguments 
                                           ( ("" variable
                                                (:reference 1
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [10127 10142])
-                                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10143 10145]))                                          
+                                                (reparse-symbol arg-sub-list) [10325 10340])
+                                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10341 10343]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [10114 10278])
+                                        (reparse-symbol classsubparts) [10312 10476])
                                     ("shared_count" function
                                        (:prototype-flag t
                                         :constructor-flag t
@@ -292,9 +293,9 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [10314 10335]))                                          
+                                                (reparse-symbol arg-sub-list) [10512 10533]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [10301 10336])
+                                        (reparse-symbol classsubparts) [10499 10534])
                                     ("shared_count" function
                                        (:prototype-flag t
                                         :constructor-flag t
@@ -303,10 +304,10 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [10402 10423])
-                                            ("" variable (:type ("sp_nothrow_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10424 10440]))                                          
+                                                (reparse-symbol arg-sub-list) [10600 10621])
+                                            ("" variable (:type ("sp_nothrow_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10622 10638]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [10388 10441])
+                                        (reparse-symbol classsubparts) [10586 10639])
                                     ("=" function
                                        (:operator-flag t
                                         :arguments 
@@ -314,20 +315,20 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [10526 10549]))                                          
+                                                (reparse-symbol arg-sub-list) [10724 10747]))                                          
                                         :type ("shared_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [10500 10794])
+                                        (reparse-symbol classsubparts) [10698 10992])
                                     ("swap" function
                                        (:arguments 
                                           ( ("r" variable
                                                (:reference 1
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [10810 10827]))                                          
+                                                (reparse-symbol arg-sub-list) [11008 11025]))                                          
                                         :type "void")
-                                        (reparse-symbol classsubparts) [10800 10929])
-                                    ("use_count" function (:type "long") (reparse-symbol classsubparts) [10935 11026])
-                                    ("unique" function (:type "bool") (reparse-symbol classsubparts) [11032 11107])
-                                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [11113 11179])
+                                        (reparse-symbol classsubparts) [10998 11127])
+                                    ("use_count" function (:type "long") (reparse-symbol classsubparts) [11133 11224])
+                                    ("unique" function (:type "bool") (reparse-symbol classsubparts) [11230 11305])
+                                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [11311 11377])
                                     ("==" function
                                        (:operator-flag t
                                         :typemodifiers ("friend" "inline")
@@ -336,14 +337,14 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11215 11238])
+                                                (reparse-symbol arg-sub-list) [11413 11436])
                                             ("b" variable
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11239 11262]))                                          
+                                                (reparse-symbol arg-sub-list) [11437 11460]))                                          
                                         :type "bool")
-                                        (reparse-symbol classsubparts) [11185 11305])
+                                        (reparse-symbol classsubparts) [11383 11503])
                                     ("<" function
                                        (:operator-flag t
                                         :typemodifiers ("friend" "inline")
@@ -352,14 +353,14 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11340 11363])
+                                                (reparse-symbol arg-sub-list) [11538 11561])
                                             ("b" variable
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11364 11387]))                                          
+                                                (reparse-symbol arg-sub-list) [11562 11585]))                                          
                                         :type "bool")
-                                        (reparse-symbol classsubparts) [11311 11462])
+                                        (reparse-symbol classsubparts) [11509 11660])
                                     ("get_deleter" function
                                        (:pointer 1
                                         :arguments 
@@ -367,28 +368,28 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("sp_typeinfo" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11488 11512]))                                          
+                                                (reparse-symbol arg-sub-list) [11686 11710]))                                          
                                         :type "void")
-                                        (reparse-symbol classsubparts) [11468 11577])
+                                        (reparse-symbol classsubparts) [11666 11775])
                                     ("get_untyped_deleter" function
                                        (:pointer 1
                                         :type "void")
-                                        (reparse-symbol classsubparts) [11583 11680]))                                  
+                                        (reparse-symbol classsubparts) [11781 11878]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [2166 11683])
+                                (reparse-symbol namespacesubparts) [2364 11881])
                             ("weak_count" type
                                (:members 
-                                  ( ("private" label nil (reparse-symbol classsubparts) [11705 11713])
+                                  ( ("private" label nil (reparse-symbol classsubparts) [11903 11911])
                                     ("pi_" variable
                                        (:pointer 1
                                         :type ("sp_counted_base" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11719 11741])
-                                    ("shared_count" friend nil (reparse-symbol classsubparts) [11809 11834])
-                                    ("public" label nil (reparse-symbol classsubparts) [11837 11844])
+                                        (reparse-symbol classsubparts) [11917 11939])
+                                    ("shared_count" friend nil (reparse-symbol classsubparts) [12007 12032])
+                                    ("public" label nil (reparse-symbol classsubparts) [12035 12042])
                                     ("weak_count" function
                                        (:constructor-flag t
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11850 11970])
+                                        (reparse-symbol classsubparts) [12048 12168])
                                     ("weak_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -396,9 +397,9 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11987 12010]))                                          
+                                                (reparse-symbol arg-sub-list) [12185 12208]))                                          
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11976 12164])
+                                        (reparse-symbol classsubparts) [12174 12362])
                                     ("weak_count" function
                                        (:constructor-flag t
                                         :arguments 
@@ -406,23 +407,23 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [12181 12202]))                                          
+                                                (reparse-symbol arg-sub-list) [12379 12400]))                                          
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [12170 12356])
+                                        (reparse-symbol classsubparts) [12368 12554])
                                     ("weak_count" function
                                        (:constructor-flag t
                                         :arguments 
                                           ( ("" variable
                                                (:reference 1
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [12440 12453])
-                                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12454 12456]))                                          
+                                                (reparse-symbol arg-sub-list) [12638 12651])
+                                            ("" variable (:type ("r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12652 12654]))                                          
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [12429 12587])
+                                        (reparse-symbol classsubparts) [12627 12785])
                                     ("weak_count" function
                                        (:destructor-flag t
                                         :type "void")
-                                        (reparse-symbol classsubparts) [12601 12744])
+                                        (reparse-symbol classsubparts) [12799 12942])
                                     ("=" function
                                        (:operator-flag t
                                         :arguments 
@@ -430,9 +431,9 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("shared_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [12774 12797]))                                          
+                                                (reparse-symbol arg-sub-list) [12972 12995]))                                          
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [12750 13043])
+                                        (reparse-symbol classsubparts) [12948 13241])
                                     ("=" function
                                        (:operator-flag t
                                         :arguments 
@@ -440,19 +441,19 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13073 13094]))                                          
+                                                (reparse-symbol arg-sub-list) [13271 13292]))                                          
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [13049 13340])
+                                        (reparse-symbol classsubparts) [13247 13538])
                                     ("swap" function
                                        (:arguments 
                                           ( ("r" variable
                                                (:reference 1
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13356 13371]))                                          
+                                                (reparse-symbol arg-sub-list) [13554 13569]))                                          
                                         :type "void")
-                                        (reparse-symbol classsubparts) [13346 13473])
-                                    ("use_count" function (:type "long") (reparse-symbol classsubparts) [13479 13570])
-                                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [13576 13642])
+                                        (reparse-symbol classsubparts) [13544 13671])
+                                    ("use_count" function (:type "long") (reparse-symbol classsubparts) [13677 13768])
+                                    ("empty" function (:type "bool") (reparse-symbol classsubparts) [13774 13840])
                                     ("==" function
                                        (:operator-flag t
                                         :typemodifiers ("friend" "inline")
@@ -461,14 +462,14 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13678 13699])
+                                                (reparse-symbol arg-sub-list) [13876 13897])
                                             ("b" variable
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13700 13721]))                                          
+                                                (reparse-symbol arg-sub-list) [13898 13919]))                                          
                                         :type "bool")
-                                        (reparse-symbol classsubparts) [13648 13764])
+                                        (reparse-symbol classsubparts) [13846 13962])
                                     ("<" function
                                        (:operator-flag t
                                         :typemodifiers ("friend" "inline")
@@ -477,16 +478,16 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13799 13820])
+                                                (reparse-symbol arg-sub-list) [13997 14018])
                                             ("b" variable
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("weak_count" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [13821 13842]))                                          
+                                                (reparse-symbol arg-sub-list) [14019 14040]))                                          
                                         :type "bool")
-                                        (reparse-symbol classsubparts) [13770 13915]))                                  
+                                        (reparse-symbol classsubparts) [13968 14113]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [11686 13918])
+                                (reparse-symbol namespacesubparts) [11884 14116])
                             ("shared_count" function
                                (:constructor-flag t
                                 :parent "shared_count"
@@ -496,9 +497,9 @@
                                        (:reference 1
                                         :constant-flag t
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [13955 13977]))                                  
+                                        (reparse-symbol arg-sub-list) [14153 14175]))                                  
                                 :type ("shared_count" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [13920 14186])
+                                (reparse-symbol namespacesubparts) [14118 14384])
                             ("shared_count" function
                                (:constructor-flag t
                                 :parent "shared_count"
@@ -508,19 +509,19 @@
                                        (:reference 1
                                         :constant-flag t
                                         :type ("weak_count" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [14223 14244])
-                                    ("" variable (:type ("sp_nothrow_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14245 14261]))                                  
+                                        (reparse-symbol arg-sub-list) [14421 14442])
+                                    ("" variable (:type ("sp_nothrow_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14443 14459]))                                  
                                 :type ("shared_count" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [14188 14430]))                          
+                                (reparse-symbol namespacesubparts) [14386 14628]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [1486 14433]))                  
+                        (reparse-symbol namespacesubparts) [1684 14631]))                  
                 :type "namespace")
-                nil [1370 14456]))          
+                nil [1568 14654]))          
       :file "shared_count.hpp"
-      :pointmax 14649
-      :fsize 14648
-      :lastmodtime '(22070 2374 0 0)
-      :unmatched-syntax '((punctuation 12452 . 12453) (punctuation 11834 . 11835) (EXPLICIT 10292 . 10300) (punctuation 10141 . 10142) (EXPLICIT 9185 . 9193) (punctuation 9179 . 9180) (symbol 9178 . 9179) (CLASS 9172 . 9177) (punctuation 9170 . 9171) (symbol 9169 . 9170) (CLASS 9163 . 9168) (punctuation 9162 . 9163) (TEMPLATE 9154 . 9162) (EXPLICIT 8637 . 8645) (punctuation 8631 . 8632) (symbol 8630 . 8631) (CLASS 8624 . 8629) (punctuation 8622 . 8623) (symbol 8621 . 8622) (CLASS 8615 . 8620) (punctuation 8614 . 8615) (TEMPLATE 8606 . 8614) (EXPLICIT 8214 . 8222) (punctuation 8208 . 8209) (symbol 8207 . 8208) (CLASS 8201 . 8206) (punctuation 8200 . 8201) (TEMPLATE 8192 . 8200) (EXPLICIT 2478 . 2486) (punctuation 2476 . 2477) (symbol 2475 . 2476) (CLASS 2469 . 2474) (punctuation 2468 . 2469) (TEMPLATE 2460 . 2468) (punctuation 2314 . 2315) (EXPLICIT 1775 . 1783))
+      :pointmax 14925
+      :fsize 14924
+      :lastmodtime '(22134 46856 0 0)
+      :unmatched-syntax '((punctuation 12650 . 12651) (punctuation 12032 . 12033) (EXPLICIT 10490 . 10498) (punctuation 10339 . 10340) (EXPLICIT 9383 . 9391) (punctuation 9377 . 9378) (symbol 9376 . 9377) (CLASS 9370 . 9375) (punctuation 9368 . 9369) (symbol 9367 . 9368) (CLASS 9361 . 9366) (punctuation 9360 . 9361) (TEMPLATE 9352 . 9360) (EXPLICIT 8835 . 8843) (punctuation 8829 . 8830) (symbol 8828 . 8829) (CLASS 8822 . 8827) (punctuation 8820 . 8821) (symbol 8819 . 8820) (CLASS 8813 . 8818) (punctuation 8812 . 8813) (TEMPLATE 8804 . 8812) (EXPLICIT 8412 . 8420) (punctuation 8406 . 8407) (symbol 8405 . 8406) (CLASS 8399 . 8404) (punctuation 8398 . 8399) (TEMPLATE 8390 . 8398) (EXPLICIT 2676 . 2684) (punctuation 2674 . 2675) (symbol 2673 . 2674) (CLASS 2667 . 2672) (punctuation 2666 . 2667) (TEMPLATE 2658 . 2666) (punctuation 2512 . 2513) (EXPLICIT 1973 . 1981))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SHARED_COUNT_HPP_INCLUDED")
           )
@@ -596,7 +597,7 @@
       :file "sp_convertible.hpp"
       :pointmax 2154
       :fsize 2153
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax '((punctuation 1986 . 1987) (semantic-list 1983 . 1986) (punctuation 1981 . 1982) (symbol 1975 . 1980) (punctuation 1974 . 1975) (punctuation 1973 . 1974) (punctuation 1972 . 1973) (symbol 1970 . 1971) (punctuation 1968 . 1969) (symbol 1967 . 1968) (punctuation 1965 . 1966) (symbol 1951 . 1965) (punctuation 1949 . 1950) (symbol 1920 . 1949) (PUBLIC 1913 . 1919) (punctuation 1911 . 1912) (symbol 1887 . 1911) (STRUCT 1880 . 1886) (punctuation 1878 . 1879) (symbol 1876 . 1877) (CLASS 1870 . 1875) (punctuation 1868 . 1869) (symbol 1867 . 1868) (CLASS 1861 . 1866) (punctuation 1859 . 1860) (TEMPLATE 1851 . 1859) (punctuation 1622 . 1623) (semantic-list 1557 . 1622) (punctuation 1555 . 1556) (semantic-list 1552 . 1554) (symbol 1551 . 1552) (punctuation 1549 . 1550) (semantic-list 1546 . 1549) (symbol 1545 . 1546) (punctuation 1543 . 1544) (symbol 1529 . 1543) (STRUCT 1522 . 1528) (punctuation 1520 . 1521) (symbol 1518 . 1519) (CLASS 1512 . 1517) (punctuation 1510 . 1511) (symbol 1509 . 1510) (symbol 1502 . 1508) (punctuation 1501 . 1502) (punctuation 1500 . 1501) (symbol 1497 . 1500) (punctuation 1495 . 1496) (symbol 1494 . 1495) (CLASS 1488 . 1493) (punctuation 1486 . 1487) (TEMPLATE 1478 . 1486) (punctuation 1475 . 1476) (semantic-list 1410 . 1475) (punctuation 1408 . 1409) (semantic-list 1405 . 1407) (symbol 1404 . 1405) (punctuation 1402 . 1403) (semantic-list 1400 . 1402) (symbol 1399 . 1400) (punctuation 1397 . 1398) (symbol 1383 . 1397) (STRUCT 1376 . 1382) (punctuation 1374 . 1375) (symbol 1372 . 1373) (CLASS 1366 . 1371) (punctuation 1364 . 1365) (symbol 1363 . 1364) (CLASS 1357 . 1362) (punctuation 1355 . 1356) (TEMPLATE 1347 . 1355) (punctuation 1344 . 1345) (semantic-list 1309 . 1344) (punctuation 1307 . 1308) (semantic-list 1304 . 1306) (symbol 1303 . 1304) (punctuation 1301 . 1302) (symbol 1300 . 1301) (punctuation 1298 . 1299) (symbol 1284 . 1298) (STRUCT 1277 . 1283) (punctuation 1275 . 1276) (symbol 1273 . 1274) (CLASS 1267 . 1272) (punctuation 1265 . 1266) (symbol 1264 . 1265) (CLASS 1258 . 1263) (punctuation 1256 . 1257) (TEMPLATE 1248 . 1256) (semantic-list 1235 . 1240) (SIZEOF 1229 . 1235) (punctuation 1227 . 1228) (punctuation 1226 . 1227) (semantic-list 1196 . 1225) (SIZEOF 1190 . 1196) (punctuation 1188 . 1189) (semantic-list 1235 . 1240) (SIZEOF 1229 . 1235) (punctuation 1227 . 1228) (punctuation 1226 . 1227) (semantic-list 1196 . 1225) (SIZEOF 1190 . 1196) (punctuation 1188 . 1189) (punctuation 1114 . 1115) (semantic-list 1111 . 1114) (semantic-list 1104 . 1109) (CHAR 1099 . 1103) (TYPEDEF 1091 . 1098) (punctuation 1085 . 1086) (semantic-list 1082 . 1085) (semantic-list 1075 . 1081) (CHAR 1070 . 1074) (TYPEDEF 1062 . 1069))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_CONVERTIBLE_HPP_INCLUDED")
@@ -623,7 +624,7 @@
       :file "sp_nullptr_t.hpp"
       :pointmax 977
       :fsize 976
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_NULLPTR_T_HPP_INCLUDED")
@@ -728,7 +729,7 @@
       :file "spinlock_pool.hpp"
       :pointmax 2955
       :fsize 2954
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax '((EXPLICIT 1393 . 1401) (EXPLICIT 1393 . 1401))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SPINLOCK_POOL_HPP_INCLUDED")
@@ -745,7 +746,7 @@
       :file "sp_counted_base.hpp"
       :pointmax 3338
       :fsize 3337
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_COUNTED_BASE_HPP_INCLUDED")
@@ -1021,7 +1022,7 @@
       :file "sp_counted_impl.hpp"
       :pointmax 5809
       :fsize 5808
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax '((EXPLICIT 1585 . 1593))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_COUNTED_IMPL_HPP_INCLUDED")
@@ -1037,7 +1038,7 @@
       :file "spinlock.hpp"
       :pointmax 1805
       :fsize 1804
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SPINLOCK_HPP_INCLUDED")
@@ -1052,7 +1053,7 @@
       :file "sp_has_sync.hpp"
       :pointmax 1530
       :fsize 1529
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_HAS_SYNC_HPP_INCLUDED")
@@ -1178,7 +1179,7 @@
       :file "sp_counted_base_gcc_x86.hpp"
       :pointmax 3585
       :fsize 3584
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_COUNTED_BASE_GCC_X86_HPP_INCLUDED")
@@ -1275,7 +1276,7 @@
       :file "sp_counted_base_nt.hpp"
       :pointmax 2139
       :fsize 2138
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SP_COUNTED_BASE_NT_HPP_INCLUDED")
@@ -1360,11 +1361,25 @@
       :file "spinlock_nt.hpp"
       :pointmax 1465
       :fsize 1464
-      :lastmodtime '(22070 2374 0 0)
+      :lastmodtime '(22134 46856 0 0)
       :unmatched-syntax '((EXPLICIT 1136 . 1144) (EXPLICIT 1136 . 1144))
       :lexical-table 
         '(("BOOST_SMART_PTR_DETAIL_SPINLOCK_NT_HPP_INCLUDED")
           ("BOOST_DETAIL_SPINLOCK_INIT" . ((semantic-list "{ false }" 1388 . 1397)))
+          )
+)
+    (semanticdb-table "sp_disable_deprecated.hpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("BOOST_SMART_PTR_DETAIL_SP_DISABLE_DEPRECATED_HPP_INCLUDED" variable (:constant-flag t) nil [75 132])
+            ("boost/config.hpp" include (:system-flag t) nil [504 531]))          
+      :file "sp_disable_deprecated.hpp"
+      :pointmax 984
+      :fsize 983
+      :lastmodtime '(22134 46856 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SMART_PTR_DETAIL_SP_DISABLE_DEPRECATED_HPP_INCLUDED")
           )
 ))
   :file "!usr!include!boost!smart_ptr!detail!semantic.cache"

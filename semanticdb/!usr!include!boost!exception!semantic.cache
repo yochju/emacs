@@ -839,7 +839,7 @@
                                   ( ("T" type (:type "class") nil nil))                                  
                                 :type "class"
                                 :members 
-                                  ( ("clone_tag" type (:type "struct") (reparse-symbol classsubparts) [11278 11299])
+                                  ( ("clone_tag" type (:type "struct") (reparse-symbol classsubparts) [11417 11438])
                                     ("clone_impl" function
                                        (:constructor-flag t
                                         :arguments 
@@ -847,11 +847,11 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("clone_impl" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11324 11345])
-                                            ("" variable (:type ("clone_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11346 11357]))                                          
+                                                (reparse-symbol arg-sub-list) [11463 11484])
+                                            ("" variable (:type ("clone_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11485 11496]))                                          
                                         :type ("clone_impl" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11312 11462])
-                                    ("public" label nil (reparse-symbol classsubparts) [11476 11483])
+                                        (reparse-symbol classsubparts) [11451 11601])
+                                    ("public" label nil (reparse-symbol classsubparts) [11615 11622])
                                     ("clone_impl" function
                                        (:constructor-flag t
                                         :arguments 
@@ -859,19 +859,19 @@
                                                (:reference 1
                                                 :constant-flag t
                                                 :type ("T" type (:type "class") nil nil))
-                                                (reparse-symbol arg-sub-list) [11530 11543]))                                          
+                                                (reparse-symbol arg-sub-list) [11669 11682]))                                          
                                         :type ("clone_impl" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11518 11648])
+                                        (reparse-symbol classsubparts) [11657 11787])
                                     ("clone_impl" function
                                        (:destructor-flag t
                                         :type "void")
-                                        (reparse-symbol classsubparts) [11662 11719])
-                                    ("private" label nil (reparse-symbol classsubparts) [11733 11741])
+                                        (reparse-symbol classsubparts) [11801 11858])
+                                    ("private" label nil (reparse-symbol classsubparts) [11872 11880])
                                     ("clone" function
                                        (:pointer 1
                                         :type ("clone_base" type (:type "class") nil nil))
-                                        (reparse-symbol classsubparts) [11755 11893])
-                                    ("rethrow" function (:type "void") (reparse-symbol classsubparts) [11907 12003]))                                  
+                                        (reparse-symbol classsubparts) [11894 12032])
+                                    ("rethrow" function (:type "void") (reparse-symbol classsubparts) [12046 12142]))                                  
                                 :superclasses 
                                   ( ("T" type
                                        (:protection "public"
@@ -881,9 +881,9 @@
                                        (:protection "public"
                                         :type "class")
                                         nil nil))                                  )
-                                (reparse-symbol namespacesubparts) [11139 12018]))                          
+                                (reparse-symbol namespacesubparts) [11278 12157]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [9992 12028])
+                        (reparse-symbol namespacesubparts) [9992 12167])
                     ("enable_current_exception" function
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -897,16 +897,16 @@
                                (:reference 1
                                 :constant-flag t
                                 :type ("T" type (:type "class") nil nil))
-                                (reparse-symbol arg-sub-list) [12130 12143]))                          
+                                (reparse-symbol arg-sub-list) [12397 12410]))                          
                         :typemodifiers ("inline"))
-                        (reparse-symbol namespacesubparts) [12034 12214]))                  
+                        (reparse-symbol namespacesubparts) [12301 12481]))                  
                 :type "namespace")
-                nil [529 12220]))          
+                nil [529 12487]))          
       :file "exception.hpp"
-      :pointmax 12324
-      :fsize 12323
-      :lastmodtime '(21983 29353 0 0)
-      :unmatched-syntax '((EXPLICIT 11497 . 11505) (symbol 10559 . 10562) (symbol 10548 . 10558) (symbol 10544 . 10547) (symbol 10537 . 10543) (punctuation 10534 . 10535) (semantic-list 10147 . 10156) (symbol 10142 . 10146) (DEFAULT 10148 . 10155) (symbol 10131 . 10141) (DEFAULT 10148 . 10155) (symbol 10127 . 10130) (symbol 10120 . 10126) (punctuation 10117 . 10118) (punctuation 9598 . 9599) (punctuation 9597 . 9598) (punctuation 9596 . 9597) (semantic-list 9531 . 9596) (SIZEOF 9525 . 9531) (punctuation 9524 . 9525) (symbol 9523 . 9524) (punctuation 9522 . 9523) (symbol 9498 . 9522) (TYPENAME 9489 . 9497) (TYPEDEF 9481 . 9488) (symbol 8749 . 8752) (symbol 8738 . 8748) (symbol 8734 . 8737) (symbol 8727 . 8733) (punctuation 8724 . 8725) (EXPLICIT 8431 . 8439) (semantic-list 8258 . 8267) (symbol 8253 . 8257) (DEFAULT 8259 . 8266) (symbol 8242 . 8252) (DEFAULT 8259 . 8266) (symbol 8238 . 8241) (symbol 8231 . 8237) (punctuation 8228 . 8229) (symbol 7308 . 7318) (symbol 7304 . 7307) (symbol 7297 . 7303) (punctuation 7294 . 7295) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (semantic-list 4891 . 4900) (symbol 4886 . 4890) (DEFAULT 4892 . 4899) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (symbol 4875 . 4885) (DEFAULT 4892 . 4899) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (symbol 4871 . 4874) (symbol 4864 . 4870) (punctuation 4861 . 4862) (symbol 3204 . 3207) (symbol 3193 . 3203) (symbol 3189 . 3192) (symbol 3182 . 3188) (punctuation 3179 . 3180) (semantic-list 3049 . 3058) (symbol 3044 . 3048) (DEFAULT 3050 . 3057) (symbol 3033 . 3043) (DEFAULT 3050 . 3057) (symbol 3029 . 3032) (symbol 3022 . 3028) (punctuation 3019 . 3020) (EXPLICIT 2832 . 2840) (EXPLICIT 2582 . 2590) (EXPLICIT 2314 . 2322) (symbol 409 . 422) (symbol 405 . 408) (symbol 398 . 404) (punctuation 397 . 398))
+      :pointmax 12591
+      :fsize 12590
+      :lastmodtime '(22134 46853 0 0)
+      :unmatched-syntax '((symbol 12277 . 12280) (symbol 12266 . 12276) (symbol 12262 . 12265) (symbol 12255 . 12261) (punctuation 12252 . 12253) (EXPLICIT 11636 . 11644) (semantic-list 11245 . 11254) (symbol 11240 . 11244) (DEFAULT 11246 . 11253) (symbol 11229 . 11239) (DEFAULT 11246 . 11253) (symbol 11225 . 11228) (symbol 11218 . 11224) (punctuation 11215 . 11216) (symbol 10559 . 10562) (symbol 10548 . 10558) (symbol 10544 . 10547) (symbol 10537 . 10543) (punctuation 10534 . 10535) (semantic-list 10147 . 10156) (symbol 10142 . 10146) (DEFAULT 10148 . 10155) (symbol 10131 . 10141) (DEFAULT 10148 . 10155) (symbol 10127 . 10130) (symbol 10120 . 10126) (punctuation 10117 . 10118) (punctuation 9598 . 9599) (punctuation 9597 . 9598) (punctuation 9596 . 9597) (semantic-list 9531 . 9596) (SIZEOF 9525 . 9531) (punctuation 9524 . 9525) (symbol 9523 . 9524) (punctuation 9522 . 9523) (symbol 9498 . 9522) (TYPENAME 9489 . 9497) (TYPEDEF 9481 . 9488) (symbol 8749 . 8752) (symbol 8738 . 8748) (symbol 8734 . 8737) (symbol 8727 . 8733) (punctuation 8724 . 8725) (EXPLICIT 8431 . 8439) (semantic-list 8258 . 8267) (symbol 8253 . 8257) (DEFAULT 8259 . 8266) (symbol 8242 . 8252) (DEFAULT 8259 . 8266) (symbol 8238 . 8241) (symbol 8231 . 8237) (punctuation 8228 . 8229) (symbol 7308 . 7318) (symbol 7304 . 7307) (symbol 7297 . 7303) (punctuation 7294 . 7295) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (semantic-list 4891 . 4900) (symbol 4886 . 4890) (DEFAULT 4892 . 4899) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (symbol 4875 . 4885) (DEFAULT 4892 . 4899) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (FRIEND 6829 . 6835) (FRIEND 6767 . 6773) (FRIEND 6701 . 6707) (symbol 4871 . 4874) (symbol 4864 . 4870) (punctuation 4861 . 4862) (symbol 3204 . 3207) (symbol 3193 . 3203) (symbol 3189 . 3192) (symbol 3182 . 3188) (punctuation 3179 . 3180) (semantic-list 3049 . 3058) (symbol 3044 . 3048) (DEFAULT 3050 . 3057) (symbol 3033 . 3043) (DEFAULT 3050 . 3057) (symbol 3029 . 3032) (symbol 3022 . 3028) (punctuation 3019 . 3020) (EXPLICIT 2832 . 2840) (EXPLICIT 2582 . 2590) (EXPLICIT 2314 . 2322) (symbol 409 . 422) (symbol 405 . 408) (symbol 398 . 404) (punctuation 397 . 398))
       :lexical-table 
         '(("UUID_274DA366004E11DCB1DDFE2E56D89593")
           )

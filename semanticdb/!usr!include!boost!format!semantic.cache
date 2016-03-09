@@ -75,7 +75,7 @@
       :file "format_fwd.hpp"
       :pointmax 1431
       :fsize 1430
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 851 . 852) (punctuation 849 . 850) (symbol 847 . 849) (punctuation 846 . 847) (symbol 837 . 846) (punctuation 836 . 837) (punctuation 835 . 836) (symbol 832 . 835) (punctuation 830 . 831) (symbol 824 . 829) (CLASS 818 . 823) (punctuation 816 . 817) (punctuation 815 . 816) (symbol 813 . 815) (punctuation 812 . 813) (symbol 801 . 812) (symbol 788 . 800) (punctuation 786 . 787) (symbol 783 . 785) (CLASS 777 . 782) (punctuation 766 . 767) (symbol 764 . 766) (CLASS 758 . 763) (punctuation 757 . 758) (TEMPLATE 748 . 756))
       :lexical-table 
         '(("BOOST_FORMAT_FWD_HPP")
@@ -271,7 +271,7 @@
       :file "internals_fwd.hpp"
       :pointmax 2205
       :fsize 2204
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_FORMAT_INTERNAL_FWD_HPP")
@@ -543,7 +543,7 @@
       :file "internals.hpp"
       :pointmax 8161
       :fsize 8160
-      :lastmodtime '(22070 2371 764792 173000)
+      :lastmodtime '(22134 46854 9367 649000)
       :unmatched-syntax '((punctuation 3233 . 3234) (punctuation 3232 . 3233) (TYPEDEF 3224 . 3231) (symbol 3068 . 3080) (TYPEDEF 3060 . 3067) (symbol 1227 . 1239) (TYPEDEF 1219 . 1226))
       :lexical-table 
         '(("BOOST_FORMAT_INTERNALS_HPP")
@@ -883,7 +883,7 @@
       :file "format_class.hpp"
       :pointmax 7119
       :fsize 7118
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((EXPLICIT 1843 . 1851) (EXPLICIT 1772 . 1780) (EXPLICIT 1546 . 1554) (EXPLICIT 1495 . 1503))
       :lexical-table 
         '(("BOOST_FORMAT_CLASS_HPP")
@@ -1036,7 +1036,7 @@
       :file "exceptions.hpp"
       :pointmax 3441
       :fsize 3440
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_FORMAT_EXCEPTIONS_HPP")
@@ -1368,7 +1368,7 @@
       :file "format_implementation.hpp"
       :pointmax 11868
       :fsize 11867
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 7286 . 7287) (punctuation 7285 . 7286) (punctuation 7284 . 7285) (symbol 7279 . 7284) (punctuation 7277 . 7278) (symbol 7275 . 7277) (punctuation 7273 . 7274) (symbol 7271 . 7273) (punctuation 7270 . 7271) (symbol 7258 . 7270) (TYPENAME 7249 . 7257) (punctuation 7243 . 7244) (symbol 7238 . 7243) (CLASS 7232 . 7237) (punctuation 7230 . 7231) (symbol 7228 . 7230) (CLASS 7222 . 7227) (punctuation 7220 . 7221) (symbol 7218 . 7220) (CLASS 7212 . 7217) (punctuation 7210 . 7211) (TEMPLATE 7202 . 7210))
       :lexical-table 
         '(("BOOST_FORMAT_IMPLEMENTATION_HPP")
@@ -3030,7 +3030,7 @@
       :file "group.hpp"
       :pointmax 17880
       :fsize 17879
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 6854 . 6855) (symbol 6771 . 6783) (INLINE 6764 . 6770) (punctuation 6762 . 6763) (symbol 6759 . 6762) (CLASS 6753 . 6758) (punctuation 6752 . 6753) (symbol 6750 . 6752) (CLASS 6744 . 6749) (punctuation 6743 . 6744) (symbol 6741 . 6743) (CLASS 6735 . 6740) (punctuation 6734 . 6735) (symbol 6732 . 6734) (CLASS 6726 . 6731) (punctuation 6725 . 6726) (symbol 6723 . 6725) (CLASS 6717 . 6722) (punctuation 6716 . 6717) (symbol 6714 . 6716) (CLASS 6708 . 6713) (punctuation 6707 . 6708) (symbol 6705 . 6707) (CLASS 6699 . 6704) (punctuation 6698 . 6699) (symbol 6696 . 6698) (CLASS 6690 . 6695) (punctuation 6689 . 6690) (symbol 6687 . 6689) (CLASS 6681 . 6686) (punctuation 6680 . 6681) (symbol 6678 . 6680) (CLASS 6672 . 6677) (punctuation 6670 . 6671) (symbol 6668 . 6670) (CLASS 6662 . 6667) (punctuation 6660 . 6661) (symbol 6658 . 6660) (CLASS 6652 . 6657) (punctuation 6651 . 6652) (TEMPLATE 6642 . 6650) (punctuation 6056 . 6057) (symbol 5973 . 5985) (INLINE 5966 . 5972) (punctuation 5964 . 5965) (symbol 5962 . 5964) (CLASS 5956 . 5961) (punctuation 5955 . 5956) (symbol 5953 . 5955) (CLASS 5947 . 5952) (punctuation 5946 . 5947) (symbol 5944 . 5946) (CLASS 5938 . 5943) (punctuation 5937 . 5938) (symbol 5935 . 5937) (CLASS 5929 . 5934) (punctuation 5928 . 5929) (symbol 5926 . 5928) (CLASS 5920 . 5925) (punctuation 5919 . 5920) (symbol 5917 . 5919) (CLASS 5911 . 5916) (punctuation 5910 . 5911) (symbol 5908 . 5910) (CLASS 5902 . 5907) (punctuation 5901 . 5902) (symbol 5899 . 5901) (CLASS 5893 . 5898) (punctuation 5892 . 5893) (symbol 5890 . 5892) (CLASS 5884 . 5889) (punctuation 5882 . 5883) (symbol 5880 . 5882) (CLASS 5874 . 5879) (punctuation 5872 . 5873) (symbol 5870 . 5872) (CLASS 5864 . 5869) (punctuation 5863 . 5864) (TEMPLATE 5854 . 5862) (punctuation 5323 . 5324) (symbol 5240 . 5252) (INLINE 5233 . 5239) (punctuation 5231 . 5232) (symbol 5229 . 5231) (CLASS 5223 . 5228) (punctuation 5222 . 5223) (symbol 5220 . 5222) (CLASS 5214 . 5219) (punctuation 5213 . 5214) (symbol 5211 . 5213) (CLASS 5205 . 5210) (punctuation 5204 . 5205) (symbol 5202 . 5204) (CLASS 5196 . 5201) (punctuation 5195 . 5196) (symbol 5193 . 5195) (CLASS 5187 . 5192) (punctuation 5186 . 5187) (symbol 5184 . 5186) (CLASS 5178 . 5183) (punctuation 5177 . 5178) (symbol 5175 . 5177) (CLASS 5169 . 5174) (punctuation 5168 . 5169) (symbol 5166 . 5168) (CLASS 5160 . 5165) (punctuation 5158 . 5159) (symbol 5156 . 5158) (CLASS 5150 . 5155) (punctuation 5148 . 5149) (symbol 5146 . 5148) (CLASS 5140 . 5145) (punctuation 5139 . 5140) (TEMPLATE 5130 . 5138) (punctuation 4645 . 4646) (symbol 4562 . 4574) (INLINE 4555 . 4561) (punctuation 4553 . 4554) (symbol 4551 . 4553) (CLASS 4545 . 4550) (punctuation 4544 . 4545) (symbol 4542 . 4544) (CLASS 4536 . 4541) (punctuation 4535 . 4536) (symbol 4533 . 4535) (CLASS 4527 . 4532) (punctuation 4526 . 4527) (symbol 4524 . 4526) (CLASS 4518 . 4523) (punctuation 4517 . 4518) (symbol 4515 . 4517) (CLASS 4509 . 4514) (punctuation 4508 . 4509) (symbol 4506 . 4508) (CLASS 4500 . 4505) (punctuation 4499 . 4500) (symbol 4497 . 4499) (CLASS 4491 . 4496) (punctuation 4489 . 4490) (symbol 4487 . 4489) (CLASS 4481 . 4486) (punctuation 4479 . 4480) (symbol 4477 . 4479) (CLASS 4471 . 4476) (punctuation 4470 . 4471) (TEMPLATE 4461 . 4469) (punctuation 4022 . 4023) (symbol 3939 . 3951) (INLINE 3932 . 3938) (punctuation 3930 . 3931) (symbol 3928 . 3930) (CLASS 3922 . 3927) (punctuation 3921 . 3922) (symbol 3919 . 3921) (CLASS 3913 . 3918) (punctuation 3912 . 3913) (symbol 3910 . 3912) (CLASS 3904 . 3909) (punctuation 3903 . 3904) (symbol 3901 . 3903) (CLASS 3895 . 3900) (punctuation 3894 . 3895) (symbol 3892 . 3894) (CLASS 3886 . 3891) (punctuation 3885 . 3886) (symbol 3883 . 3885) (CLASS 3877 . 3882) (punctuation 3875 . 3876) (symbol 3873 . 3875) (CLASS 3867 . 3872) (punctuation 3865 . 3866) (symbol 3863 . 3865) (CLASS 3857 . 3862) (punctuation 3856 . 3857) (TEMPLATE 3847 . 3855) (punctuation 3454 . 3455) (symbol 3371 . 3383) (INLINE 3364 . 3370) (punctuation 3362 . 3363) (symbol 3360 . 3362) (CLASS 3354 . 3359) (punctuation 3353 . 3354) (symbol 3351 . 3353) (CLASS 3345 . 3350) (punctuation 3344 . 3345) (symbol 3342 . 3344) (CLASS 3336 . 3341) (punctuation 3335 . 3336) (symbol 3333 . 3335) (CLASS 3327 . 3332) (punctuation 3326 . 3327) (symbol 3324 . 3326) (CLASS 3318 . 3323) (punctuation 3316 . 3317) (symbol 3314 . 3316) (CLASS 3308 . 3313) (punctuation 3306 . 3307) (symbol 3304 . 3306) (CLASS 3298 . 3303) (punctuation 3297 . 3298) (TEMPLATE 3288 . 3296) (punctuation 2941 . 2942) (symbol 2858 . 2870) (INLINE 2851 . 2857) (punctuation 2849 . 2850) (symbol 2847 . 2849) (CLASS 2841 . 2846) (punctuation 2840 . 2841) (symbol 2838 . 2840) (CLASS 2832 . 2837) (punctuation 2831 . 2832) (symbol 2829 . 2831) (CLASS 2823 . 2828) (punctuation 2822 . 2823) (symbol 2820 . 2822) (CLASS 2814 . 2819) (punctuation 2812 . 2813) (symbol 2810 . 2812) (CLASS 2804 . 2809) (punctuation 2802 . 2803) (symbol 2800 . 2802) (CLASS 2794 . 2799) (punctuation 2793 . 2794) (TEMPLATE 2784 . 2792) (punctuation 2437 . 2438) (symbol 2354 . 2366) (INLINE 2347 . 2353) (punctuation 2345 . 2346) (symbol 2343 . 2345) (CLASS 2337 . 2342) (punctuation 2336 . 2337) (symbol 2334 . 2336) (CLASS 2328 . 2333) (punctuation 2327 . 2328) (symbol 2325 . 2327) (CLASS 2319 . 2324) (punctuation 2317 . 2318) (symbol 2315 . 2317) (CLASS 2309 . 2314) (punctuation 2307 . 2308) (symbol 2305 . 2307) (CLASS 2299 . 2304) (punctuation 2298 . 2299) (TEMPLATE 2289 . 2297) (punctuation 1988 . 1989) (symbol 1905 . 1917) (INLINE 1898 . 1904) (punctuation 1896 . 1897) (symbol 1894 . 1896) (CLASS 1888 . 1893) (punctuation 1887 . 1888) (symbol 1885 . 1887) (CLASS 1879 . 1884) (punctuation 1877 . 1878) (symbol 1875 . 1877) (CLASS 1869 . 1874) (punctuation 1867 . 1868) (symbol 1865 . 1867) (CLASS 1859 . 1864) (punctuation 1858 . 1859) (TEMPLATE 1849 . 1857) (punctuation 1591 . 1592) (symbol 1508 . 1520) (INLINE 1501 . 1507) (punctuation 1499 . 1500) (symbol 1497 . 1499) (CLASS 1491 . 1496) (punctuation 1489 . 1490) (symbol 1487 . 1489) (CLASS 1481 . 1486) (punctuation 1479 . 1480) (symbol 1477 . 1479) (CLASS 1471 . 1476) (punctuation 1470 . 1471) (TEMPLATE 1461 . 1469) (punctuation 1264 . 1265) (symbol 1180 . 1192) (INLINE 1173 . 1179) (punctuation 1171 . 1172) (symbol 1169 . 1171) (CLASS 1163 . 1168) (punctuation 1161 . 1162) (symbol 1159 . 1161) (CLASS 1153 . 1158) (punctuation 1152 . 1153) (TEMPLATE 1143 . 1151))
       :lexical-table 
         '(("BOOST_FORMAT_GROUP_HPP")
@@ -3362,7 +3362,7 @@
                                                 :default-value "NULL"
                                                 :type ("io::detail::locale_t" type (:type "class") nil nil))
                                                 (reparse-symbol arg-sub-list) [5834 5868]))                                          )
-                                        (reparse-symbol namespacesubparts) [5540 11418])
+                                        (reparse-symbol namespacesubparts) [5540 11485])
                                     ("distribute" function
                                        (:template 
                                           ( ("Ch" type (:type "class") nil nil)
@@ -3380,9 +3380,9 @@
                                                           ("Alloc" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [11515 11548])
-                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11549 11553]))                                          )
-                                        (reparse-symbol namespacesubparts) [11441 12157])
+                                                (reparse-symbol arg-sub-list) [11582 11615])
+                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11616 11620]))                                          )
+                                        (reparse-symbol namespacesubparts) [11508 12224])
                                     ("feed_impl" function
                                        (:template 
                                           ( ("Ch" type (:type "class") nil nil)
@@ -3406,9 +3406,9 @@
                                                           ("Alloc" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [12265 12298])
-                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12299 12303]))                                          )
-                                        (reparse-symbol namespacesubparts) [12163 12615])
+                                                (reparse-symbol arg-sub-list) [12332 12365])
+                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12366 12370]))                                          )
+                                        (reparse-symbol namespacesubparts) [12230 12682])
                                     ("feed" function
                                        (:template 
                                           ( ("Ch" type (:type "class") nil nil)
@@ -3432,20 +3432,20 @@
                                                           ("Alloc" type nil nil nil))                                                        
                                                       :type "class")
                                                       nil nil))
-                                                (reparse-symbol arg-sub-list) [12724 12757])
-                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12758 12762]))                                          
+                                                (reparse-symbol arg-sub-list) [12791 12824])
+                                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12825 12829]))                                          
                                         :typemodifiers ("inline"))
-                                        (reparse-symbol namespacesubparts) [12621 12867]))                                  
+                                        (reparse-symbol namespacesubparts) [12688 12934]))                                  
                                 :type "namespace")
-                                (reparse-symbol namespacesubparts) [978 12874]))                          
+                                (reparse-symbol namespacesubparts) [978 12941]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [963 12896]))                  
+                        (reparse-symbol namespacesubparts) [963 12963]))                  
                 :type "namespace")
-                nil [945 12914]))          
+                nil [945 12981]))          
       :file "feed_args.hpp"
-      :pointmax 12974
-      :fsize 12973
-      :lastmodtime '(22070 2371 0 0)
+      :pointmax 13041
+      :fsize 13040
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 5791 . 5792) (punctuation 5790 . 5791) (punctuation 5720 . 5721) (punctuation 5719 . 5720) (punctuation 5460 . 5461) (punctuation 5286 . 5287) (punctuation 5157 . 5158) (punctuation 5075 . 5076) (punctuation 4692 . 4693) (punctuation 4489 . 4490) (punctuation 4310 . 4311) (punctuation 4189 . 4190) (punctuation 3942 . 3943) (punctuation 3792 . 3793) (punctuation 3577 . 3578) (punctuation 3450 . 3451))
       :lexical-table 
         '(("BOOST_FORMAT_FEED_ARGS_HPP")
@@ -3683,7 +3683,7 @@
       :file "parsing.hpp"
       :pointmax 18901
       :fsize 18900
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_FORMAT_PARSING_HPP")
@@ -3767,7 +3767,7 @@
       :file "free_funcs.hpp"
       :pointmax 2629
       :fsize 2628
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 1060 . 1061) (punctuation 1059 . 1060) (USING 1053 . 1058))
       :lexical-table 
         '(("BOOST_FORMAT_FUNCS_HPP")
@@ -3806,7 +3806,7 @@
       :file "alt_sstream.hpp"
       :pointmax 7439
       :fsize 7438
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 5359 . 5360) (punctuation 5335 . 5336) (punctuation 5334 . 5335) (punctuation 5332 . 5333) (punctuation 5330 . 5331) (symbol 5325 . 5330) (punctuation 5323 . 5324) (symbol 5321 . 5323) (punctuation 5319 . 5320) (symbol 5317 . 5319) (punctuation 5315 . 5316) (symbol 5297 . 5315) (punctuation 5295 . 5296) (symbol 5285 . 5295) (punctuation 5283 . 5284) (symbol 5267 . 5283) (PRIVATE 5259 . 5266) (punctuation 5257 . 5258) (symbol 5221 . 5243) (CLASS 5215 . 5220) (punctuation 5205 . 5206) (symbol 5200 . 5205) (CLASS 5194 . 5199) (punctuation 5192 . 5193) (symbol 5190 . 5192) (CLASS 5184 . 5189) (punctuation 5182 . 5183) (symbol 5180 . 5182) (CLASS 5174 . 5179) (punctuation 5173 . 5174) (TEMPLATE 5164 . 5172) (punctuation 1272 . 1273) (punctuation 1262 . 1263) (symbol 1230 . 1248) (CLASS 1224 . 1229) (punctuation 1214 . 1215) (symbol 1209 . 1214) (CLASS 1203 . 1208) (punctuation 1201 . 1202) (symbol 1199 . 1201) (CLASS 1193 . 1198) (punctuation 1191 . 1192) (symbol 1189 . 1191) (CLASS 1183 . 1188) (punctuation 1182 . 1183) (TEMPLATE 1174 . 1182) (punctuation 1124 . 1125) (punctuation 1122 . 1123) (symbol 1120 . 1122) (punctuation 1119 . 1120) (symbol 1110 . 1119) (punctuation 1109 . 1110) (punctuation 1108 . 1109) (symbol 1105 . 1108) (punctuation 1104 . 1105) (punctuation 1103 . 1104) (punctuation 1102 . 1103) (symbol 1097 . 1102) (CLASS 1091 . 1096) (punctuation 1071 . 1072) (punctuation 1070 . 1071) (symbol 1068 . 1070) (punctuation 1067 . 1068) (symbol 1056 . 1067) (punctuation 1055 . 1056) (punctuation 1054 . 1055) (symbol 1051 . 1054) (punctuation 1050 . 1051) (punctuation 1049 . 1050) (punctuation 1048 . 1049) (symbol 1045 . 1047) (CLASS 1039 . 1044) (punctuation 1037 . 1038) (symbol 1035 . 1037) (CLASS 1029 . 1034) (punctuation 1028 . 1029) (TEMPLATE 1020 . 1028) (punctuation 975 . 976) (punctuation 973 . 974) (symbol 971 . 973) (punctuation 970 . 971) (symbol 961 . 970) (punctuation 960 . 961) (punctuation 959 . 960) (symbol 956 . 959) (punctuation 955 . 956) (punctuation 954 . 955) (punctuation 953 . 954) (symbol 948 . 953) (CLASS 942 . 947) (punctuation 922 . 923) (punctuation 921 . 922) (symbol 919 . 921) (punctuation 918 . 919) (symbol 907 . 918) (punctuation 906 . 907) (punctuation 905 . 906) (symbol 902 . 905) (punctuation 901 . 902) (punctuation 900 . 901) (punctuation 899 . 900) (symbol 897 . 899) (CLASS 891 . 896) (punctuation 889 . 890) (symbol 887 . 889) (CLASS 881 . 886) (punctuation 880 . 881) (TEMPLATE 872 . 880))
       :lexical-table 
         '(("BOOST_SK_ALT_SSTREAM_HPP")
@@ -3915,7 +3915,7 @@
       :file "alt_sstream_impl.hpp"
       :pointmax 13479
       :fsize 13478
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 9877 . 9878) (punctuation 9876 . 9877) (punctuation 9875 . 9876) (symbol 9870 . 9875) (punctuation 9868 . 9869) (symbol 9866 . 9868) (punctuation 9864 . 9865) (symbol 9862 . 9864) (punctuation 9861 . 9862) (symbol 9843 . 9861) (TYPENAME 9834 . 9842) (punctuation 9824 . 9825) (symbol 9819 . 9824) (CLASS 9813 . 9818) (punctuation 9811 . 9812) (symbol 9809 . 9811) (CLASS 9803 . 9808) (punctuation 9801 . 9802) (symbol 9799 . 9801) (CLASS 9793 . 9798) (punctuation 9792 . 9793) (TEMPLATE 9784 . 9792) (punctuation 8914 . 8915) (punctuation 8913 . 8914) (punctuation 8912 . 8913) (symbol 8907 . 8912) (punctuation 8905 . 8906) (symbol 8903 . 8905) (punctuation 8901 . 8902) (symbol 8899 . 8901) (punctuation 8898 . 8899) (symbol 8880 . 8898) (TYPENAME 8871 . 8879) (punctuation 8861 . 8862) (symbol 8856 . 8861) (CLASS 8850 . 8855) (punctuation 8848 . 8849) (symbol 8846 . 8848) (CLASS 8840 . 8845) (punctuation 8838 . 8839) (symbol 8836 . 8838) (CLASS 8830 . 8835) (punctuation 8829 . 8830) (TEMPLATE 8821 . 8829) (punctuation 7912 . 7913) (punctuation 7911 . 7912) (punctuation 7910 . 7911) (symbol 7905 . 7910) (punctuation 7903 . 7904) (symbol 7901 . 7903) (punctuation 7899 . 7900) (symbol 7897 . 7899) (punctuation 7896 . 7897) (symbol 7878 . 7896) (TYPENAME 7869 . 7877) (punctuation 7859 . 7860) (symbol 7854 . 7859) (CLASS 7848 . 7853) (punctuation 7846 . 7847) (symbol 7844 . 7846) (CLASS 7838 . 7843) (punctuation 7836 . 7837) (symbol 7834 . 7836) (CLASS 7828 . 7833) (punctuation 7827 . 7828) (TEMPLATE 7819 . 7827) (punctuation 6293 . 6294) (punctuation 6292 . 6293) (punctuation 6205 . 6206) (punctuation 6204 . 6205) (punctuation 6203 . 6204) (symbol 6198 . 6203) (punctuation 6196 . 6197) (symbol 6194 . 6196) (punctuation 6192 . 6193) (symbol 6190 . 6192) (punctuation 6189 . 6190) (symbol 6171 . 6189) (TYPENAME 6162 . 6170) (punctuation 6152 . 6153) (symbol 6147 . 6152) (CLASS 6141 . 6146) (punctuation 6139 . 6140) (symbol 6137 . 6139) (CLASS 6131 . 6136) (punctuation 6129 . 6130) (symbol 6127 . 6129) (CLASS 6121 . 6126) (punctuation 6120 . 6121) (TEMPLATE 6112 . 6120) (punctuation 4113 . 4114) (punctuation 4112 . 4113) (punctuation 4083 . 4084) (punctuation 4082 . 4083) (punctuation 3994 . 3995) (punctuation 3993 . 3994) (punctuation 3992 . 3993) (symbol 3987 . 3992) (punctuation 3985 . 3986) (symbol 3983 . 3985) (punctuation 3981 . 3982) (symbol 3979 . 3981) (punctuation 3978 . 3979) (symbol 3960 . 3978) (TYPENAME 3951 . 3959) (punctuation 3941 . 3942) (symbol 3936 . 3941) (CLASS 3930 . 3935) (punctuation 3928 . 3929) (symbol 3926 . 3928) (CLASS 3920 . 3925) (punctuation 3918 . 3919) (symbol 3916 . 3918) (CLASS 3910 . 3915) (punctuation 3909 . 3910) (TEMPLATE 3901 . 3909))
       :lexical-table 
         '(("BOOST_SK_ALT_SSTREAM_IMPL_HPP")

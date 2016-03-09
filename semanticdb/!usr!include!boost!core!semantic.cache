@@ -10,14 +10,22 @@
             ("boost/config.hpp" include nil nil [509 536])
             ("boost" type
                (:members 
-                  ( ("enable_if_c" type
+                  ( ("enable_if_has_type" type
+                       (:members 
+                          ( ("type" type
+                               (:typedef ("R" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [797 812]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [763 817])
+                    ("enable_if_c" type
                        (:members 
                           ( ("type" type
                                (:typedef ("T" type (:type "class") nil nil)
                                 :type "typedef")
-                                (reparse-symbol classsubparts) [786 801]))                          
+                                (reparse-symbol classsubparts) [883 898]))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [761 806])
+                        (reparse-symbol namespacesubparts) [858 903])
                     ("enable_if_c" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -25,7 +33,7 @@
                         :template-specifier 
                           ( ("false" type nil nil nil)
                             ("T" type nil nil nil))                          )
-                        (reparse-symbol namespacesubparts) [810 863])
+                        (reparse-symbol namespacesubparts) [907 960])
                     ("enable_if" type
                        (:superclasses 
                           ( ("enable_if_c" type
@@ -33,7 +41,7 @@
                                 :type "class")
                                 nil nil))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [908 965])
+                        (reparse-symbol namespacesubparts) [1005 1062])
                     ("lazy_enable_if_c" type
                        (:template 
                           ( ("bool" type nil nil nil)
@@ -43,8 +51,8 @@
                           ( ("type" type
                                (:typedef ("T::type" type (:type "class") nil nil)
                                 :type "typedef")
-                                (reparse-symbol classsubparts) [1028 1058]))                          )
-                        (reparse-symbol namespacesubparts) [969 1063])
+                                (reparse-symbol classsubparts) [1125 1155]))                          )
+                        (reparse-symbol namespacesubparts) [1066 1160])
                     ("lazy_enable_if_c" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -52,7 +60,7 @@
                         :template-specifier 
                           ( ("false" type nil nil nil)
                             ("T" type nil nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1067 1125])
+                        (reparse-symbol namespacesubparts) [1164 1222])
                     ("lazy_enable_if" type
                        (:template 
                           ( ("Cond" type (:type "class") nil nil)
@@ -63,15 +71,15 @@
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1129 1230])
+                        (reparse-symbol namespacesubparts) [1226 1327])
                     ("disable_if_c" type
                        (:members 
                           ( ("type" type
                                (:typedef ("T" type (:type "class") nil nil)
                                 :type "typedef")
-                                (reparse-symbol classsubparts) [1297 1312]))                          
+                                (reparse-symbol classsubparts) [1394 1409]))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [1271 1317])
+                        (reparse-symbol namespacesubparts) [1368 1414])
                     ("disable_if_c" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -79,7 +87,7 @@
                         :template-specifier 
                           ( ("true" type nil nil nil)
                             ("T" type nil nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1321 1374])
+                        (reparse-symbol namespacesubparts) [1418 1471])
                     ("disable_if" type
                        (:superclasses 
                           ( ("disable_if_c" type
@@ -87,7 +95,7 @@
                                 :type "class")
                                 nil nil))                          
                         :type "struct")
-                        (reparse-symbol namespacesubparts) [1419 1478])
+                        (reparse-symbol namespacesubparts) [1516 1575])
                     ("lazy_disable_if_c" type
                        (:template 
                           ( ("bool" type nil nil nil)
@@ -97,8 +105,8 @@
                           ( ("type" type
                                (:typedef ("T::type" type (:type "class") nil nil)
                                 :type "typedef")
-                                (reparse-symbol classsubparts) [1542 1572]))                          )
-                        (reparse-symbol namespacesubparts) [1482 1577])
+                                (reparse-symbol classsubparts) [1639 1669]))                          )
+                        (reparse-symbol namespacesubparts) [1579 1674])
                     ("lazy_disable_if_c" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -106,7 +114,7 @@
                         :template-specifier 
                           ( ("true" type nil nil nil)
                             ("T" type nil nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1581 1639])
+                        (reparse-symbol namespacesubparts) [1678 1736])
                     ("lazy_disable_if" type
                        (:template 
                           ( ("Cond" type (:type "class") nil nil)
@@ -117,14 +125,14 @@
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1643 1746]))                  
+                        (reparse-symbol namespacesubparts) [1740 1843]))                  
                 :type "namespace")
-                nil [703 1749]))          
+                nil [703 1846]))          
       :file "enable_if.hpp"
-      :pointmax 3097
-      :fsize 3096
-      :lastmodtime '(22070 2371 0 0)
-      :unmatched-syntax '((punctuation 1414 . 1415) (VOID 1410 . 1414) (punctuation 1408 . 1409) (symbol 1406 . 1407) (CLASS 1400 . 1405) (punctuation 1398 . 1399) (symbol 1394 . 1398) (CLASS 1388 . 1393) (punctuation 1387 . 1388) (TEMPLATE 1378 . 1386) (punctuation 1267 . 1268) (VOID 1263 . 1267) (punctuation 1261 . 1262) (symbol 1259 . 1260) (CLASS 1253 . 1258) (punctuation 1251 . 1252) (symbol 1250 . 1251) (BOOL 1245 . 1249) (punctuation 1244 . 1245) (TEMPLATE 1235 . 1243) (punctuation 903 . 904) (VOID 899 . 903) (punctuation 897 . 898) (symbol 895 . 896) (CLASS 889 . 894) (punctuation 887 . 888) (symbol 883 . 887) (CLASS 877 . 882) (punctuation 876 . 877) (TEMPLATE 867 . 875) (punctuation 757 . 758) (VOID 753 . 757) (punctuation 751 . 752) (symbol 749 . 750) (CLASS 743 . 748) (punctuation 741 . 742) (symbol 740 . 741) (BOOL 735 . 739) (punctuation 734 . 735) (TEMPLATE 725 . 733))
+      :pointmax 3316
+      :fsize 3315
+      :lastmodtime '(22134 46853 0 0)
+      :unmatched-syntax '((punctuation 1511 . 1512) (VOID 1507 . 1511) (punctuation 1505 . 1506) (symbol 1503 . 1504) (CLASS 1497 . 1502) (punctuation 1495 . 1496) (symbol 1491 . 1495) (CLASS 1485 . 1490) (punctuation 1484 . 1485) (TEMPLATE 1475 . 1483) (punctuation 1364 . 1365) (VOID 1360 . 1364) (punctuation 1358 . 1359) (symbol 1356 . 1357) (CLASS 1350 . 1355) (punctuation 1348 . 1349) (symbol 1347 . 1348) (BOOL 1342 . 1346) (punctuation 1341 . 1342) (TEMPLATE 1332 . 1340) (punctuation 1000 . 1001) (VOID 996 . 1000) (punctuation 994 . 995) (symbol 992 . 993) (CLASS 986 . 991) (punctuation 984 . 985) (symbol 980 . 984) (CLASS 974 . 979) (punctuation 973 . 974) (TEMPLATE 964 . 972) (punctuation 854 . 855) (VOID 850 . 854) (punctuation 848 . 849) (symbol 846 . 847) (CLASS 840 . 845) (punctuation 838 . 839) (symbol 837 . 838) (BOOL 832 . 836) (punctuation 831 . 832) (TEMPLATE 822 . 830) (punctuation 759 . 760) (VOID 755 . 759) (punctuation 754 . 755) (symbol 753 . 754) (TYPENAME 744 . 752) (punctuation 742 . 743) (symbol 741 . 742) (TYPENAME 732 . 740) (punctuation 731 . 732) (TEMPLATE 723 . 731))
       :lexical-table 
         '(("BOOST_CORE_ENABLE_IF_HPP")
           )
@@ -178,7 +186,7 @@
       :file "swap.hpp"
       :pointmax 1727
       :fsize 1726
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax '((symbol 1611 . 1628) (punctuation 1607 . 1608) (symbol 1605 . 1607) (CLASS 1599 . 1604) (punctuation 1597 . 1598) (symbol 1595 . 1597) (CLASS 1589 . 1594) (punctuation 1588 . 1589) (TEMPLATE 1580 . 1588) (semantic-list 1437 . 1440) (semantic-list 1428 . 1437) (semantic-list 1421 . 1424) (semantic-list 1413 . 1421) (symbol 1376 . 1393) (punctuation 1372 . 1373) (symbol 1371 . 1372) (symbol 1364 . 1370) (punctuation 1363 . 1364) (punctuation 1362 . 1363) (symbol 1359 . 1362) (punctuation 1357 . 1358) (symbol 1356 . 1357) (CLASS 1350 . 1355) (punctuation 1349 . 1350) (TEMPLATE 1341 . 1349) (symbol 1179 . 1196) (punctuation 1175 . 1176) (symbol 1174 . 1175) (CLASS 1168 . 1173) (punctuation 1167 . 1168) (TEMPLATE 1159 . 1167))
       :lexical-table 
         '(("BOOST_CORE_SWAP_HPP")
@@ -352,7 +360,7 @@
       :file "addressof.hpp"
       :pointmax 3437
       :fsize 3436
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax '((symbol 2171 . 2188) (punctuation 2169 . 2170) (symbol 2168 . 2169) (CLASS 2162 . 2167) (punctuation 2161 . 2162) (TEMPLATE 2153 . 2161) (symbol 2049 . 2066) (STATIC 2042 . 2048) (symbol 1851 . 1868) (STATIC 1844 . 1850) (symbol 1665 . 1682) (STATIC 1658 . 1664) (symbol 1485 . 1502) (STATIC 1478 . 1484) (symbol 1037 . 1054) (STATIC 1030 . 1036) (symbol 860 . 877) (STATIC 853 . 859) (semantic-list 724 . 738) (CONST 718 . 723) (semantic-list 715 . 717) (punctuation 713 . 714) (symbol 712 . 713) (OPERATOR 703 . 711) (symbol 685 . 702))
       :lexical-table 
         '(("BOOST_CORE_ADDRESSOF_HPP")
@@ -369,7 +377,7 @@
       :file "explicit_operator_bool.hpp"
       :pointmax 5168
       :fsize 5167
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_EXPLICIT_OPERATOR_BOOL_NOEXCEPT" (spp-arg-list nil 1535 . 1537) . 
@@ -412,7 +420,7 @@
       :file "noncopyable.hpp"
       :pointmax 1395
       :fsize 1394
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax '((punctuation 1112 . 1113) (DELETE 1106 . 1112) (punctuation 1104 . 1105) (semantic-list 1081 . 1103) (punctuation 1080 . 1081) (OPERATOR 1072 . 1080) (punctuation 1070 . 1071) (symbol 1059 . 1070) (punctuation 1051 . 1052) (DELETE 1045 . 1051) (punctuation 1043 . 1044) (semantic-list 1020 . 1042) (symbol 1009 . 1020) (punctuation 894 . 895) (DEFAULT 887 . 894) (punctuation 885 . 886) (semantic-list 882 . 884) (symbol 871 . 882) (punctuation 870 . 871) (punctuation 862 . 863) (DEFAULT 855 . 862) (punctuation 853 . 854) (semantic-list 850 . 852) (symbol 839 . 850) (symbol 823 . 838))
       :lexical-table 
         '(("BOOST_CORE_NONCOPYABLE_HPP")
@@ -499,7 +507,7 @@
       :file "checked_delete.hpp"
       :pointmax 1589
       :fsize 1588
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_CORE_CHECKED_DELETE_HPP")
@@ -736,7 +744,7 @@
       :file "ref.hpp"
       :pointmax 5975
       :fsize 5974
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax '((symbol 5799 . 5816) (punctuation 5797 . 5798) (symbol 5796 . 5797) (CLASS 5790 . 5795) (punctuation 5789 . 5790) (TEMPLATE 5781 . 5789) (punctuation 5705 . 5706) (punctuation 5704 . 5705) (punctuation 5703 . 5704) (symbol 5702 . 5703) (punctuation 5701 . 5702) (symbol 5685 . 5701) (TYPENAME 5676 . 5684) (symbol 5658 . 5675) (punctuation 5656 . 5657) (symbol 5655 . 5656) (CLASS 5649 . 5654) (punctuation 5648 . 5649) (TEMPLATE 5640 . 5648) (punctuation 3769 . 3770) (DELETE "delete" 3753 . 3769) (punctuation "=" 3753 . 3769) (semantic-list 3741 . 3752) (symbol 3737 . 3741) (punctuation 3750 . 3751) (VOID 3732 . 3736) (punctuation 3750 . 3751) (punctuation 3730 . 3731) (symbol 3729 . 3730) (CLASS 3723 . 3728) (punctuation 3722 . 3723) (TEMPLATE 3714 . 3722) (punctuation 3750 . 3751) (punctuation 3645 . 3646) (DELETE "delete" 3629 . 3645) (punctuation "=" 3629 . 3645) (semantic-list 3617 . 3628) (symbol 3614 . 3617) (punctuation 3626 . 3627) (VOID 3609 . 3613) (punctuation 3626 . 3627) (punctuation 3607 . 3608) (symbol 3606 . 3607) (CLASS 3600 . 3605) (punctuation 3599 . 3600) (TEMPLATE 3591 . 3599) (punctuation 3626 . 3627) (symbol 3171 . 3188) (punctuation 3169 . 3170) (symbol 3168 . 3169) (CLASS 3162 . 3167) (punctuation 3161 . 3162) (TEMPLATE 3153 . 3161) (symbol 2814 . 2831) (punctuation 2812 . 2813) (symbol 2811 . 2812) (CLASS 2805 . 2810) (punctuation 2804 . 2805) (TEMPLATE 2796 . 2804) (symbol 2448 . 2465) (symbol 2270 . 2287) (semantic-list 2170 . 2185) (CONST 2164 . 2169) (semantic-list 2161 . 2163) (punctuation 2159 . 2160) (symbol 2158 . 2159) (OPERATOR 2149 . 2157) (symbol 2131 . 2148) (semantic-list 2005 . 2031) (symbol 1983 . 2005) (semantic-list 2023 . 2030) (EXPLICIT 1603 . 1611) (symbol 1585 . 1602))
       :lexical-table 
         '(("BOOST_CORE_REF_HPP")
@@ -775,7 +783,7 @@
       :file "typeinfo.hpp"
       :pointmax 2724
       :fsize 2723
-      :lastmodtime '(22070 2371 0 0)
+      :lastmodtime '(22134 46853 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_CORE_TYPEID" (spp-arg-list ("T") 2649 . 2652) . ((symbol "typeid" 2653 . 2659) (semantic-list "(T)" 2659 . 2662)))
@@ -790,29 +798,29 @@
             ("string" include (:system-flag t) nil [355 372])
             ("BOOST_CORE_HAS_CXXABI_H" variable (:constant-flag t) nil [621 644])
             ("cxxabi.h" include (:system-flag t) nil [692 712])
-            ("cstdlib" include (:system-flag t) nil [713 732])
-            ("cstddef" include (:system-flag t) nil [733 752])
+            ("cstdlib" include (:system-flag t) nil [1101 1121])
+            ("cstddef" include (:system-flag t) nil [1122 1142])
             ("boost" type
                (:members 
                   ( ("core" type
                        (:members 
-                          ( ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [854 869])
-                            ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [917 932])
+                          ( ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [1252 1267])
+                            ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [1315 1330])
                             ("scoped_demangled_name" type
                                (:members 
-                                  ( ("private" label nil (reparse-symbol classsubparts) [964 972])
+                                  ( ("private" label nil (reparse-symbol classsubparts) [1362 1370])
                                     ("m_p" variable
                                        (:pointer 1
                                         :type "char")
-                                        (reparse-symbol classsubparts) [977 994])
-                                    ("public" label nil (reparse-symbol classsubparts) [996 1003])
+                                        (reparse-symbol classsubparts) [1375 1392])
+                                    ("public" label nil (reparse-symbol classsubparts) [1394 1401])
                                     ("m_p" function
                                        (:arguments 
-                                          ( ("" variable (:type ("demangle_alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1090 1112]))                                          
+                                          ( ("" variable (:type ("demangle_alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1488 1510]))                                          
                                         :type "int")
-                                        (reparse-symbol classsubparts) [1085 1126]))                                  
+                                        (reparse-symbol classsubparts) [1483 1524]))                                  
                                 :type "class")
-                                (reparse-symbol namespacesubparts) [934 1470])
+                                (reparse-symbol namespacesubparts) [1332 1868])
                             ("demangle" function
                                (:typemodifiers ("inline")
                                 :arguments 
@@ -820,18 +828,18 @@
                                        (:pointer 1
                                         :constant-flag t
                                         :type "char")
-                                        (reparse-symbol arg-sub-list) [2238 2257]))                                  
+                                        (reparse-symbol arg-sub-list) [2636 2655]))                                  
                                 :type ("std::string" type (:type "class") nil nil))
-                                (reparse-symbol namespacesubparts) [2209 2278]))                          
+                                (reparse-symbol namespacesubparts) [2607 2676]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [780 2289]))                  
+                        (reparse-symbol namespacesubparts) [1178 2687]))                  
                 :type "namespace")
-                nil [761 2310]))          
+                nil [1159 2708]))          
       :file "demangle.hpp"
-      :pointmax 2414
-      :fsize 2413
-      :lastmodtime '(22070 2371 0 0)
-      :unmatched-syntax '((semantic-list 2204 . 2207) (symbol 2189 . 2203) (semantic-list 2172 . 2188) (symbol 2159 . 2172) (VOID 2154 . 2158) (INLINE 2147 . 2153) (semantic-list 2125 . 2145) (symbol 2110 . 2124) (semantic-list 2088 . 2109) (symbol 2074 . 2088) (punctuation 2072 . 2073) (CONST 2066 . 2071) (CHAR 2061 . 2065) (INLINE 2054 . 2060) (semantic-list 1400 . 1467) (symbol 1378 . 1400) (semantic-list 1434 . 1466) (punctuation 1432 . 1433) (OPERATOR 1424 . 1432) (semantic-list 1318 . 1373) (symbol 1296 . 1318) (semantic-list 1340 . 1372) (semantic-list 1263 . 1290) (symbol 1244 . 1258) (CONST 1238 . 1243) (semantic-list 1235 . 1237) (symbol 1232 . 1235) (punctuation 1230 . 1231) (CONST 1224 . 1229) (CHAR 1219 . 1223) (semantic-list 1176 . 1213) (symbol 1157 . 1171) (semantic-list 1154 . 1156) (symbol 1133 . 1154) (punctuation 1132 . 1133) (semantic-list 1104 . 1112) (punctuation 1075 . 1076) (symbol 1060 . 1074) (semantic-list 1038 . 1059) (symbol 1017 . 1038) (EXPLICIT 1008 . 1016) (semantic-list 895 . 916) (symbol 882 . 895) (VOID 877 . 881) (INLINE 870 . 876) (semantic-list 832 . 853) (symbol 818 . 832) (punctuation 816 . 817) (CONST 810 . 815) (CHAR 805 . 809) (INLINE 798 . 804))
+      :pointmax 2812
+      :fsize 2811
+      :lastmodtime '(22134 46853 0 0)
+      :unmatched-syntax '((semantic-list 2602 . 2605) (symbol 2587 . 2601) (semantic-list 2570 . 2586) (symbol 2557 . 2570) (VOID 2552 . 2556) (INLINE 2545 . 2551) (semantic-list 2523 . 2543) (symbol 2508 . 2522) (semantic-list 2486 . 2507) (symbol 2472 . 2486) (punctuation 2470 . 2471) (CONST 2464 . 2469) (CHAR 2459 . 2463) (INLINE 2452 . 2458) (semantic-list 1798 . 1865) (symbol 1776 . 1798) (semantic-list 1832 . 1864) (punctuation 1830 . 1831) (OPERATOR 1822 . 1830) (semantic-list 1716 . 1771) (symbol 1694 . 1716) (semantic-list 1738 . 1770) (semantic-list 1661 . 1688) (symbol 1642 . 1656) (CONST 1636 . 1641) (semantic-list 1633 . 1635) (symbol 1630 . 1633) (punctuation 1628 . 1629) (CONST 1622 . 1627) (CHAR 1617 . 1621) (semantic-list 1574 . 1611) (symbol 1555 . 1569) (semantic-list 1552 . 1554) (symbol 1531 . 1552) (punctuation 1530 . 1531) (semantic-list 1502 . 1510) (punctuation 1473 . 1474) (symbol 1458 . 1472) (semantic-list 1436 . 1457) (symbol 1415 . 1436) (EXPLICIT 1406 . 1414) (semantic-list 1293 . 1314) (symbol 1280 . 1293) (VOID 1275 . 1279) (INLINE 1268 . 1274) (semantic-list 1230 . 1251) (symbol 1216 . 1230) (punctuation 1214 . 1215) (CONST 1208 . 1213) (CHAR 1203 . 1207) (INLINE 1196 . 1202))
       :lexical-table 
         '(("BOOST_CORE_DEMANGLE_HPP_INCLUDED")
           )

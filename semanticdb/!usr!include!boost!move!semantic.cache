@@ -16,7 +16,7 @@
       :file "utility.hpp"
       :pointmax 5222
       :fsize 5221
-      :lastmodtime '(22070 2372 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((semantic-list 4932 . 4947) (symbol 4908 . 4922) (semantic-list 4901 . 4907) (symbol 4885 . 4901) (symbol 4865 . 4869) (punctuation 4864 . 4865) (punctuation 4863 . 4864) (punctuation 4862 . 4863) (punctuation 4861 . 4862) (symbol 4860 . 4861) (CONST 4854 . 4859) (punctuation 4852 . 4853) (symbol 4847 . 4852) (punctuation 4846 . 4847) (punctuation 4845 . 4846) (punctuation 4844 . 4845) (symbol 4843 . 4844) (punctuation 4842 . 4843) (symbol 4799 . 4842) (punctuation 4798 . 4799) (punctuation 4797 . 4798) (symbol 4786 . 4797) (punctuation 4785 . 4786) (punctuation 4784 . 4785) (symbol 4779 . 4784) (punctuation 4778 . 4779) (punctuation 4777 . 4778) (punctuation 4776 . 4777) (punctuation 4774 . 4775) (symbol 4750 . 4761) (punctuation 4749 . 4750) (punctuation 4748 . 4749) (symbol 4737 . 4748) (punctuation 4736 . 4737) (punctuation 4735 . 4736) (symbol 4730 . 4735) (punctuation 4729 . 4730) (punctuation 4728 . 4729) (TYPENAME 4719 . 4727) (punctuation 4708 . 4709) (symbol 4707 . 4708) (CLASS 4701 . 4706) (punctuation 4700 . 4701) (TEMPLATE 4691 . 4699) (semantic-list 4649 . 4680) (symbol 4625 . 4639) (semantic-list 4618 . 4624) (symbol 4602 . 4618) (symbol 4582 . 4586) (punctuation 4581 . 4582) (punctuation 4580 . 4581) (punctuation 4579 . 4580) (punctuation 4578 . 4579) (punctuation 4577 . 4578) (symbol 4576 . 4577) (punctuation 4574 . 4575) (symbol 4569 . 4574) (punctuation 4568 . 4569) (punctuation 4567 . 4568) (punctuation 4566 . 4567) (symbol 4565 . 4566) (punctuation 4564 . 4565) (symbol 4521 . 4564) (punctuation 4520 . 4521) (punctuation 4519 . 4520) (symbol 4508 . 4519) (punctuation 4507 . 4508) (punctuation 4506 . 4507) (symbol 4501 . 4506) (punctuation 4500 . 4501) (punctuation 4499 . 4500) (punctuation 4497 . 4498) (symbol 4473 . 4484) (punctuation 4472 . 4473) (punctuation 4471 . 4472) (symbol 4460 . 4471) (punctuation 4459 . 4460) (punctuation 4458 . 4459) (symbol 4453 . 4458) (punctuation 4452 . 4453) (punctuation 4451 . 4452) (TYPENAME 4442 . 4450) (punctuation 4431 . 4432) (symbol 4430 . 4431) (CLASS 4424 . 4429) (punctuation 4423 . 4424) (TEMPLATE 4414 . 4422) (punctuation 708 . 709))
       :lexical-table 
         '(("BOOST_MOVE_MOVE_UTILITY_HPP")
@@ -46,7 +46,7 @@
                                 (reparse-symbol classsubparts) [5584 5616]))                          )
                         (reparse-symbol namespacesubparts) [5506 5625]))                  
                 :type "namespace")
-                nil [5034 10178])
+                nil [5034 10322])
             ("boost" type
                (:members 
                   ( ("move_detail" type
@@ -57,17 +57,17 @@
                                 :type ("boost::move_detail::add_rvalue_reference::type" type (:type "class") nil nil)
                                 :typemodifiers ("typename")
                                 :prototype-flag t)
-                                (reparse-symbol namespacesubparts) [10394 10485]))                          
+                                (reparse-symbol namespacesubparts) [10538 10629]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [10370 10488]))                  
+                        (reparse-symbol namespacesubparts) [10514 10632]))                  
                 :type "namespace")
-                nil [10353 10516])
-            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [10592 10635]))          
+                nil [10497 10660])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [10736 10779]))          
       :file "utility_core.hpp"
-      :pointmax 10687
-      :fsize 10686
-      :lastmodtime '(22070 2372 0 0)
-      :unmatched-syntax '((semantic-list 9893 . 10124) (symbol 9869 . 9883) (semantic-list 9806 . 9868) (symbol 9778 . 9806) (punctuation 9864 . 9865) (punctuation 9817 . 9818) (punctuation 9816 . 9817) (TYPENAME 9807 . 9815) (punctuation 9776 . 9777) (punctuation 9775 . 9776) (symbol 9774 . 9775) (INLINE 9767 . 9773) (punctuation 9756 . 9757) (symbol 9755 . 9756) (CLASS 9749 . 9754) (punctuation 9748 . 9749) (TEMPLATE 9739 . 9747) (semantic-list 9694 . 9728) (symbol 9670 . 9684) (semantic-list 9608 . 9669) (symbol 9580 . 9608) (punctuation 9619 . 9620) (punctuation 9618 . 9619) (TYPENAME 9609 . 9617) (punctuation 9578 . 9579) (punctuation 9577 . 9578) (symbol 9576 . 9577) (INLINE 9569 . 9575) (punctuation 9558 . 9559) (symbol 9557 . 9558) (CLASS 9551 . 9556) (punctuation 9550 . 9551) (TEMPLATE 9541 . 9549) (semantic-list 8525 . 8756) (symbol 8501 . 8515) (semantic-list 8438 . 8500) (symbol 8431 . 8438) (punctuation 8496 . 8497) (punctuation 8449 . 8450) (punctuation 8448 . 8449) (TYPENAME 8439 . 8447) (punctuation 8429 . 8430) (punctuation 8428 . 8429) (symbol 8427 . 8428) (INLINE 8420 . 8426) (punctuation 8409 . 8410) (symbol 8408 . 8409) (CLASS 8402 . 8407) (punctuation 8401 . 8402) (TEMPLATE 8392 . 8400) (semantic-list 8347 . 8381) (symbol 8323 . 8337) (semantic-list 8261 . 8322) (symbol 8254 . 8261) (punctuation 8272 . 8273) (punctuation 8271 . 8272) (TYPENAME 8262 . 8270) (punctuation 8252 . 8253) (punctuation 8251 . 8252) (symbol 8250 . 8251) (INLINE 8243 . 8249) (punctuation 8232 . 8233) (symbol 8231 . 8232) (CLASS 8225 . 8230) (punctuation 8224 . 8225) (TEMPLATE 8215 . 8223) (semantic-list 6813 . 6900) (symbol 6789 . 6803) (semantic-list 6781 . 6788) (symbol 6777 . 6781) (punctuation 6784 . 6785) (punctuation 6775 . 6776) (punctuation 6774 . 6775) (symbol 6769 . 6773) (punctuation 6768 . 6769) (punctuation 6767 . 6768) (punctuation 6766 . 6767) (symbol 6765 . 6766) (punctuation 6764 . 6765) (symbol 6748 . 6764) (punctuation 6747 . 6748) (punctuation 6746 . 6747) (symbol 6735 . 6746) (punctuation 6734 . 6735) (punctuation 6733 . 6734) (symbol 6728 . 6733) (punctuation 6727 . 6728) (punctuation 6726 . 6727) (TYPENAME 6717 . 6725) (INLINE 6710 . 6716) (punctuation 6699 . 6700) (symbol 6698 . 6699) (CLASS 6692 . 6697) (punctuation 6691 . 6692) (TEMPLATE 6682 . 6690) (punctuation 733 . 734))
+      :pointmax 10831
+      :fsize 10830
+      :lastmodtime '(22134 46854 0 0)
+      :unmatched-syntax '((semantic-list 10037 . 10268) (symbol 10013 . 10027) (semantic-list 9950 . 10012) (symbol 9922 . 9950) (punctuation 10008 . 10009) (punctuation 9961 . 9962) (punctuation 9960 . 9961) (TYPENAME 9951 . 9959) (punctuation 9920 . 9921) (punctuation 9919 . 9920) (symbol 9918 . 9919) (INLINE 9911 . 9917) (punctuation 9900 . 9901) (symbol 9899 . 9900) (CLASS 9893 . 9898) (punctuation 9892 . 9893) (TEMPLATE 9883 . 9891) (semantic-list 9838 . 9872) (symbol 9814 . 9828) (semantic-list 9752 . 9813) (symbol 9724 . 9752) (punctuation 9763 . 9764) (punctuation 9762 . 9763) (TYPENAME 9753 . 9761) (punctuation 9722 . 9723) (punctuation 9721 . 9722) (symbol 9720 . 9721) (INLINE 9713 . 9719) (punctuation 9702 . 9703) (symbol 9701 . 9702) (CLASS 9695 . 9700) (punctuation 9694 . 9695) (TEMPLATE 9685 . 9693) (semantic-list 8525 . 8756) (symbol 8501 . 8515) (semantic-list 8438 . 8500) (symbol 8431 . 8438) (punctuation 8496 . 8497) (punctuation 8449 . 8450) (punctuation 8448 . 8449) (TYPENAME 8439 . 8447) (punctuation 8429 . 8430) (punctuation 8428 . 8429) (symbol 8427 . 8428) (INLINE 8420 . 8426) (punctuation 8409 . 8410) (symbol 8408 . 8409) (CLASS 8402 . 8407) (punctuation 8401 . 8402) (TEMPLATE 8392 . 8400) (semantic-list 8347 . 8381) (symbol 8323 . 8337) (semantic-list 8261 . 8322) (symbol 8254 . 8261) (punctuation 8272 . 8273) (punctuation 8271 . 8272) (TYPENAME 8262 . 8270) (punctuation 8252 . 8253) (punctuation 8251 . 8252) (symbol 8250 . 8251) (INLINE 8243 . 8249) (punctuation 8232 . 8233) (symbol 8231 . 8232) (CLASS 8225 . 8230) (punctuation 8224 . 8225) (TEMPLATE 8215 . 8223) (semantic-list 6813 . 6900) (symbol 6789 . 6803) (semantic-list 6781 . 6788) (symbol 6777 . 6781) (punctuation 6784 . 6785) (punctuation 6775 . 6776) (punctuation 6774 . 6775) (symbol 6769 . 6773) (punctuation 6768 . 6769) (punctuation 6767 . 6768) (punctuation 6766 . 6767) (symbol 6765 . 6766) (punctuation 6764 . 6765) (symbol 6748 . 6764) (punctuation 6747 . 6748) (punctuation 6746 . 6747) (symbol 6735 . 6746) (punctuation 6734 . 6735) (punctuation 6733 . 6734) (symbol 6728 . 6733) (punctuation 6727 . 6728) (punctuation 6726 . 6727) (TYPENAME 6717 . 6725) (INLINE 6710 . 6716) (punctuation 6699 . 6700) (symbol 6698 . 6699) (CLASS 6692 . 6697) (punctuation 6691 . 6692) (TEMPLATE 6682 . 6690) (punctuation 733 . 734))
       :lexical-table 
         '(("BOOST_MOVE_MOVE_UTILITY_CORE_HPP")
           )
@@ -118,7 +118,7 @@
       :file "traits.hpp"
       :pointmax 2555
       :fsize 2554
-      :lastmodtime '(22070 2372 0 0)
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 2390 . 2391) (punctuation 2360 . 2361) (punctuation 2359 . 2360) (symbol 2353 . 2358) (punctuation 2352 . 2353) (punctuation 2351 . 2352) (punctuation 2350 . 2351) (symbol 2349 . 2350) (punctuation 2348 . 2349) (symbol 2332 . 2348) (punctuation 2301 . 2302) (punctuation 2300 . 2301) (symbol 2294 . 2299) (punctuation 2293 . 2294) (punctuation 2292 . 2293) (punctuation 2291 . 2292) (symbol 2290 . 2291) (punctuation 2289 . 2290) (symbol 2260 . 2289) (punctuation 2258 . 2259) (symbol 2252 . 2257) (BOOL 2247 . 2251) (CONST 2241 . 2246) (STATIC 2234 . 2240) (punctuation 1813 . 1814) (symbol 1807 . 1812) (BOOL 1802 . 1806) (CONST 1796 . 1801) (STATIC 1789 . 1795) (punctuation 558 . 559))
       :lexical-table 
         '(("BOOST_MOVE_TRAITS_HPP")
@@ -131,10 +131,10 @@
             ("boost/config.hpp" include (:system-flag t) nil [606 635])
             ("boost/move/detail/config_begin.hpp" include (:system-flag t) nil [703 748])
             ("boost/move/detail/workaround.hpp" include (:system-flag t) nil [749 792])
-            ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" variable (:constant-flag t) nil [1241 1279])
-            ("BOOST_MOVABLE_BUT_NOT_COPYABLE" variable (:constant-flag t) nil [8589 8619])
-            ("BOOST_COPYABLE_AND_MOVABLE" variable (:constant-flag t) nil [8984 9010])
-            ("BOOST_COPYABLE_AND_MOVABLE_ALT" variable (:constant-flag t) nil [9080 9110])
+            ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" variable (:constant-flag t) nil [1251 1289])
+            ("BOOST_MOVABLE_BUT_NOT_COPYABLE" variable (:constant-flag t) nil [8612 8642])
+            ("BOOST_COPYABLE_AND_MOVABLE" variable (:constant-flag t) nil [9007 9033])
+            ("BOOST_COPYABLE_AND_MOVABLE_ALT" variable (:constant-flag t) nil [9103 9133])
             ("boost" type
                (:members 
                   ( ("has_move_emulation_enabled" type
@@ -147,8 +147,8 @@
                                 :constant-flag t
                                 :default-value "false"
                                 :type "bool")
-                                (reparse-symbol classsubparts) [9492 9524]))                          )
-                        (reparse-symbol namespacesubparts) [9426 9530])
+                                (reparse-symbol classsubparts) [9515 9547]))                          )
+                        (reparse-symbol namespacesubparts) [9449 9553])
                     ("has_move_emulation_disabled" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
@@ -159,26 +159,26 @@
                                 :constant-flag t
                                 :default-value "true"
                                 :type "bool")
-                                (reparse-symbol classsubparts) [9602 9633]))                          )
-                        (reparse-symbol namespacesubparts) [9535 9639]))                  
+                                (reparse-symbol classsubparts) [9625 9656]))                          )
+                        (reparse-symbol namespacesubparts) [9558 9662]))                  
                 :type "namespace")
-                nil [9183 9645])
-            ("BOOST_RV_REF" variable (:constant-flag t) nil [9862 9874])
-            ("BOOST_RV_REF_BEG" variable (:constant-flag t) nil [10286 10302])
-            ("BOOST_RV_REF_END" variable (:constant-flag t) nil [10703 10719])
-            ("BOOST_RV_REF_BEG_IF_CXX11" variable (:constant-flag t) nil [10869 10894])
-            ("BOOST_RV_REF_END_IF_CXX11" variable (:constant-flag t) nil [11059 11084])
-            ("BOOST_COPY_ASSIGN_REF" variable (:constant-flag t) nil [11257 11278])
-            ("BOOST_FWD_REF" variable (:constant-flag t) nil [11434 11447])
-            ("BOOST_RV_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [11534 11559])
-            ("BOOST_RV_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11625 11650])
-            ("BOOST_COPY_ASSIGN_REF_BEG" variable (:constant-flag t) nil [11728 11753])
-            ("BOOST_COPY_ASSIGN_REF_END" variable (:constant-flag t) nil [11788 11813])
-            ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [11844 11878])
-            ("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11949 11983])
-            ("BOOST_CATCH_CONST_RLVALUE" variable (:constant-flag t) nil [12065 12090])
-            ("BOOST_MOVE_RET" variable (:constant-flag t) nil [13526 13540])
-            ("BOOST_MOVE_BASE" variable (:constant-flag t) nil [15035 15050])
+                nil [9206 9668])
+            ("BOOST_RV_REF" variable (:constant-flag t) nil [9885 9897])
+            ("BOOST_RV_REF_BEG" variable (:constant-flag t) nil [10309 10325])
+            ("BOOST_RV_REF_END" variable (:constant-flag t) nil [10726 10742])
+            ("BOOST_RV_REF_BEG_IF_CXX11" variable (:constant-flag t) nil [10892 10917])
+            ("BOOST_RV_REF_END_IF_CXX11" variable (:constant-flag t) nil [11082 11107])
+            ("BOOST_COPY_ASSIGN_REF" variable (:constant-flag t) nil [11280 11301])
+            ("BOOST_FWD_REF" variable (:constant-flag t) nil [11457 11470])
+            ("BOOST_RV_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [11557 11582])
+            ("BOOST_RV_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11648 11673])
+            ("BOOST_COPY_ASSIGN_REF_BEG" variable (:constant-flag t) nil [11751 11776])
+            ("BOOST_COPY_ASSIGN_REF_END" variable (:constant-flag t) nil [11811 11836])
+            ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" variable (:constant-flag t) nil [11867 11901])
+            ("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" variable (:constant-flag t) nil [11972 12006])
+            ("BOOST_CATCH_CONST_RLVALUE" variable (:constant-flag t) nil [12088 12113])
+            ("BOOST_MOVE_RET" variable (:constant-flag t) nil [13549 13563])
+            ("BOOST_MOVE_BASE" variable (:constant-flag t) nil [15058 15073])
             ("boost" type
                (:members 
                   ( ("move_detail" type
@@ -191,51 +191,51 @@
                                   ( ("type" type
                                        (:typedef ("T" type (:type "class") nil nil)
                                         :type "typedef")
-                                        (reparse-symbol classsubparts) [15208 15223]))                                  )
-                                (reparse-symbol namespacesubparts) [15167 15226]))                          
+                                        (reparse-symbol classsubparts) [15231 15246]))                                  )
+                                (reparse-symbol namespacesubparts) [15190 15249]))                          
                         :type "namespace")
-                        (reparse-symbol namespacesubparts) [15139 15232]))                  
+                        (reparse-symbol namespacesubparts) [15162 15255]))                  
                 :type "namespace")
-                nil [15118 15233])
-            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [15280 15323]))          
+                nil [15141 15256])
+            ("boost/move/detail/config_end.hpp" include (:system-flag t) nil [15303 15346]))          
       :file "core.hpp"
-      :pointmax 15362
-      :fsize 15361
-      :lastmodtime '(22070 2372 0 0)
+      :pointmax 15385
+      :fsize 15384
+      :lastmodtime '(22134 46854 0 0)
       :unmatched-syntax '((punctuation 643 . 644))
       :lexical-table 
-        '(("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 11983 . 12007) . 
-              ((CONST "const" 12015 . 12020) (symbol "TYPE" 12021 . 12025) (punctuation "<" 12025 . 12026) (symbol "ARG1" 12026 . 12030) (punctuation "," 12030 . 12031) (symbol "ARG2" 12032 . 12036) (punctuation "," 12036 . 12037) (symbol "ARG3" 12038 . 12042) (punctuation ">" 12042 . 12043) (punctuation "&" 12043 . 12044)))
-          ("BOOST_COPYABLE_AND_MOVABLE_ALT" (spp-arg-list ("TYPE") 9110 . 9116))
-          ("BOOST_COPY_ASSIGN_REF" (spp-arg-list ("TYPE") 11278 . 11284) . 
-              ((CONST "const" 11292 . 11297) (symbol "TYPE" 11298 . 11302) (punctuation "&" 11303 . 11304)))
-          ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" (spp-arg-list ("TYPE") 1279 . 1285) . 
-              ((PUBLIC "public" 1294 . 1300) (punctuation ":" 1300 . 1301) (symbol "TYPE" 1309 . 1313) (semantic-list "(TYPE const &)" 1313 . 1327) (punctuation "=" 1328 . 1329) (DELETE "delete" 1330 . 1336) (punctuation ";" 1336 . 1337) (symbol "TYPE" 1345 . 1349) (punctuation "&" 1349 . 1350) (OPERATOR "operator" 1351 . 1359) (punctuation "=" 1359 . 1360) (semantic-list "(TYPE const &)" 1360 . 1374) (punctuation "=" 1375 . 1376) (DELETE "delete" 1377 . 1383) (punctuation ";" 1383 . 1384) (PUBLIC "public" 1392 . 1398) (punctuation ":" 1398 . 1399) (TYPEDEF "typedef" 1407 . 1414) (INT "int" 1415 . 1418) (symbol "boost_move_no_copy_constructor_or_assign" 1419 . 1459) (punctuation ";" 1459 . 1460) (PRIVATE "private" 1469 . 1476) (punctuation ":" 1476 . 1477)))
-          ("BOOST_MOVABLE_BUT_NOT_COPYABLE" (spp-arg-list ("TYPE") 8619 . 8625) . 
-              ((symbol "BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" 8633 . 8671) (semantic-list "(TYPE)" 8671 . 8677) (PUBLIC "public" 8685 . 8691) (punctuation ":" 8691 . 8692) (TYPEDEF "typedef" 8700 . 8707) (INT "int" 8708 . 8711) (symbol "boost_move_emulation_t" 8712 . 8734) (punctuation ";" 8734 . 8735)))
-          ("BOOST_RV_REF" (spp-arg-list ("TYPE") 9874 . 9880) . 
-              ((symbol "TYPE" 9888 . 9892) (punctuation "&" 9893 . 9894) (punctuation "&" 9894 . 9895)))
-          ("BOOST_RV_REF_END" . ((punctuation "&" 10727 . 10728) (punctuation "&" 10728 . 10729)))
-          ("BOOST_FWD_REF" (spp-arg-list ("TYPE") 11447 . 11453) . 
-              ((symbol "TYPE" 11461 . 11465) (punctuation "&" 11466 . 11467) (punctuation "&" 11467 . 11468)))
-          ("BOOST_MOVE_RET" (spp-arg-list ("RET_TYPE" "REF") 13540 . 13555) . ((symbol "REF" 13566 . 13569)))
+        '(("BOOST_COPY_ASSIGN_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 12006 . 12030) . 
+              ((CONST "const" 12038 . 12043) (symbol "TYPE" 12044 . 12048) (punctuation "<" 12048 . 12049) (symbol "ARG1" 12049 . 12053) (punctuation "," 12053 . 12054) (symbol "ARG2" 12055 . 12059) (punctuation "," 12059 . 12060) (symbol "ARG3" 12061 . 12065) (punctuation ">" 12065 . 12066) (punctuation "&" 12066 . 12067)))
+          ("BOOST_COPYABLE_AND_MOVABLE_ALT" (spp-arg-list ("TYPE") 9133 . 9139))
+          ("BOOST_COPY_ASSIGN_REF" (spp-arg-list ("TYPE") 11301 . 11307) . 
+              ((CONST "const" 11315 . 11320) (symbol "TYPE" 11321 . 11325) (punctuation "&" 11326 . 11327)))
+          ("BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" (spp-arg-list ("TYPE") 1289 . 1295) . 
+              ((PUBLIC "public" 1304 . 1310) (punctuation ":" 1310 . 1311) (symbol "TYPE" 1319 . 1323) (semantic-list "(TYPE const &)" 1323 . 1337) (punctuation "=" 1338 . 1339) (DELETE "delete" 1340 . 1346) (punctuation ";" 1346 . 1347) (symbol "TYPE" 1355 . 1359) (punctuation "&" 1359 . 1360) (OPERATOR "operator" 1361 . 1369) (punctuation "=" 1369 . 1370) (semantic-list "(TYPE const &)" 1370 . 1384) (punctuation "=" 1385 . 1386) (DELETE "delete" 1387 . 1393) (punctuation ";" 1393 . 1394) (PUBLIC "public" 1402 . 1408) (punctuation ":" 1408 . 1409) (TYPEDEF "typedef" 1417 . 1424) (INT "int" 1425 . 1428) (symbol "boost_move_no_copy_constructor_or_assign" 1429 . 1469) (punctuation ";" 1469 . 1470) (PRIVATE "private" 1479 . 1486) (punctuation ":" 1486 . 1487)))
+          ("BOOST_MOVABLE_BUT_NOT_COPYABLE" (spp-arg-list ("TYPE") 8642 . 8648) . 
+              ((symbol "BOOST_MOVE_IMPL_NO_COPY_CTOR_OR_ASSIGN" 8656 . 8694) (semantic-list "(TYPE)" 8694 . 8700) (PUBLIC "public" 8708 . 8714) (punctuation ":" 8714 . 8715) (TYPEDEF "typedef" 8723 . 8730) (INT "int" 8731 . 8734) (symbol "boost_move_emulation_t" 8735 . 8757) (punctuation ";" 8757 . 8758)))
+          ("BOOST_RV_REF" (spp-arg-list ("TYPE") 9897 . 9903) . 
+              ((symbol "TYPE" 9911 . 9915) (punctuation "&" 9916 . 9917) (punctuation "&" 9917 . 9918)))
+          ("BOOST_RV_REF_END" . ((punctuation "&" 10750 . 10751) (punctuation "&" 10751 . 10752)))
+          ("BOOST_FWD_REF" (spp-arg-list ("TYPE") 11470 . 11476) . 
+              ((symbol "TYPE" 11484 . 11488) (punctuation "&" 11489 . 11490) (punctuation "&" 11490 . 11491)))
+          ("BOOST_MOVE_RET" (spp-arg-list ("RET_TYPE" "REF") 13563 . 13578) . ((symbol "REF" 13589 . 13592)))
           ("BOOST_MOVE_CORE_HPP")
           ("BOOST_RV_REF_BEG")
-          ("BOOST_COPYABLE_AND_MOVABLE" (spp-arg-list ("TYPE") 9010 . 9016))
-          ("BOOST_RV_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 11650 . 11674) . 
-              ((symbol "TYPE" 11682 . 11686) (punctuation "<" 11686 . 11687) (symbol "ARG1" 11687 . 11691) (punctuation "," 11691 . 11692) (symbol "ARG2" 11693 . 11697) (punctuation "," 11697 . 11698) (symbol "ARG3" 11699 . 11703) (punctuation ">" 11703 . 11704) (punctuation "&" 11705 . 11706) (punctuation "&" 11706 . 11707)))
-          ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11878 . 11896) . 
-              ((CONST "const" 11904 . 11909) (symbol "TYPE" 11910 . 11914) (punctuation "<" 11914 . 11915) (symbol "ARG1" 11915 . 11919) (punctuation "," 11919 . 11920) (symbol "ARG2" 11921 . 11925) (punctuation ">" 11925 . 11926) (punctuation "&" 11927 . 11928)))
-          ("BOOST_COPY_ASSIGN_REF_END" . ((punctuation "&" 11822 . 11823)))
-          ("BOOST_COPY_ASSIGN_REF_BEG" . ((CONST "const" 11762 . 11767)))
-          ("BOOST_MOVE_BASE" (spp-arg-list ("BASE_TYPE" "ARG") 15050 . 15066) . 
-              ((punctuation ":" 15075 . 15076) (punctuation ":" 15076 . 15077) (symbol "boost" 15077 . 15082) (punctuation ":" 15082 . 15083) (punctuation ":" 15083 . 15084) (symbol "move" 15084 . 15088) (semantic-list "((BASE_TYPE&)(ARG))" 15088 . 15107)))
-          ("BOOST_RV_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11559 . 11577) . 
-              ((symbol "TYPE" 11585 . 11589) (punctuation "<" 11589 . 11590) (symbol "ARG1" 11590 . 11594) (punctuation "," 11594 . 11595) (symbol "ARG2" 11596 . 11600) (punctuation ">" 11600 . 11601) (punctuation "&" 11602 . 11603) (punctuation "&" 11603 . 11604)))
-          ("BOOST_RV_REF_END_IF_CXX11" . ((symbol "BOOST_RV_REF_END" 11093 . 11109)))
-          ("BOOST_RV_REF_BEG_IF_CXX11" . ((symbol "BOOST_RV_REF_BEG" 10903 . 10919)))
-          ("BOOST_CATCH_CONST_RLVALUE" (spp-arg-list ("TYPE") 12090 . 12096) . 
-              ((CONST "const" 12104 . 12109) (symbol "TYPE" 12110 . 12114) (punctuation "&" 12115 . 12116)))
+          ("BOOST_COPYABLE_AND_MOVABLE" (spp-arg-list ("TYPE") 9033 . 9039))
+          ("BOOST_RV_REF_3_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2" "ARG3") 11673 . 11697) . 
+              ((symbol "TYPE" 11705 . 11709) (punctuation "<" 11709 . 11710) (symbol "ARG1" 11710 . 11714) (punctuation "," 11714 . 11715) (symbol "ARG2" 11716 . 11720) (punctuation "," 11720 . 11721) (symbol "ARG3" 11722 . 11726) (punctuation ">" 11726 . 11727) (punctuation "&" 11728 . 11729) (punctuation "&" 11729 . 11730)))
+          ("BOOST_COPY_ASSIGN_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11901 . 11919) . 
+              ((CONST "const" 11927 . 11932) (symbol "TYPE" 11933 . 11937) (punctuation "<" 11937 . 11938) (symbol "ARG1" 11938 . 11942) (punctuation "," 11942 . 11943) (symbol "ARG2" 11944 . 11948) (punctuation ">" 11948 . 11949) (punctuation "&" 11950 . 11951)))
+          ("BOOST_COPY_ASSIGN_REF_END" . ((punctuation "&" 11845 . 11846)))
+          ("BOOST_COPY_ASSIGN_REF_BEG" . ((CONST "const" 11785 . 11790)))
+          ("BOOST_MOVE_BASE" (spp-arg-list ("BASE_TYPE" "ARG") 15073 . 15089) . 
+              ((punctuation ":" 15098 . 15099) (punctuation ":" 15099 . 15100) (symbol "boost" 15100 . 15105) (punctuation ":" 15105 . 15106) (punctuation ":" 15106 . 15107) (symbol "move" 15107 . 15111) (semantic-list "((BASE_TYPE&)(ARG))" 15111 . 15130)))
+          ("BOOST_RV_REF_2_TEMPL_ARGS" (spp-arg-list ("TYPE" "ARG1" "ARG2") 11582 . 11600) . 
+              ((symbol "TYPE" 11608 . 11612) (punctuation "<" 11612 . 11613) (symbol "ARG1" 11613 . 11617) (punctuation "," 11617 . 11618) (symbol "ARG2" 11619 . 11623) (punctuation ">" 11623 . 11624) (punctuation "&" 11625 . 11626) (punctuation "&" 11626 . 11627)))
+          ("BOOST_RV_REF_END_IF_CXX11" . ((symbol "BOOST_RV_REF_END" 11116 . 11132)))
+          ("BOOST_RV_REF_BEG_IF_CXX11" . ((symbol "BOOST_RV_REF_BEG" 10926 . 10942)))
+          ("BOOST_CATCH_CONST_RLVALUE" (spp-arg-list ("TYPE") 12113 . 12119) . 
+              ((CONST "const" 12127 . 12132) (symbol "TYPE" 12133 . 12137) (punctuation "&" 12138 . 12139)))
           )
 ))
   :file "!usr!include!boost!move!semantic.cache"

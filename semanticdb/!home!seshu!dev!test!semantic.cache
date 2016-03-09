@@ -3,189 +3,65 @@
 (semanticdb-project-database-file "test/"
   :tables
   (list
-
-    (semanticdb-table "iterative.hpp"
-      :major-mode 'c++-mode
-      :tags 
-        '( ("NONLINEAR_SYSTEMS_ITERATIVE_H" variable (:constant-flag t) nil [47 76])
-            ("cmath" include (:system-flag t) nil [78 94])
-            ("NonlinearSystems" type
-               (:members 
-                  ( ("Iterative" type
-                       (:template 
-                          ( ("T" type (:type "class") nil nil))                          
-                        :type "class"
-                        :members 
-                          ( ("protected" label nil (reparse-symbol classsubparts) [168 178])
-                            ("a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [183 187])
-                            ("b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [192 196])
-                            ("e" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [201 205])
-                            ("public" label nil (reparse-symbol classsubparts) [209 216])
-                            ("Iterative" function
-                               (:constructor-flag t
-                                :arguments 
-                                  ( ("a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229 233])
-                                    ("b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [234 238])
-                                    ("e" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [239 243]))                                  
-                                :type ("Iterative" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [219 265])
-                            ("f" function
-                               (:pure-virtual-flag t
-                                :prototype-flag t
-                                :typemodifiers ("virtual")
-                                :arguments 
-                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [283 287]))                                  
-                                :type ("T" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [271 292])
-                            ("iterate_bisection" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [298 614])
-                            ("iterate_false_position" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [621 1073])
-                            ("iterate_secant" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1080 1479]))                          )
-                        (reparse-symbol namespacesubparts) [127 1485]))                  
-                :type "namespace")
-                nil [96 1487]))          
-      :file "iterative.hpp"
-      :pointmax 1495
-      :fsize 1494
-      :lastmodtime '(22141 22236 628111 571000)
-      :unmatched-syntax '((punctuation 1479 . 1480) (punctuation 1073 . 1074) (punctuation 614 . 615) (punctuation 265 . 266))
-      :lexical-table 
-        '(("NONLINEAR_SYSTEMS_ITERATIVE_H")
-          )
-)
-    (semanticdb-table "iterative.i"
-      :major-mode 'c-mode
-      :tags 
-        '( ("NonlinearSystems::Iterative" variable (:type "int") nil [132 168]))          
-      :file "iterative.i"
-      :pointmax 169
-      :fsize 168
-      :lastmodtime '(22141 23494 327042 222000)
-      :unmatched-syntax '((semantic-list 114 . 131) (TEMPLATE 106 . 114) (punctuation 105 . 106) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 131 . 148) (TEMPLATE 123 . 131) (punctuation 122 . 123) (string 105 . 120) (symbol 97 . 104) (punctuation 96 . 97) (semantic-list 20 . 94) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 114 . 131) (TEMPLATE 106 . 114) (punctuation 105 . 106) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 114 . 131) (TEMPLATE 106 . 114) (punctuation 105 . 106) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 114 . 131) (TEMPLATE 106 . 114) (punctuation 105 . 106) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 113 . 130) (TEMPLATE 105 . 113) (punctuation 104 . 105) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (semantic-list 113 . 130) (TEMPLATE 105 . 113) (punctuation 104 . 105) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80) (semantic-list 20 . 77) (punctuation 19 . 20) (symbol 9 . 18) (symbol 2 . 8) (punctuation 1 . 2) (string 88 . 103) (symbol 80 . 87) (punctuation 79 . 80))
-      :lexical-table 
-        '(("SWIG_FILE_WITH_INIT")
-          )
-)
-    (semanticdb-table "link.py"
+    (semanticdb-table "test.py"
       :major-mode 'python-mode
       :tags 
-        '( ("iterative" include nil nil [1 17])
-            ("math" include nil nil [18 36])
-            ("deg_to_rad" function (:arguments 
-              ( ("x" variable nil (reparse-symbol function_parameters) [54 55]))              ) nil [39 80])
-            ("Link" type
-               (:superclasses ("iterative.doubleIterative")
+        '( ("test" type
+               (:superclasses ("object")
                 :members 
-                  ( ("__init__" function
-                       (:suite 
-                          ( ("self" variable nil (reparse-symbol indented_block_body) [154 183]))                          
-                        :parent "dummy"
+                  ( ("__iter__" function
+                       (:parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [139 143]))                          
-                        :constructor-flag t)
-                        (reparse-symbol indented_block_body) [126 184])
-                    ("f" function (:arguments 
-                      ( ("x" variable nil (reparse-symbol function_parameters) [195 196]))                      ) (reparse-symbol indented_block_body) [189 288]))                  
-                :type "class")
-                nil [82 288]))          
-      :file "link.py"
-      :pointmax 288
-      :fsize 287
-      :lastmodtime '(22141 26799 624416 464000)
-      :unmatched-syntax nil)
-    (semanticdb-table "iterative.py"
-      :major-mode 'python-mode
-      :tags 
-        '( ("sys" include nil nil [208 236])
-            ("if" code nil nil [237 851])
-            ("del" code nil nil [851 867])
-            ("try" code nil nil [868 971])
-            ("_swig_setattr_nondynamic" function
-               (:parent "dummy"
-                :arguments 
-                  ( ("self" variable nil (reparse-symbol function_parameters) [1002 1006])
-                    ("class_type" variable nil (reparse-symbol function_parameters) [1008 1018])
-                    ("name" variable nil (reparse-symbol function_parameters) [1020 1024])
-                    ("value" variable nil (reparse-symbol function_parameters) [1026 1031])
-                    ("static" variable nil (reparse-symbol function_parameters) [1033 1039]))                  )
-                nil [973 1581])
-            ("_swig_setattr" function
-               (:parent "dummy"
-                :arguments 
-                  ( ("self" variable nil (reparse-symbol function_parameters) [1601 1605])
-                    ("class_type" variable nil (reparse-symbol function_parameters) [1607 1617])
-                    ("name" variable nil (reparse-symbol function_parameters) [1619 1623])
-                    ("value" variable nil (reparse-symbol function_parameters) [1625 1630]))                  )
-                nil [1583 1703])
-            ("_swig_getattr_nondynamic" function
-               (:parent "dummy"
-                :arguments 
-                  ( ("self" variable nil (reparse-symbol function_parameters) [1734 1738])
-                    ("class_type" variable nil (reparse-symbol function_parameters) [1740 1750])
-                    ("name" variable nil (reparse-symbol function_parameters) [1752 1756])
-                    ("static" variable nil (reparse-symbol function_parameters) [1758 1764]))                  )
-                nil [1705 2043])
-            ("_swig_getattr" function
-               (:parent "dummy"
-                :arguments 
-                  ( ("self" variable nil (reparse-symbol function_parameters) [2062 2066])
-                    ("class_type" variable nil (reparse-symbol function_parameters) [2068 2078])
-                    ("name" variable nil (reparse-symbol function_parameters) [2080 2084]))                  )
-                nil [2044 2150])
-            ("_swig_repr" function
-               (:parent "dummy"
-                :arguments 
-                  ( ("self" variable nil (reparse-symbol function_parameters) [2167 2171]))                  )
-                nil [2152 2360])
-            ("try" code nil nil [2361 2478])
-            ("doubleIterative" type
-               (:superclasses ("_object")
-                :members 
-                  ( ("__swig_setmethods__" variable nil (reparse-symbol indented_block_body) [2516 2540])
-                    ("__setattr__" variable nil (reparse-symbol indented_block_body) [2545 2634])
-                    ("__swig_getmethods__" variable nil (reparse-symbol indented_block_body) [2639 2663])
-                    ("__getattr__" variable nil (reparse-symbol indented_block_body) [2668 2743])
+                          ( ("self" variable nil (reparse-symbol function_parameters) [39 43]))                          )
+                        (reparse-symbol indented_block_body) [26 66])
+                    ("next" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [80 84]))                          )
+                        (reparse-symbol indented_block_body) [71 236])
                     ("__init__" function
                        (:suite 
-                          ( ("raise" code nil (reparse-symbol indented_block_body) [2794 2860]))                          
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [280 298])
+                            ("self" variable nil (reparse-symbol indented_block_body) [307 323]))                          
                         :parent "dummy"
                         :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2762 2766])
-                            ("args" variable nil (reparse-symbol function_parameters) [2768 2773])
-                            ("kwargs" variable nil (reparse-symbol function_parameters) [2775 2783]))                          
+                          ( ("self" variable nil (reparse-symbol function_parameters) [254 258])
+                            ("low" variable nil (reparse-symbol function_parameters) [260 263])
+                            ("high" variable nil (reparse-symbol function_parameters) [265 269]))                          
                         :constructor-flag t)
-                        (reparse-symbol indented_block_body) [2749 2861])
-                    ("__repr__" variable nil (reparse-symbol indented_block_body) [2865 2886])
-                    ("f" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2898 2902])
-                            ("x" variable nil (reparse-symbol function_parameters) [2904 2905]))                          )
-                        (reparse-symbol indented_block_body) [2892 2961])
-                    ("iterate_bisection" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [2988 2992]))                          )
-                        (reparse-symbol indented_block_body) [2966 3061])
-                    ("iterate_false_position" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3093 3097]))                          )
-                        (reparse-symbol indented_block_body) [3066 3171])
-                    ("iterate_secant" function
-                       (:parent "dummy"
-                        :arguments 
-                          ( ("self" variable nil (reparse-symbol function_parameters) [3195 3199]))                          )
-                        (reparse-symbol indented_block_body) [3176 3265])
-                    ("__swig_destroy__" variable nil (reparse-symbol indented_block_body) [3269 3321])
-                    ("__del__" variable nil (reparse-symbol indented_block_body) [3326 3353]))                  
+                        (reparse-symbol indented_block_body) [241 324]))                  
                 :type "class")
-                nil [2480 3354])
-            ("doubleIterative_swigregister" variable nil nil [3354 3424])
-            ("doubleIterative_swigregister" code nil nil [3425 3470]))          
-      :file "iterative.py"
-      :pointmax 3541
-      :fsize 3540
-      :lastmodtime '(22141 23254 111372 222000)
+                nil [1 324])
+            ("t" variable nil nil [341 355]))          
+      :file "test.py"
+      :pointmax 356
+      :fsize 380
+      :lastmodtime '(22184 14897 528849 680000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("asyncio" include nil nil [24 38])
+            ("websockets" include nil nil [39 56])
+            ("hello" function nil nil [64 344])
+            ("asyncio" code nil nil [345 397]))          
+      :file "client.py"
+      :pointmax 398
+      :fsize 397
+      :lastmodtime '(22167 1290 60196 207000)
+      :unmatched-syntax nil)
+    (semanticdb-table "client2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("asyncio" include nil nil [24 38])
+            ("websockets" include nil nil [39 56])
+            ("hello" function (:decorators 
+              ( ("asyncio.coroutine" function (:type "decorator") nil nil))              ) nil [58 426])
+            ("asyncio" code nil nil [427 479]))          
+      :file "client2.py"
+      :pointmax 480
+      :fsize 479
+      :lastmodtime '(22167 1361 173989 421000)
       :unmatched-syntax nil))
   :file "!home!seshu!dev!test!semantic.cache"
   :semantic-tag-version "2.0"

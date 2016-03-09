@@ -78,6 +78,10 @@
 ;;python3
 (elpy-use-ipython)
 
+;; python
+;; (add-hook 'python-mode-hook 'anaconda-mode)
+;; (add-hook 'python-mode-hook 'ac-anaconda-setup)
+
 ;; lua
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
@@ -301,3 +305,13 @@
 ;; (global-set-key (kbd "C-c w s") 'layout-save-current)
 ;; (global-set-key (kbd "C-c w r") 'layout-restore)
 ;; (global-set-key (kbd "C-c w k") 'layout-delete-current)
+
+;; gc-cons
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold 800000))
+
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)

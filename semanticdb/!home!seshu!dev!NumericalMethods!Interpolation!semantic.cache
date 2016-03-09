@@ -3,9 +3,6 @@
 (semanticdb-project-database-file "Interpolation/"
   :tables
   (list
-
-
-
     (semanticdb-table "direct_fit.hpp"
       :major-mode 'c++-mode
       :tags 
@@ -97,22 +94,17 @@
       :major-mode 'c++-mode
       :tags 
         '( ("INTERPOLATION_NEWTON_H" variable (:constant-flag t) nil [40 62])
-            ("string" include (:system-flag t) nil [64 81])
-            ("boost/format.hpp" include (:system-flag t) nil [82 109])
-            ("binomial_coefficients.hpp" include nil nil [110 146])
-            ("fit.hpp" include nil nil [147 165])
-            ("std::to_string" using (:type ("std::to_string" type
+            ("iostream" include (:system-flag t) nil [64 83])
+            ("include/binomial_coefficients.hpp" include nil nil [84 128])
+            ("fit.hpp" include nil nil [129 147])
+            ("std::cout" using (:type ("std::cout" type
                  (:prototype t
                   :type "class")
-                  nil nil)) nil [167 188])
-            ("std::string" using (:type ("std::string" type
+                  nil nil)) nil [149 165])
+            ("std::endl" using (:type ("std::endl" type
                  (:prototype t
                   :type "class")
-                  nil nil)) nil [189 207])
-            ("std::ostream" using (:type ("std::ostream" type
-                 (:prototype t
-                  :type "class")
-                  nil nil)) nil [208 227])
+                  nil nil)) nil [166 182])
             ("Interpolation" type
                (:members 
                   ( ("Newton" type
@@ -120,23 +112,23 @@
                           ( ("T" type (:type "class") nil nil))                          
                         :type "class"
                         :members 
-                          ( ("protected" label nil (reparse-symbol classsubparts) [313 323])
-                            ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [328 340])
+                          ( ("protected" label nil (reparse-symbol classsubparts) [268 278])
+                            ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [283 295])
                             ("table" variable (:type ("vector" type
                                  (:template-specifier 
                                     ( ("vector" type nil nil nil))                                    
                                   :type "class")
-                                  nil nil)) (reparse-symbol classsubparts) [345 369])
-                            ("deg" variable (:type "int") (reparse-symbol classsubparts) [374 382])
+                                  nil nil)) (reparse-symbol classsubparts) [300 324])
+                            ("deg" variable (:type "int") (reparse-symbol classsubparts) [329 337])
                             ("build_table" function
                                (:arguments 
                                   ( ("deg" variable
                                        (:constant-flag t
                                         :type "int")
-                                        (reparse-symbol arg-sub-list) [405 419]))                                  
+                                        (reparse-symbol arg-sub-list) [360 374]))                                  
                                 :type "void")
-                                (reparse-symbol classsubparts) [388 776])
-                            ("public" label nil (reparse-symbol classsubparts) [781 788])
+                                (reparse-symbol classsubparts) [343 731])
+                            ("public" label nil (reparse-symbol classsubparts) [736 743])
                             ("Newton" function
                                (:constructor-flag t
                                 :arguments 
@@ -148,7 +140,7 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [798 817])
+                                        (reparse-symbol arg-sub-list) [753 772])
                                     ("f" variable
                                        (:reference 1
                                         :constant-flag t
@@ -157,22 +149,22 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [818 837])
-                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [838 850]))                                  
+                                        (reparse-symbol arg-sub-list) [773 792])
+                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [793 805]))                                  
                                 :type ("Newton" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [791 894]))                          
+                                (reparse-symbol classsubparts) [746 849]))                          
                         :superclasses 
                           ( ("Fit" type
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [257 901])
+                        (reparse-symbol namespacesubparts) [212 855])
                     ("ForwardDifference" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
                         :type "class"
                         :members 
-                          ( ("public" label nil (reparse-symbol classsubparts) [975 982])
+                          ( ("public" label nil (reparse-symbol classsubparts) [929 936])
                             ("ForwardDifference" function
                                (:constructor-flag t
                                 :arguments 
@@ -184,7 +176,7 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [1003 1022])
+                                        (reparse-symbol arg-sub-list) [957 976])
                                     ("f" variable
                                        (:reference 1
                                         :constant-flag t
@@ -193,34 +185,34 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [1023 1042])
-                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1043 1055]))                                  
+                                        (reparse-symbol arg-sub-list) [977 996])
+                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [997 1009]))                                  
                                 :type ("ForwardDifference" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [985 1091])
+                                (reparse-symbol classsubparts) [939 1045])
                             ("fit" function
                                (:arguments 
                                   ( ("point" variable
                                        (:constant-flag t
                                         :type ("T" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1118 1132])
+                                        (reparse-symbol arg-sub-list) [1072 1086])
                                     ("deg" variable
                                        (:constant-flag t
                                         :type "int")
-                                        (reparse-symbol arg-sub-list) [1133 1147]))                                  
+                                        (reparse-symbol arg-sub-list) [1087 1101]))                                  
                                 :type "int")
-                                (reparse-symbol classsubparts) [1114 1613]))                          
+                                (reparse-symbol classsubparts) [1068 1567]))                          
                         :superclasses 
                           ( ("Newton" type
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [905 1619])
+                        (reparse-symbol namespacesubparts) [859 1573])
                     ("BackwardDifference" type
                        (:template 
                           ( ("T" type (:type "class") nil nil))                          
                         :type "class"
                         :members 
-                          ( ("public" label nil (reparse-symbol classsubparts) [1694 1701])
+                          ( ("public" label nil (reparse-symbol classsubparts) [1648 1655])
                             ("BackwardDifference" function
                                (:constructor-flag t
                                 :arguments 
@@ -232,7 +224,7 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [1723 1742])
+                                        (reparse-symbol arg-sub-list) [1677 1696])
                                     ("f" variable
                                        (:reference 1
                                         :constant-flag t
@@ -241,35 +233,35 @@
                                                 ( ("T" type nil nil nil))                                                
                                               :type "class")
                                               nil nil))
-                                        (reparse-symbol arg-sub-list) [1743 1762])
-                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1763 1775]))                                  
+                                        (reparse-symbol arg-sub-list) [1697 1716])
+                                    ("step_size" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1717 1729]))                                  
                                 :type ("BackwardDifference" type (:type "class") nil nil))
-                                (reparse-symbol classsubparts) [1704 1811])
+                                (reparse-symbol classsubparts) [1658 1765])
                             ("fit" function
                                (:arguments 
                                   ( ("point" variable
                                        (:constant-flag t
                                         :type ("T" type (:type "class") nil nil))
-                                        (reparse-symbol arg-sub-list) [1838 1852])
+                                        (reparse-symbol arg-sub-list) [1792 1806])
                                     ("deg" variable
                                        (:constant-flag t
                                         :type "int")
-                                        (reparse-symbol arg-sub-list) [1853 1867]))                                  
+                                        (reparse-symbol arg-sub-list) [1807 1821]))                                  
                                 :type "int")
-                                (reparse-symbol classsubparts) [1834 2419]))                          
+                                (reparse-symbol classsubparts) [1788 2373]))                          
                         :superclasses 
                           ( ("Newton" type
                                (:protection "public"
                                 :type "class")
                                 nil nil))                          )
-                        (reparse-symbol namespacesubparts) [1623 2424]))                  
+                        (reparse-symbol namespacesubparts) [1577 2378]))                  
                 :type "namespace")
-                nil [229 2426]))          
+                nil [184 2380]))          
       :file "newton.hpp"
-      :pointmax 2435
+      :pointmax 2389
       :fsize 2388
       :lastmodtime '(22125 44601 284180 195000)
-      :unmatched-syntax '((punctuation 1832 . 1833) (semantic-list 1829 . 1832) (symbol 1827 . 1828) (punctuation 1826 . 1827) (symbol 1818 . 1826) (punctuation 1811 . 1812) (punctuation 1613 . 1614) (punctuation 1112 . 1113) (semantic-list 1109 . 1112) (symbol 1107 . 1108) (punctuation 1106 . 1107) (symbol 1098 . 1106) (punctuation 1091 . 1092) (punctuation 894 . 895) (punctuation 776 . 777) (punctuation 2003 . 2004) (semantic-list 2000 . 2003) (symbol 1998 . 1999) (punctuation 1997 . 1998) (symbol 1989 . 1997) (punctuation 1982 . 1983) (punctuation 1784 . 1785) (punctuation 1283 . 1284) (semantic-list 1280 . 1283) (symbol 1278 . 1279) (punctuation 1277 . 1278) (symbol 1269 . 1277) (punctuation 1262 . 1263) (punctuation 1071 . 1072))
+      :unmatched-syntax '((punctuation 1786 . 1787) (semantic-list 1783 . 1786) (symbol 1781 . 1782) (punctuation 1780 . 1781) (symbol 1772 . 1780) (punctuation 1765 . 1766) (punctuation 1567 . 1568) (punctuation 1066 . 1067) (semantic-list 1063 . 1066) (symbol 1061 . 1062) (punctuation 1060 . 1061) (symbol 1052 . 1060) (punctuation 1045 . 1046) (punctuation 849 . 850) (punctuation 731 . 732))
       :lexical-table 
         '(("INTERPOLATION_NEWTON_H")
           )
@@ -332,8 +324,8 @@
                 nil [84 837]))          
       :file "lagrange.hpp"
       :pointmax 846
-      :fsize 845
-      :lastmodtime '(22141 18902 4904 610000)
+      :fsize 847
+      :lastmodtime '(22108 60567 740801 562000)
       :unmatched-syntax nil
       :lexical-table 
         '(("INTERPOLATION_LAGRANGE")

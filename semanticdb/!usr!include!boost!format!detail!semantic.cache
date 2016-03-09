@@ -63,7 +63,7 @@
       :file "compat_workarounds.hpp"
       :pointmax 3117
       :fsize 3116
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_FORMAT_COMPAT_WORKAROUNDS_HPP")
@@ -75,7 +75,7 @@
       :file "unset_macros.hpp"
       :pointmax 1112
       :fsize 1111
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "config_macros.hpp"
       :major-mode 'c++-mode
@@ -103,7 +103,7 @@
       :file "config_macros.hpp"
       :pointmax 3135
       :fsize 3134
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax '((punctuation ":" 2925 . 2937) (punctuation ":" 2925 . 2937) (TYPEDEF 2917 . 2924))
       :lexical-table 
         '(("BOOST_IO_STD" . 
@@ -118,7 +118,7 @@
       :file "msvc_disambiguater.hpp"
       :pointmax 1638
       :fsize 1637
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_MSVC_DISAMBIGUATER_HPP")
@@ -130,7 +130,7 @@
       :file "workarounds_gcc-2_95.hpp"
       :pointmax 4887
       :fsize 4886
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "workarounds_stlport.hpp"
       :major-mode 'c++-mode
@@ -139,7 +139,7 @@
       :file "workarounds_stlport.hpp"
       :pointmax 1378
       :fsize 1377
-      :lastmodtime '(22116 6589 0 0)
+      :lastmodtime '(22134 46855 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("BOOST_MACROS_STLPORT_HPP")
