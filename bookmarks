@@ -2,19 +2,4 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RTags_2"
- (filename . "~/dev/NumericalMethods/UnitTests/IVP.cpp")
- (front-context-string . "ImplicitEuler<E,")
- (rear-context-string . ">, public ODEs::")
- (position . 613))
-("RTags_1"
- (filename . "~/dev/NumericalMethods/ODEs/implicit_euler.hpp")
- (front-context-string . "ImplicitEuler : ")
- (rear-context-string . "lass S>\n  class ")
- (position . 194))
-("RTags_0"
- (filename . "~/dev/NumericalMethods/UnitTests/IVP.cpp")
- (front-context-string . "ImplicitEuler<E,")
- (rear-context-string . "ps) :\n    ODEs::")
- (position . 720))
-)
+()
