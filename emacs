@@ -113,11 +113,16 @@
 ;; cuda
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 
-;; auto-complete
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
+(setq company-idle-delay 0)
 
+(defun indent-or-complete ()
+  (interactive)
+  (if (looking-at "\\_>")
+      (company-complete-common)
+          (indent-according-to-mode)))
+
+(global-set-key "\t" 'indent-or-complete)
+;; (setq-default tab-always-indent 'complete)
 (eval-after-load 'company
   '(add-to-list
     'company-backends '(company-rtags company-irony-c-headers company-irony)))
@@ -293,10 +298,19 @@
 (yas-global-mode 1)
 
 ;; python
-(eval-after-load "company"
-  '(add-to-list 'company-backends 'company-anaconda))
-(add-hook 'python-mode-hook 'anaconda-mode)
-(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+(package-initialize)
+(elpy-enable)
+;; python2
+;; (setq python-shell-interpreter "ipython2")
+;; (setq elpy-rpc-python-command "python2")
+;;python3
+(elpy-use-ipython)
+
+;; python
+;; (eval-after-load "company"
+;;   '(add-to-list 'company-backends 'company-anaconda))
+;; (add-hook 'python-mode-hook 'anaconda-mode)
+;; (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
 ;; gc-cons
 (defun my-minibuffer-setup-hook ()
