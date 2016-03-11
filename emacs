@@ -12,7 +12,11 @@
  '(linum-highlight-in-all-buffersp nil)
  '(rm-blacklist
    (quote
-    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK"))))
+    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC" " Anaconda")))
+ '(safe-local-variable-values
+   (quote
+    ((cmake-ide-dir . "/home/seshu/dev/NumericalMethods/build")
+     (cmake-ide-dir . "/home/seshu/dev/NumericalMethods")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -87,13 +91,17 @@
 ;; rtags
 (require 'rtags)
 (require 'company-rtags)
+(require 'flycheck-rtags)
 
+(setq rtags-completions-enabled t)
 (rtags-enable-standard-keybindings c-mode-base-map)
 (setq rtags-completions-enabled t)
 (setq rtags-use-helm t)
+(setq rtags-autostart-diagnostics t)
+(rtags-enable-standard-keybindings)
 
 ;; cmake-ide
-;; (cmake-ide-setup)
+(cmake-ide-setup)
 
 ;; irony
 (add-hook 'c++-mode-hook 'irony-mode)
@@ -268,9 +276,11 @@
 (add-hook 'python-mode-hook 'hs-minor-mode)
 
 ;; stickyfunc-enhance
-;; (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-;; (require 'stickyfunc-enhance)
-;; (global-semantic-stickyfunc-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
+(setq semantic-default-submodes (delete 'semanticdb semantic-default-submodes))
+(semantic-mode 1)
+(require 'stickyfunc-enhance)
+(global-semantic-stickyfunc-mode)
 
 ;; dtrt-indent
 (require 'dtrt-indent)

@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/dev/NumericalMethods/")
+("~/dev/NumericalMethods/" "~/.emacs.d/" "~/dev/euler/")
