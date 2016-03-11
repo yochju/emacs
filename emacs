@@ -5,16 +5,14 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("c9fa45acd59564778b031178375261dbdc9259c9781c86e64c937ded3d8132e7"
-     "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa"
-     "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223"
-     "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+    ("c9fa45acd59564778b031178375261dbdc9259c9781c86e64c937ded3d8132e7" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(global-linum-mode t)
+ '(helm-swoop-split-with-multiple-windows t)
  '(linum-format "%d ")
  '(linum-highlight-in-all-buffersp nil)
  '(rm-blacklist
    (quote
-    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company"))))
+    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -27,11 +25,15 @@
  '(ediff-fine-diff-C ((t (:background "yellow" :foreground "black"))))
  '(ediff-odd-diff-A ((t (:background "Grey" :foreground "black"))))
  '(ediff-odd-diff-C ((t (:background "Grey" :foreground "black"))))
+ '(helm-grep-file ((t (:foreground "magenta" :underline t))))
+ '(helm-selection ((t (:background "brightblack" :foreground "brightyellow"))))
+ '(helm-source-header ((t (:background "color-235" :foreground "white" :weight bold :height 1.3 :family "Sans Serif"))))
+ '(helm-swoop-target-line-face ((t (:background "yellow" :foreground "#222222"))))
+ '(helm-swoop-target-word-face ((t (:background "magenta" :foreground "#ffffff"))))
  '(linum-highlight-face ((t (:inherit default :background "color-235" :foreground "brightred"))))
  '(mode-line ((t (:background "color-235" :inverse-video nil))))
  '(mode-line-inactive ((t (:background "color-235" :inverse-video nil))))
  '(region ((t (:background "brightblack")))))
-
 
 ;; no menu or welcome
 (menu-bar-mode -1)
@@ -290,12 +292,11 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-;; layout restore
-;; (add-to-list 'load-path "~/.emacs.d/layout-restore")
-;; (require 'layout-restore)
-;; (global-set-key (kbd "C-c w s") 'layout-save-current)
-;; (global-set-key (kbd "C-c w r") 'layout-restore)
-;; (global-set-key (kbd "C-c w k") 'layout-delete-current)
+;; python
+(eval-after-load "company"
+  '(add-to-list 'company-backends 'company-anaconda))
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
 ;; gc-cons
 (defun my-minibuffer-setup-hook ()
