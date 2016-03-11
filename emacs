@@ -132,6 +132,7 @@
 
 (global-set-key "\t" 'indent-or-complete)
 ;; (setq-default tab-always-indent 'complete)
+(setq company-backends (delete 'company-semantic company-backends))
 (eval-after-load 'company
   '(add-to-list
     'company-backends '(company-rtags company-irony-c-headers company-irony)))
