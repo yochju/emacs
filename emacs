@@ -15,8 +15,8 @@
     (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC" " Anaconda")))
  '(safe-local-variable-values
    (quote
-    ((cmake-ide-dir . "/home/seshu/dev/NumericalMethods/build")
-     (cmake-ide-dir . "/home/seshu/dev/NumericalMethods")))))
+    ((cmake-ide-dir . "/home/seshu/dev/cppweb/build")
+     (cmake-ide-dir . "/home/seshu/dev/NumericalMethods/build")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -103,6 +103,19 @@
 ;; cmake-ide
 (cmake-ide-setup)
 
+;; cmake
+(require 'cmake-mode)
+
+(setq auto-mode-alist
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'" . cmake-mode))
+       auto-mode-alist))
+
+;; cmake-font-lock
+
+(add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
+
 ;; irony
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
@@ -124,18 +137,21 @@
 
 (setq company-idle-delay 0)
 
-(defun indent-or-complete ()
-  (interactive)
-  (if (looking-at "\\_>")
-      (company-complete-common)
-          (indent-according-to-mode)))
+;; (defun indent-or-complete ()
+;;   (interactive)
+;;   (if (looking-at "\\_>")
+;;       (company-complete-common)
+;;           (indent-according-to-mode)))
 
-(global-set-key "\t" 'indent-or-complete)
+;; (global-set-key "\t" 'indent-or-complete)
 ;; (setq-default tab-always-indent 'complete)
+
+(define-key c-mode-map [(tab)] 'company-complete)
+(define-key c++-mode-map [(tab)] 'company-complete)
 (setq company-backends (delete 'company-semantic company-backends))
 (eval-after-load 'company
   '(add-to-list
-    'company-backends '(company-rtags company-irony-c-headers company-irony)))
+    'company-backends '(company-rtags company-irony-c-headers company-irony company-yasnippet)))
 
 ;; flycheck-mode
 (add-hook 'c++-mode-hook 'flycheck-mode)
@@ -306,7 +322,7 @@
 
 ;; yasnippet
 (require 'yasnippet)
-(yas-global-mode 1)
+;; (yas-global-mode 1)
 
 ;; python
 (package-initialize)
