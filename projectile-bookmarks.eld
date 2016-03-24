@@ -1,1 +1,0 @@
-("~/.emacs.d/" "~/dev/rsstray/" "~/dev/cppweb/" "~/dev/NumericalMethods/" "~/dev/euler/")
