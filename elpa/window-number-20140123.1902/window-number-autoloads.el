@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("window-number.el") (22020 34944 437500
-;;;;;;  916000))
+;;;### (autoloads nil nil ("window-number.el") (22241 26163 955740
+;;;;;;  222000))
 
 ;;;***
 

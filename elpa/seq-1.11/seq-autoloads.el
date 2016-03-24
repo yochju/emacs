@@ -1,9 +1,9 @@
-;;; popup-autoloads.el --- automatically extracted autoloads
+;;; seq-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("popup.el") (22241 28011 606185 308000))
+;;;### (autoloads nil nil ("seq.el") (22240 5048 20223 330000))
 
 ;;;***
 
@@ -12,4 +12,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; popup-autoloads.el ends here
+;;; seq-autoloads.el ends here

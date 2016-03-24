@@ -44,7 +44,6 @@
 (tool-bar-mode -1)
 (setq inhibit-startup-message t)
 
-;; package.el
 (when (>= emacs-major-version 24)
   (require 'package)
   (add-to-list
@@ -92,14 +91,17 @@
 ;; rtags
 (require 'rtags)
 (require 'company-rtags)
+(require 'flycheck-rtags)
 
+(setq rtags-completions-enabled t)
 (rtags-enable-standard-keybindings c-mode-base-map)
 (setq rtags-completions-enabled t)
 (setq rtags-use-helm t)
+(setq rtags-autostart-diagnostics t)
+(rtags-enable-standard-keybindings)
 
-;; python
-;; (add-hook 'python-mode-hook 'anaconda-mode)
-;; (add-hook 'python-mode-hook 'ac-anaconda-setup)
+;; cmake-ide
+(cmake-ide-setup)
 
 ;; cmake
 (require 'cmake-mode)
@@ -119,16 +121,19 @@
 (add-hook 'c-mode-hook 'irony-mode)
 (add-hook 'objc-mode-hook 'irony-mode)
 
-;; gdb
-(setq gdb-many-windows t
-      gdb-show-main t)
+(defun my-irony-mode-hook ()
+  (define-key irony-mode-map [remap completion-at-point]
+    'irony-completion-at-point-async)
+  (define-key irony-mode-map [remap complete-symbol]
+    'irony-completion-at-point-async))
 
-;; sml
-(setq sml/theme 'respectful)
-(sml/setup)
+(add-hook 'irony-mode-hook 'my-irony-mode-hook)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
 
-;; cuda
-(add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
+;; company
+(require 'company-irony-c-headers)
+(add-hook 'after-init-hook 'global-company-mode)
 
 (setq company-idle-delay 0)
 
@@ -148,15 +153,14 @@
   '(add-to-list
     'company-backends '(company-rtags company-irony-c-headers company-irony company-yasnippet)))
 
-(add-hook 'c++-mode-hook 'my:ac-c-headers-init)
-(add-hook 'c-mode-hook 'my:ac-c-headers-init)
+;; flycheck-mode
+(add-hook 'c++-mode-hook 'flycheck-mode)
+(add-hook 'c-mode-hook 'flycheck-mode)
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
-;; semantic mode
-(semantic-mode 1)
-(defun my:add-semantic-to-autocomplete()
-  (add-to-list 'ac-sources 'ac-source-semantic))
-(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
-(global-semantic-idle-scheduler-mode 1)
+;; eldoc
+(add-hook 'irony-mode-hook 'irony-eldoc)
 
 ;; whitespace
 ;; (global-set-key (kbd "C-c w") 'whitespace-mode)
@@ -296,9 +300,11 @@
 (add-hook 'python-mode-hook 'hs-minor-mode)
 
 ;; stickyfunc-enhance
-;; (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-;; (require 'stickyfunc-enhance)
-;; (global-semantic-stickyfunc-mode)
+(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
+(setq semantic-default-submodes (delete 'semanticdb semantic-default-submodes))
+(semantic-mode 1)
+(require 'stickyfunc-enhance)
+(global-semantic-stickyfunc-mode)
 
 ;; dtrt-indent
 (require 'dtrt-indent)

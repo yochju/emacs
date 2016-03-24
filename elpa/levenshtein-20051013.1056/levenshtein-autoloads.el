@@ -1,9 +1,9 @@
-;;; popup-autoloads.el --- automatically extracted autoloads
+;;; levenshtein-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("popup.el") (22241 28011 606185 308000))
+;;;### (autoloads nil nil ("levenshtein.el") (22240 5056 153426 252000))
 
 ;;;***
 
@@ -12,4 +12,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; popup-autoloads.el ends here
+;;; levenshtein-autoloads.el ends here
