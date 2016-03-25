@@ -12,11 +12,7 @@
  '(linum-highlight-in-all-buffersp nil)
  '(rm-blacklist
    (quote
-    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC" " Anaconda")))
- '(safe-local-variable-values
-   (quote
-    ((cmake-ide-dir . "/home/seshu/dev/cppweb/build")
-     (cmake-ide-dir . "/home/seshu/dev/NumericalMethods/build")))))
+    (" hl-p" " SP" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " ElDoc" " FlyC"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -88,53 +84,18 @@
 ;; cuda
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 
-;; rtags
-(require 'rtags)
-(require 'company-rtags)
-(require 'flycheck-rtags)
+;; semantic
+(require 'cc-mode)
+(require 'semantic)
 
-(setq rtags-completions-enabled t)
-(rtags-enable-standard-keybindings c-mode-base-map)
-(setq rtags-completions-enabled t)
-(setq rtags-use-helm t)
-(setq rtags-autostart-diagnostics t)
-(rtags-enable-standard-keybindings)
-
-;; cmake-ide
-(cmake-ide-setup)
-
-;; cmake
-(require 'cmake-mode)
-
-(setq auto-mode-alist
-      (append
-       '(("CMakeLists\\.txt\\'" . cmake-mode))
-       '(("\\.cmake\\'" . cmake-mode))
-       auto-mode-alist))
-
-;; cmake-font-lock
-
-(add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
-
-;; irony
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
-
-(defun my-irony-mode-hook ()
-  (define-key irony-mode-map [remap completion-at-point]
-    'irony-completion-at-point-async)
-  (define-key irony-mode-map [remap complete-symbol]
-    'irony-completion-at-point-async))
-
-(add-hook 'irony-mode-hook 'my-irony-mode-hook)
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(semantic-mode 1)
 
 ;; company
-(require 'company-irony-c-headers)
+(require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
-
+(add-to-list 'company-backends 'company-c-headers)
 (setq company-idle-delay 0)
 
 ;; (defun indent-or-complete ()
@@ -145,22 +106,12 @@
 
 ;; (global-set-key "\t" 'indent-or-complete)
 ;; (setq-default tab-always-indent 'complete)
-
 (define-key c-mode-map [(tab)] 'company-complete)
 (define-key c++-mode-map [(tab)] 'company-complete)
-(setq company-backends (delete 'company-semantic company-backends))
-(eval-after-load 'company
-  '(add-to-list
-    'company-backends '(company-rtags company-irony-c-headers company-irony company-yasnippet)))
 
 ;; flycheck-mode
 (add-hook 'c++-mode-hook 'flycheck-mode)
 (add-hook 'c-mode-hook 'flycheck-mode)
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
-
-;; eldoc
-(add-hook 'irony-mode-hook 'irony-eldoc)
 
 ;; whitespace
 ;; (global-set-key (kbd "C-c w") 'whitespace-mode)
@@ -290,6 +241,30 @@
 ;; helm-flycheck
 (require 'helm-flycheck)
 
+;; helm-gtags
+(setq helm-gtags-ignore-case t
+      helm-gtags-auto-update t
+      helm-gtags-use-input-at-cursor t
+      helm-gtags-pulse-at-cursor t
+      helm-gtags-prefix-key "\C-cg"
+      helm-gtags-suggested-key-mapping t
+      )
+
+(require 'helm-gtags)
+;; Enable helm-gtags-mode
+(add-hook 'dired-mode-hook 'helm-gtags-mode)
+(add-hook 'eshell-mode-hook 'helm-gtags-mode)
+(add-hook 'c-mode-hook 'helm-gtags-mode)
+(add-hook 'c++-mode-hook 'helm-gtags-mode)
+(add-hook 'asm-mode-hook 'helm-gtags-mode)
+
+(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
+(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
+(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
+(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
+(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+
 ;; projectile
 (projectile-global-mode)
 (setq projectile-completion-system 'helm)
@@ -301,8 +276,6 @@
 
 ;; stickyfunc-enhance
 (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-(setq semantic-default-submodes (delete 'semanticdb semantic-default-submodes))
-(semantic-mode 1)
 (require 'stickyfunc-enhance)
 (global-semantic-stickyfunc-mode)
 
@@ -332,12 +305,6 @@
 ;; (setq elpy-rpc-python-command "python2")
 ;;python3
 (elpy-use-ipython)
-
-;; python
-;; (eval-after-load "company"
-;;   '(add-to-list 'company-backends 'company-anaconda))
-;; (add-hook 'python-mode-hook 'anaconda-mode)
-;; (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
 ;; gc-cons
 (defun my-minibuffer-setup-hook ()
