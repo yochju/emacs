@@ -6,6 +6,7 @@
  '(custom-safe-themes
    (quote
     ("c9fa45acd59564778b031178375261dbdc9259c9781c86e64c937ded3d8132e7" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+ '(ffap-machine-p-known (quote reject))
  '(global-linum-mode t)
  '(helm-swoop-split-with-multiple-windows t)
  '(linum-format "%d ")
@@ -315,3 +316,40 @@
 
 (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
 (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
+
+;; backups
+(setq
+ vc-make-backup-files t
+ backup-by-copying t
+ backup-directory-alist
+ '(("." . "~/.emacs.d/backups/per-save"))
+ delete-old-versions t
+ kept-new-versions 2
+ kept-old-versions 2
+ version-control t)
+
+(defun force-backup-of-buffer ()
+  ;; Make a special "per session" backup at the first save of each
+  ;; emacs session.
+  (when (not buffer-backed-up)
+    ;; Override the default parameters for per-session backups.
+    (let ((backup-directory-alist '(("" . "~/.emacs.d/backups/per-session")))
+          (kept-new-versions 2))
+      (backup-buffer)))
+  ;; Make a "per save" backup on each save.  The first save results in
+  ;; both a per-session and a per-save backup, to keep the numbering
+  ;; of per-save backups consistent.
+  (let ((buffer-backed-up nil))
+          (backup-buffer)))
+
+(add-hook 'before-save-hook  'force-backup-of-buffer)
+
+(message "Deleting old backup files...")
+(let ((week (* 60 60 24 7))
+      (current (float-time (current-time))))
+  (dolist (file (directory-files temporary-file-directory t))
+    (when (and (backup-file-name-p file)
+               (> (- current (float-time (fifth (file-attributes file))))
+                  week))
+      (message "%s" file)
+      (delete-file file))))
