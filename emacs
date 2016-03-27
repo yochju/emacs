@@ -11,13 +11,15 @@
  '(helm-swoop-split-with-multiple-windows t)
  '(linum-format "%d ")
  '(linum-highlight-in-all-buffersp nil)
+ '(org-html-htmlize-output-type (quote css))
+ '(org-org-htmlized-css-url "static/worg.css")
  '(rm-blacklist
    (quote
-    (" hl-p" " SP" " AC" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC" " Anaconda")))
+    (" hl-p" " SP" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
  '(safe-local-variable-values
    (quote
-    ((cmake-ide-dir . "/home/seshu/dev/cppweb/build")
-     (cmake-ide-dir . "/home/seshu/dev/NumericalMethods/build")))))
+    ((cmake-ide-build-dir . "/home/seshu/dev/cppweb/build")
+     (cmake-ide-build-dir . "/home/seshu/dev/NumericalMethods/build")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -95,8 +97,6 @@
 (require 'flycheck-rtags)
 
 (setq rtags-completions-enabled t)
-(rtags-enable-standard-keybindings c-mode-base-map)
-(setq rtags-completions-enabled t)
 (setq rtags-use-helm t)
 (setq rtags-autostart-diagnostics t)
 (rtags-enable-standard-keybindings)
@@ -114,7 +114,6 @@
        auto-mode-alist))
 
 ;; cmake-font-lock
-
 (add-hook 'cmake-mode-hook 'cmake-font-lock-activate)
 
 ;; irony
@@ -333,12 +332,6 @@
 ;; (setq elpy-rpc-python-command "python2")
 ;;python3
 (elpy-use-ipython)
-
-;; python
-;; (eval-after-load "company"
-;;   '(add-to-list 'company-backends 'company-anaconda))
-;; (add-hook 'python-mode-hook 'anaconda-mode)
-;; (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
 
 ;; gc-cons
 (defun my-minibuffer-setup-hook ()
