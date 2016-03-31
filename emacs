@@ -108,6 +108,10 @@
 ;; cmake-ide
 (cmake-ide-setup)
 
+;; malinka
+;; (require 'malinka)
+;; (add-hook 'c-mode-common-hook 'malinka-mode)
+
 ;; cmake
 (require 'cmake-mode)
 
