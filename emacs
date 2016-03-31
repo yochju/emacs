@@ -8,6 +8,7 @@
     ("c9fa45acd59564778b031178375261dbdc9259c9781c86e64c937ded3d8132e7" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(ffap-machine-p-known (quote reject))
  '(global-linum-mode t)
+ '(helm-make-build-dir "/build")
  '(helm-swoop-split-with-multiple-windows t)
  '(linum-format "%d ")
  '(linum-highlight-in-all-buffersp nil)
@@ -88,6 +89,9 @@
 (setq sml/theme 'respectful)
 (sml/setup)
 
+;; x10
+(add-to-list 'auto-mode-alist '("\\.x10\\'" . java-mode))
+
 ;; cuda
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 
@@ -151,7 +155,7 @@
 (setq company-backends (delete 'company-semantic company-backends))
 (eval-after-load 'company
   '(add-to-list
-    'company-backends '(company-rtags company-irony-c-headers company-irony company-yasnippet)))
+    'company-backends '(company-irony-c-headers company-irony company-rtags company-yasnippet)))
 
 ;; flycheck-mode
 (add-hook 'c++-mode-hook 'flycheck-mode)
@@ -322,7 +326,8 @@
 
 ;; yasnippet
 (require 'yasnippet)
-;; (yas-global-mode 1)
+(add-to-list 'yas-snippet-dirs "~/.emacs.d/yasnippet-snippets")
+(yas-global-mode 1)
 
 ;; python
 (package-initialize)
