@@ -16,7 +16,7 @@
  '(org-org-htmlized-css-url "static/worg.css")
  '(rm-blacklist
    (quote
-    (" hl-p" " SP" " Abbrev" " HelmGtags" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
+    (" hl-p" " SP" " Abbrev" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
  '(safe-local-variable-values
    (quote
     ((cmake-ide-build-dir . "/home/seshu/dev/cppweb/build")
@@ -179,6 +179,7 @@
 ;; clean-aindent
 (require 'clean-aindent-mode)
 (add-hook 'prog-mode-hook 'clean-aindent-mode)
+(define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; smartparens
 (require 'smartparens-config)
@@ -229,7 +230,6 @@
  helm-move-to-line-cycle-in-source t ; move to end or beginning of source when reaching top or bottom of source.
  helm-buffers-fuzzy-matching t          ; fuzzy matching buffer names when non-nil
                                         ; useful in helm-mini that lists buffers
-
  )
 
 (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
