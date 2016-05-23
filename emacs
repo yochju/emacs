@@ -19,7 +19,9 @@
     (" hl-p" " SP" " Abbrev" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
  '(safe-local-variable-values
    (quote
-    ((cmake-ide-build-dir . "/home/seshu/dev/cppweb/build")
+    ((irony-additional-clang-options "-std=c++14")
+     (cmake-ide-build-dir . "/home/seshu/dev/bioswarm++/build")
+     (cmake-ide-build-dir . "/home/seshu/dev/cppweb/build")
      (cmake-ide-build-dir . "/home/seshu/dev/NumericalMethods/build")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -95,6 +97,10 @@
 ;; cuda
 (add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 
+;; c-style
+(setq c-default-style "bsd")
+(setq-default c-basic-offset 2)
+
 ;; rtags
 (require 'rtags)
 (require 'company-rtags)
@@ -144,15 +150,6 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (setq company-idle-delay 0)
-
-;; (defun indent-or-complete ()
-;;   (interactive)
-;;   (if (looking-at "\\_>")
-;;       (company-complete-common)
-;;           (indent-according-to-mode)))
-
-;; (global-set-key "\t" 'indent-or-complete)
-;; (setq-default tab-always-indent 'complete)
 
 (define-key c-mode-map [(tab)] 'company-complete)
 (define-key c++-mode-map [(tab)] 'company-complete)
@@ -331,7 +328,10 @@
 ;; yasnippet
 (require 'yasnippet)
 (add-to-list 'yas-snippet-dirs "~/.emacs.d/yasnippet-snippets")
-(yas-global-mode 1)
+(yas-reload-all)
+(add-hook 'c-mode-common-hook 'yas-minor-mode)
+(add-hook 'python-mode 'yas-minor-mode)
+;; (yas-global-mode 1)
 
 ;; python
 (package-initialize)

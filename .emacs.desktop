@@ -1,0 +1,30 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon May 23 04:20:34 2016
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22338 48466 479886 53000) (desktop . "206") "seshu@lenovo" nil nil ((((tty-type . "screen-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "unspecified-fg") (cursor-color . "yellow") (menu-bar-lines . 0) (tool-bar-lines . 0) (background-color . "unspecified-bg") (font . "tty") (height . 57) (width . 106) (modeline . t) (unsplittable) (frameset--id . "0F21-43BF-53F7-136E") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 106) (pixel-height . 56) (total-width . 106) (total-height . 56) (normal-height . 1.0) (normal-width . 1.0) (buffer "direct_fit.hpp" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins 3) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 605) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/dev/NumericalMethods/Differentiation/direct_fit.hpp" "~/dev/excel/output_merge.html" "~/dev/excel/excel_diff.py" "~/dev/bioswarmpp/bioswarm.cpp" "~/dev/bioswarmpp/bioswarm.hpp" "~/dev/bioswarmpp/ant_group.hpp" "~/dev/bioswarmpp/actor_groups.hpp" "~/dev/bioswarmpp/scene.hpp" "~/.emacs.d/bookmarks" "/usr/include/c++/5.3.0/bits/stl_construct.h" "/usr/include/c++/5.3.0/bits/shared_ptr.h" "/usr/include/c++/5.3.0/bits/shared_ptr_base.h" "/usr/include/c++/5.3.0/bits/stl_vector.h" "/usr/include/c++/5.3.0/bits/alloc_traits.h" "/usr/include/c++/5.3.0/ext/new_allocator.h" "/usr/include/c++/5.3.0/bits/unique_ptr.h" "~/dev/projectile_motion/vtktools.py" "~/dev/projectile_motion/pos.pvd" "~/dev/projectile_motion/output/pos_1.vtu" "~/dev/projectile_motion/output/pos_0.vtu"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/seshu/dev/NumericalMethods/Differentiation/direct_fit.hpp"
+  "direct_fit.hpp"
+  'c++-mode
+  '(abbrev-mode linum-mode window-number-mode company-mode flycheck-mode irony-mode smartparens-mode helm-mode projectile-mode ws-butler-mode which-key-mode yas-minor-mode eldoc-mode hs-minor-mode)
+  605
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
