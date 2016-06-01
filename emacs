@@ -43,6 +43,10 @@
  '(linum-highlight-face ((t (:inherit default :background "color-235" :foreground "brightred"))))
  '(mode-line ((t (:background "color-235" :inverse-video nil))))
  '(mode-line-inactive ((t (:background "color-235" :inverse-video nil))))
+ '(rainbow-delimiters-depth-2-face ((t (:foreground "blue"))))
+ '(rainbow-delimiters-depth-4-face ((t (:foreground "green"))))
+ '(rainbow-delimiters-depth-5-face ((t (:foreground "magenta"))))
+ '(rainbow-delimiters-depth-7-face ((t (:foreground "cyan"))))
  '(region ((t (:background "brightblack")))))
 
 ;; no menu or welcome
@@ -341,6 +345,10 @@
 ;; (setq elpy-rpc-python-command "python2")
 ;;python3
 (elpy-use-ipython)
+
+;; rainbow delimiters
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 ;; gc-cons
 (defun my-minibuffer-setup-hook ()
