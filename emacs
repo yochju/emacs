@@ -345,6 +345,7 @@
 ;; (setq elpy-rpc-python-command "python2")
 ;;python3
 (elpy-use-ipython)
+(setq python-shell-interpreter "ipython3" python-shell-interpreter-args "--simple-prompt --pprint")
 
 ;; rainbow delimiters
 (require 'rainbow-delimiters)
