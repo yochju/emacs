@@ -8,6 +8,7 @@
     ("c9fa45acd59564778b031178375261dbdc9259c9781c86e64c937ded3d8132e7" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(ffap-machine-p-known (quote reject))
  '(global-linum-mode t)
+ '(helm-dash-browser-func (quote w3m))
  '(helm-make-build-dir "/build")
  '(helm-swoop-split-with-multiple-windows t)
  '(linum-format "%d ")
@@ -16,7 +17,7 @@
  '(org-org-htmlized-css-url "static/worg.css")
  '(package-selected-packages
    (quote
-    (web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
+    (w3m helm-dash web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
  '(rm-blacklist
    (quote
     (" hl-p" " SP" " Abbrev" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
@@ -298,6 +299,9 @@
 
 ;; helm-flycheck
 (require 'helm-flycheck)
+
+;; helm-dash
+(setq helm-dash-common-docsets '("Python 2" "C++" "HTML" "CSS" "JavaScript"))
 
 ;; projectile
 (projectile-global-mode)
