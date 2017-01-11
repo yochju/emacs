@@ -17,7 +17,7 @@
  '(org-org-htmlized-css-url "static/worg.css")
  '(package-selected-packages
    (quote
-    (nodejs-repl js2-mode company-tern w3m helm-dash web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
+    (vue-mode nodejs-repl js2-mode company-tern w3m helm-dash web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
  '(rm-blacklist
    (quote
     (" hl-p" " SP" " Abbrev" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
@@ -301,7 +301,7 @@
 (require 'helm-flycheck)
 
 ;; helm-dash
-(setq helm-dash-common-docsets '("Python 2" "C++" "HTML" "CSS" "JavaScript"))
+(setq helm-dash-common-docsets '("Python 2" "C++" "HTML" "CSS" "JavaScript" "VueJS"))
 
 ;; projectile
 (projectile-global-mode)
@@ -363,6 +363,9 @@
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (define-key web-mode-map (kbd "C-c @ C-c") 'web-mode-fold-or-unfold)
+
+;; cuda
+(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 
 
 ;; gc-cons
