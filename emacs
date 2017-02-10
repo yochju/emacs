@@ -26,7 +26,8 @@
     ((irony-additional-clang-options "-std=c++14")
      (cmake-ide-build-dir . "/home/seshu/dev/bioswarm++/build")
      (cmake-ide-build-dir . "/home/seshu/dev/cppweb/build")
-     (cmake-ide-build-dir . "/home/seshu/dev/NumericalMethods/build")))))
+     (cmake-ide-build-dir . "/home/seshu/dev/NumericalMethods/build"))))
+ '(sml/vc-mode-show-backend t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -113,10 +114,12 @@
 (require 'rtags)
 (require 'company-rtags)
 (require 'flycheck-rtags)
+(require 'rtags-helm)
 
+(setq rtags-autostart-diagnostics t)
+(rtags-diagnostics)
 (setq rtags-completions-enabled t)
 (setq rtags-use-helm t)
-(setq rtags-autostart-diagnostics t)
 (rtags-enable-standard-keybindings)
 
 ;; cmake-ide
