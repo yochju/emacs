@@ -17,7 +17,7 @@
  '(org-org-htmlized-css-url "static/worg.css")
  '(package-selected-packages
    (quote
-    (helm-descbinds vue-mode nodejs-repl js2-mode company-tern w3m helm-dash web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
+    (git-gutter helm-descbinds vue-mode nodejs-repl js2-mode company-tern w3m helm-dash web-mode ws-butler window-number window-layout which-key test-simple swiper stickyfunc-enhance sr-speedbar smartparens smart-mode-line rainbow-delimiters pythonic malinka magit lua-mode loc-changes load-relative list-utils latex-preview-pane irony-eldoc htmlize hlinum helm-themes helm-swoop helm-projectile helm-make helm-ls-git helm-flycheck helm-ag google-c-style flycheck-irony elpy dtrt-indent cython-mode company-irony-c-headers company-irony cmake-ide cmake-font-lock clean-aindent-mode clang-format browse-kill-ring auctex)))
  '(rm-blacklist
    (quote
     (" hl-p" " SP" " Abbrev" " FA" " hs" " Helm" " wb" " WK" " yas" " company" " Irony" " ElDoc" " FlyC")))
@@ -114,12 +114,12 @@
 (require 'rtags)
 (require 'company-rtags)
 (require 'flycheck-rtags)
-(require 'rtags-helm)
+(require 'helm-rtags)
 
 (setq rtags-autostart-diagnostics t)
 (rtags-diagnostics)
 (setq rtags-completions-enabled t)
-(setq rtags-use-helm t)
+(setq rtags-display-result-backend 'helm)
 (rtags-enable-standard-keybindings)
 
 ;; cmake-ide
